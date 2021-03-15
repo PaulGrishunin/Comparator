@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Модели в Django</title>
+</head>
+<body class="container">
+    <form method="POST" action="create/">
+        {% csrf_token %}
+        <p>
+            <label>Add Name</label><br>
+            <input type="text" name="username" />
+        </p>
+        <p>
+            <label>Add email</label><br>
+            <input type="email" name="email" />
+        </p>
+        <p>
+            <label>Password</label><br>
+            <input type="text" name="password" />
+        </p>
+        <input type="submit" value="Save" >
+    </form>
+
+
+    {% if people.count > 0 %}
+    <h2>Users list</h2>
+    <table>
+        <tr><th>Id</th><th>Username</th><th>Email</th><th>Password</th></tr>
+        {% for users in people %}
+        <tr><td>{{ users.id }}</td><td>{{ users.username }}</td><td>{{ users.email }}</td><td>{{ users.password }}</td></tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+</body>
+</html>
