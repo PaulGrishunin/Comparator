@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'Comparator.urls'
@@ -134,8 +134,8 @@ STATIC_URL = '/static/'
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 #активировать CORS и перечень разрешенных URL
-#CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_ALLOW_ALL = False
 
-#CORS_ORIGIN_WHITELIST = (
-       #'localhost:3000',
-#)
+CORS_ORIGIN_WHITELIST = (
+       'https://127.0.0.1:3000',
+)
