@@ -25,7 +25,7 @@ SECRET_KEY = '3t$3$653h%+_sk#!^w&1=w(e(g0-1d@auc=s$x0g_l%yh8^cd1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'http://127.0.0.1:8000']
 
 
 # Application definition
@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework.authtoken',
     'corsheaders',
-    'ads'
+    'ads',
+    'authentication',
 ]
 
 MIDDLEWARE = [
@@ -112,7 +114,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
@@ -134,8 +135,17 @@ STATIC_URL = '/static/'
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 #активировать CORS и перечень разрешенных URL
-CORS_ORIGIN_ALLOW_ALL = False
+# CORS_ORIGIN_ALLOW_ALL = False
+#
+# CORS_ORIGIN_WHITELIST = (
+#        'https://127.0.0.1:3000',
+# )
 
-CORS_ORIGIN_WHITELIST = (
-       'https://127.0.0.1:3000',
-)
+AUTH_USER_MODEL = 'authentication.User'
+
+REST_FRAMEWORK = {
+    'EXCEPTION_HANDLER': 'Comparator.exceptions.core_exception_handler',
+    'NON_FIELD_ERRORS_KEY': 'error',
+    'DEFAULT_AUTHENTICATION_CLASSES': ('authentication.backends.JWTAuthentication', ),
+}
+

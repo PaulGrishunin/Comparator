@@ -9,7 +9,7 @@
     {% if ads.count > 0 %}
     <h2>Users list</h2>
     <table>
-        <tr><th>Id</th><th>markaId</th><th>Model</th><th>Year</th><th>Price</th><th>Currency</th><th>photo_link</th><th>ad_link</th></tr>
+        <tr><th>Id</th><th>Brand</th><th>Model</th><th>Year</th><th>Price</th><th>Currency</th><th>photo_link</th><th>ad_link</th></tr>
         {% for ad in ads %}
         <tr><td>{{ ad.id }}</td><td>{{ ad.brandId }}</td><td>{{ ad.model }}</td><td>{{ ad.year }}</td><td>{{ ad.price }}</td><td>{{ ad.currency }}</td><td>{{ ad.photo_link }}</td><td>{{ ad.ad_link }}</td></tr>
         {% endfor %}
