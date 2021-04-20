@@ -37,11 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'drf_yasg',
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
     'ads',
     'authentication',
+
 ]
 
 MIDDLEWARE = [
@@ -148,4 +150,3 @@ REST_FRAMEWORK = {
     'NON_FIELD_ERRORS_KEY': 'error',
     'DEFAULT_AUTHENTICATION_CLASSES': ('authentication.backends.JWTAuthentication', ),
 }
-

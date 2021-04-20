@@ -1,6 +1,7 @@
 from django.db import models
 
 
+
 class Users(models.Model):
     username = models.CharField("User name", max_length=20)
     email = models.EmailField()
@@ -16,6 +17,8 @@ class Brands(models.Model):
     
     def __str__(self):
         return self.name
+    def __repr__(self):
+        return self.id
 
 
 class Platform(models.Model):
@@ -25,9 +28,9 @@ class Platform(models.Model):
     year = models.IntegerField()
     price =  models.IntegerField()
     currency = models.CharField(max_length=3)
-    photo_link = models.CharField(max_length=255, null=True)
+    photo_link = models.URLField(null=True)
     date_add = models.DateTimeField("Created at")
-    ad_link = models.CharField(max_length=255)
+    ad_link = models.URLField()
 
     def __str__(self):
         return self.price   
@@ -40,12 +43,12 @@ class Sale_avg(models.Model):
     avg_price =  models.IntegerField()
 
     def __str__(self):
-        return self.avg_price     
+        return self.avg_price
 
 
 class Favorites(models.Model):
-    userId = models.ForeignKey(Users, on_delete=models.CASCADE)
-    adId = models.ForeignKey(Platform, on_delete=models.CASCADE)
+    userId = models.ForeignKey(Users, verbose_name="user", on_delete=models.CASCADE)
+    platformId = models.ForeignKey(Platform, verbose_name="ad", on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.userId    
+        return self.userId

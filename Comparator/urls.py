@@ -15,14 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from ads import views
-
+# from ads import views
+from .yasg import urlpatterns as doc_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
-    path('create/', views.create),
-    path('platform/', views.platform),
+
     path('api/', include('authentication.urls', namespace='authentication')),
+    path('api/', include('ads.urls', namespace='ads')),
 ]
 
+urlpatterns += doc_urls

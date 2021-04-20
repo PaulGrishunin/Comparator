@@ -15,9 +15,11 @@ INSERT INTO `ads_platform` VALUES (1,0,'Q7',2019,50000,'EUR','https://photoQ7','
 (12,1,'Continental GT',2019,91000,'EUR','https://photoBentley-Conti-GT-2','2021-02-16','https://photoBentley-Conti-GT-2',5),
 (13,0,'Continental GT',2019,150000,'EUR','https://photoBentley-Conti-GT-3','2021-02-18','https://photoBentley-Conti-GT-3',5),
 (14,1,'M5',2016,50000,'EUR','https://photoBMWM5-1','2021-02-17','https://link-to-BMWM5-1',6);
-INSERT INTO `ads_sale_avg` VALUES (1,'Q7',2019,80000,4), (2,'DB9',2010,140000,3),(3,'X7',2018,100000,6),(4,'Continental GT',2018,145000,5);
+INSERT INTO `ads_sale_avg` VALUES (1,'Q7',2019,80000,4), (2,'DB9',2010,140000,3),(3,'X7',2018,100000,6),(4,'Continental GT',2018,145000,5),
+(5,'Q7',2019,100000,4),(6,'DB9',2010,180000,3),(7,'X7',2018,80000,6),(8,'Continental GT',2018,155000,5),
+(9,'Q7',2019,110000,4),(10,'DB9',2010,170000,3),(11,'X7',2018,75000,6),(12,'Continental GT',2018,151000,5);
 INSERT INTO `ads_favorites` VALUES (1, 1, 3), (2, 1, 4), (3, 1, 5), (4, 2, 4), (5, 2, 7);    
 
-SELECT * From ads_platform;
+SELECT * From ads_sale_avg;
 
 
