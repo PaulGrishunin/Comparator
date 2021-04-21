@@ -5,6 +5,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.db.models import Avg, Count, Max
 from rest_framework import viewsets, permissions
+from django_filters.rest_framework import DjangoFilterBackend
 from collections import defaultdict
 from .serializers import (
     BrandsSerializer,
@@ -34,6 +35,44 @@ class PlatformListView(generics.ListAPIView):
     serializer_class = PlatformListSerializer
 
 
+class PlatformLView(generics.ListAPIView):
+    serializer_class = PlatformListSerializer
+    # filter_backends = (DjangoFilterBackend, )
+
+    def get_queryset(self):
+        filtered_ids=[]
+        for e in Platform.objects.filter(platform_code=1, year__gte=2010, year__lte=2021, price__gte=1000, price__lte=250000,):
+            for s in Sale_avg.objects.all():
+                if (e.brandId, e.model, e.year)==(s.brandId, s.model, s.year) and (s.avg_price - e.price >= 6000) :
+                    # print("result=", e)
+                    filtered_ids.append(e.id)
+        queryset = Platform.objects.filter(pk__in=filtered_ids)
+        return queryset.order_by('-date_add')
+
+    # def get(self, request):
+    #
+    #     examples = Platform.objects.filter(platform_code=1).order_by('brandId').values(
+    #         'brandId', 'model', 'year', 'price')
+    #     grouped_cars_by_brand_model_year = defaultdict(list)
+    #     print('examples=', examples)
+    #     for brandId, model, year, price in examples:
+    #         grouped_cars_by_brand_model_year[brandId, model, year].append(price)
+    #     print('grouped_cars_by_brand_model_year=', grouped_cars_by_brand_model_year)
+    #     avg_examples = []
+    #     for k,v in grouped_cars_by_brand_model_year.items():
+    #         avg_examples.append({
+    #             "brandId": k[0],
+    #             "model": k[1],
+    #             "year": k[2],
+    #             "price": v[0]
+    #         })
+    #     print('avg_examples=', avg_examples)
+    #     serializer = Sale_avgCreateSerializer(data=avg_examples, many=True)
+    #     if serializer.is_valid():
+    #         serializer.save()
+    #     return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+
 
 class PlatformCreateView(generics.CreateAPIView):
     """Add elements to Platform"""
@@ -55,7 +94,6 @@ class Sale_avgView(APIView):
             'brandId', 'model', 'year', 'price').iterator()
         grouped_cars_by_brand_model_year = defaultdict(list)
         # print('examples=', examples)
-
         for brandId, model, year, price in examples:
             grouped_cars_by_brand_model_year[brandId, model, year].append(price)
         print('grouped_cars_by_brand_model_year=', grouped_cars_by_brand_model_year)
@@ -67,7 +105,6 @@ class Sale_avgView(APIView):
                 "year": k[2],
                 "avg_price": (sum(v) / len(v)) * exchange_rate_PLN_EUR
             })
-
         serializer = Sale_avgCreateSerializer(data=avg_examples, many=True)
         if serializer.is_valid():
             serializer.save()
@@ -108,9 +145,6 @@ class FavoritesDeleteView(generics.DestroyAPIView):
     #     favorite = get_object_or_404(Favorites.objects.all(), pk=pk)
     #     favorite.delete()
     #     return Response({"message": "Favorite ad with id `{}` has been deleted.".format(pk)}, status=204)
-
-
-
 
     # def create_queryset(self):
     #     pk = self.kwargs['pk']                          #"userId" MUST = current_userID

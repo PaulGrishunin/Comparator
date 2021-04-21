@@ -9,7 +9,7 @@ class Users(models.Model):
     create_time = models.DateTimeField("Create time", auto_now_add=True)
 
     def __str__(self):
-        return self.username
+        return '%s %s' % (self.username, self.email)
 
 
 class Brands(models.Model):
@@ -33,8 +33,8 @@ class Platform(models.Model):
     ad_link = models.URLField()
 
     def __str__(self):
-        return self.price   
-    
+        return '%s %s %s %s %s %s %s'% (self.id, self.platform_code, self.brandId, self.model, self.year, self.price, self.currency)
+
     
 class Sale_avg(models.Model):
     brandId = models.ForeignKey(Brands, on_delete=models.CASCADE)
@@ -43,7 +43,7 @@ class Sale_avg(models.Model):
     avg_price =  models.IntegerField()
 
     def __str__(self):
-        return self.avg_price
+        return '%s %s %s %s' % (self.brandId, self.model, self.year, self.avg_price)
 
 
 class Favorites(models.Model):

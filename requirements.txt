@@ -8,6 +8,7 @@ cryptography==3.4.6
 Django @ git+https://github.com/django/django@e3e2276e6fe6fd77e4fbdeeb2a287288d31de3bb
 django-cors-headers==3.7.0
 django-extensions==3.1.1
+django-filter==2.4.0
 djangorestframework==3.12.4
 djangorestframework-jwt==1.11.0
 djangorestframework-simplejwt==4.5.0
