@@ -19,7 +19,7 @@ urlpatterns = [
     # path('platform/', views.platform),
     path('brands/', BrandsListView.as_view(), name='brands_list'),
     path('platform/', PlatformListView.as_view(), name='platform_list'),
-    path('platforml/', PlatformLView.as_view(), name='platform_list'),
+    path('platforml/price_diff=<int:dif>', PlatformLView.as_view(), name='platform_list'),
     path('platform_add/', PlatformCreateView.as_view(), name='platform_create'),
     path('sale_avg/', Sale_avgView.as_view(), name='sale_avg'),
 

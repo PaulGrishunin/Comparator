@@ -3,9 +3,9 @@ from rest_framework import generics, status
 from rest_framework.generics import get_object_or_404
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from django.db.models import Avg, Count, Max
 from rest_framework import viewsets, permissions
 from django_filters.rest_framework import DjangoFilterBackend
+from .service import PlatformFilter, PaginationPlatform
 from collections import defaultdict
 from .serializers import (
     BrandsSerializer,
@@ -29,48 +29,26 @@ class BrandsListView(generics.ListAPIView):
 
 class PlatformListView(generics.ListAPIView):
     """Get List elements of Platform"""
-    a=1000
-    b=200000
-    queryset = Platform.objects.filter(platform_code=0 ,price__gt=a, price__lt=b).order_by('price')
+    queryset = Platform.objects.all().order_by('price')
     serializer_class = PlatformListSerializer
-
+    pagination_class = PaginationPlatform
 
 class PlatformLView(generics.ListAPIView):
     serializer_class = PlatformListSerializer
-    # filter_backends = (DjangoFilterBackend, )
+    filter_backends = (DjangoFilterBackend, )
+    filterset_class = PlatformFilter
+    pagination_class = PaginationPlatform
 
     def get_queryset(self):
+        price_diff = self.kwargs['dif']
         filtered_ids=[]
-        for e in Platform.objects.filter(platform_code=1, year__gte=2010, year__lte=2021, price__gte=1000, price__lte=250000,):
+        for e in Platform.objects.filter(platform_code=1):
             for s in Sale_avg.objects.all():
-                if (e.brandId, e.model, e.year)==(s.brandId, s.model, s.year) and (s.avg_price - e.price >= 6000) :
+                if (e.brandId, e.model, e.year)==(s.brandId, s.model, s.year) and (s.avg_price - e.price >= price_diff) :
                     # print("result=", e)
                     filtered_ids.append(e.id)
         queryset = Platform.objects.filter(pk__in=filtered_ids)
         return queryset.order_by('-date_add')
-
-    # def get(self, request):
-    #
-    #     examples = Platform.objects.filter(platform_code=1).order_by('brandId').values(
-    #         'brandId', 'model', 'year', 'price')
-    #     grouped_cars_by_brand_model_year = defaultdict(list)
-    #     print('examples=', examples)
-    #     for brandId, model, year, price in examples:
-    #         grouped_cars_by_brand_model_year[brandId, model, year].append(price)
-    #     print('grouped_cars_by_brand_model_year=', grouped_cars_by_brand_model_year)
-    #     avg_examples = []
-    #     for k,v in grouped_cars_by_brand_model_year.items():
-    #         avg_examples.append({
-    #             "brandId": k[0],
-    #             "model": k[1],
-    #             "year": k[2],
-    #             "price": v[0]
-    #         })
-    #     print('avg_examples=', avg_examples)
-    #     serializer = Sale_avgCreateSerializer(data=avg_examples, many=True)
-    #     if serializer.is_valid():
-    #         serializer.save()
-    #     return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
 
