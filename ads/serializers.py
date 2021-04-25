@@ -1,11 +1,11 @@
 from rest_framework import serializers
-from .models import Users, Brands, Platform, Sale_avg, Favorites
+from .models import  Brands, Platform, Sale_avg, Favorites
 
-class UsersSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = Users
-        fields = ('pk','username', 'email', 'password', 'create_time')
+# class UsersSerializer(serializers.ModelSerializer):
+#
+#     class Meta:
+#         model = Users
+#         fields = ('pk','username', 'email', 'password', 'create_time')
 
 
 class BrandsSerializer(serializers.ModelSerializer):
@@ -17,10 +17,10 @@ class BrandsSerializer(serializers.ModelSerializer):
 
 class PlatformListSerializer(serializers.ModelSerializer):
     brandId = serializers.SlugRelatedField(slug_field="name", read_only=True)
-
+    # price_diff = Sale_avg.avg_price - Platform.price
     class Meta:
         model = Platform
-        fields = ('id', 'platform_code', 'brandId', 'model', 'year', 'price', 'currency', 'photo_link', 'date_add', 'ad_link' )
+        fields = ('id', 'platform_code', 'brandId', 'model', 'year', 'price', 'price_diff', 'currency', 'photo_link', 'date_add', 'ad_link' )
 
 
 
@@ -39,7 +39,7 @@ class Sale_avgSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Sale_avg
-        fields = ('brandId', 'model', 'year', 'avg_price')
+        fields = ('id', 'brandId', 'model', 'year', 'avg_price')
 
 
 class Sale_avgCreateSerializer(serializers.ModelSerializer):

@@ -2,13 +2,12 @@ import jwt
 from django.conf import settings
 from rest_framework import authentication, exceptions
 from .models import User
-
+from rest_framework.authentication import get_authorization_header
 
 class JWTAuthentication(authentication.BaseAuthentication):
     authentication_header_prefix = "Bearer"
 
     def authenticate(self, request):
-
         request.user = None
         auth_header = authentication.get_authorization_header(request).split()
         # print('auth_header=', auth_header)
@@ -49,3 +48,10 @@ class JWTAuthentication(authentication.BaseAuthentication):
             raise exceptions.AuthenticationFailed(msg)
 
         return (user, token)
+
+
+    def get_user(self, userid):
+        try:
+            return User.objects.get(pk=userid)
+        except Exception as e:
+            return None

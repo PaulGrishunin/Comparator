@@ -5,7 +5,7 @@ from django.contrib.auth.models import (
 	AbstractBaseUser, BaseUserManager, PermissionsMixin
 )
 from django.db import models
-
+from django.contrib.auth.models import User
 
 class UserManager(BaseUserManager):
 
@@ -56,7 +56,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         return self.username
 
     def _generate_jwt_token(self):
-        dt = datetime.now() + timedelta(days=1)
+        dt = datetime.now() + timedelta(days=7)
 
         token = jwt.encode({
             'id': self.pk,

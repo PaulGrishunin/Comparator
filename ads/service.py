@@ -28,7 +28,6 @@ class PlatformFilter(filters.FilterSet):
     year = filters.RangeFilter()
     price = filters.RangeFilter()
 
-
     class Meta:
         model = Platform
         fields = [ 'year', 'price']
