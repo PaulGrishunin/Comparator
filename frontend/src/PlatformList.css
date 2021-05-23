@@ -1,0 +1,90 @@
+
+.AdContainer {
+    border-radius: 15px;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 0px 0px 0px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin: 10px ;
+    background-color: #fff;
+}
+.AdContainer:hover {
+    background-color: rgba(250, 250, 250, 0.8);
+    box-shadow: 3px 3px 10px #333;
+    border: 2px;
+}
+.AdContainer:focus {
+    outline: none;
+    box-shadow: 3px 3px 10px #333;
+    background: rgba(233,233,233,.7);
+}
+.imageContainer{
+    width: 200px;
+    height: 135px;
+    background-image: url("./pictures/car_no_image.jpg");
+    border: 0px;
+    background-size: cover;
+    border-radius: 15px 0 0 15px;
+}
+.imageContainer img{
+
+    height: 135px;
+    float: left;
+    border: 0px;
+    text-align: left;
+    font-size: 8px;
+    border-radius: 15px 0 0 15px;
+}
+.titleContainer {
+    width: inherit;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 10px;
+    font-family: serif;
+    font-size: 16px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.titleContainer p {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: serif;
+}
+.priceContainer{
+    font-size: 16px;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    position: absolute;
+    right: 50px;
+    justify-content: right;
+    margin: 10px;
+    font-family: serif;
+}
+/*.priceContainer:hover {*/
+/*    height: auto;*/
+/*}*/
+.price{
+    font-size: 16px;
+    height: 55px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: darkgray;
+}
+.price_diff{
+    font-size: 20px;
+    color: red;
+    /*text-align: center;*/
+    padding: 30px;
+    border: 1px;
+    height: auto;
+}
+/*.priceContainer:hover .price_dif{*/
+/*    display: none;*/
+/*}*/
+

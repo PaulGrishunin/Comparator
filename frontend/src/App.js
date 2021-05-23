@@ -1,45 +1,55 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom'
-import { Route, Link } from 'react-router-dom'
-
-import  UsersList from './UsersList'
-import  UserCreateUpdate  from './UserCreateUpdate'
+import {
+    BrowserRouter as Router,
+    Route
+} from 'react-router-dom';
 import './App.css';
-
-const BaseLayout = () => (
-  <div className="container-fluid">
-<nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" href="#">Django - React </a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div className="navbar-nav">
-      <a className="nav-item nav-link" href="/">USERS</a>
-      <a className="nav-item nav-link" href="/users">CREATE User</a>
-
-    </div>
-  </div>
-</nav>
-
-    <div className="content">
-      <Route path="/" exact component={UsersList} />
-      <Route path="/users/:pk"  component={UserCreateUpdate} />
-      <Route path="/users/" exact component={UserCreateUpdate} />
-
-    </div>
-
-  </div>
-)
+import BaseRouter from './routes';
+import Layout from './Common/Layout.js';
+import 'antd/dist/antd.css';
+import QueueAnim from 'rc-queue-anim';
+import { OverPack } from 'rc-scroll-anim';
 
 class App extends Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <BaseLayout/>
-      </BrowserRouter>
-    );
-  }
-}
 
+    contactUsDiv = () => {
+        return (
+            <OverPack style={{ overflow: 'hidden' }} playScale={0.1} >
+                <QueueAnim style={{ backgroundColor: "#ffffff" }}>
+                    <div key="a" style={{ marginTop: "80vh", align: "bottom", padding: "2%", fontWeight: "bold", fontSize: "large" }}>
+                        Contact us
+                    </div>
+                    <div key="b" style={{ paddingLeft: "10%", paddingRight: "10%", display: "flex" }}>
+                        <div style={{ float: "right", fontSize: "larger", textAlign: "center", width: "60vw", margin: "1%" }} >
+                            <br />
+                            Phone: XXX-XXX-XXX
+                            <br />
+                            Email: xxx@email.com
+                            <br />
+                        </div>
+                    </div>
+                </QueueAnim>
+            </OverPack>
+        );
+    }
+
+    render() {
+
+        return (
+            <div className="App" style={{height: "100%"}}>
+                <Router>
+                      <Layout {...this.props}>
+                      <div className="Base" >
+                              <div className="BaseInfo">
+                               <BaseRouter />
+                              </div>
+                      </div>
+                      <this.contactUsDiv />
+                      </Layout>
+                </Router>
+
+            </div>);
+    }
+
+}
 export default App;

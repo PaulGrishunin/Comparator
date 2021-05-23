@@ -25,7 +25,6 @@ class RegistrationAPIView(APIView):
 
 
 class LoginAPIView(APIView):
-    # authentication_classes = [JWTAuthentication, ]
     permission_classes = (AllowAny,)
     serializer_class = LoginSerializer
     renderer_classes = (UserJSONRenderer,)
@@ -35,7 +34,6 @@ class LoginAPIView(APIView):
         user = request.data.get('user', {})
         serializer = self.serializer_class(data=user)
         serializer.is_valid(raise_exception=True)
-        # print('user=', token)
         print(' return Response LoginAPIView=', serializer.data)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
@@ -45,10 +43,14 @@ class UserRetrieveUpdateAPIView(generics.RetrieveUpdateAPIView):
     renderer_classes = (UserJSONRenderer,)
     serializer_class = UserSerializer
 
+    def get_queryset(self):
+        print('request.user=', self.request.user)
+        queryset = User.objects.filter(email=self.request.user)
+        return queryset
+
     def retrieve(self, request, *args, **kwargs):
         print('request.user=', request.user.token)
         serializer = self.serializer_class(request.user)
-
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def update(self, request, *args, **kwargs):
@@ -58,17 +60,5 @@ class UserRetrieveUpdateAPIView(generics.RetrieveUpdateAPIView):
         )
         serializer.is_valid(raise_exception=True)
         serializer.save()
-
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-
-# class HelloAPIView(RetrieveUpdateAPIView):
-#     permission_classes = (IsAuthenticated,)
-#     renderer_classes = (UserJSONRenderer,)
-#     serializer_class = UserSerializer
-#
-#     def retrieve(self, request, *args, **kwargs):
-#         print('request.user=', request.user)
-#         serializer = self.serializer_class()
-#
-#         return Response(serializer.data, status=status.HTTP_200_OK)

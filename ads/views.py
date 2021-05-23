@@ -32,7 +32,7 @@ class PlatformListView(generics.ListAPIView):
     """Get List elements of Platform"""
     queryset = Platform.objects.all().order_by('price')
     serializer_class = PlatformListSerializer
-    pagination_class = PaginationPlatform
+    # pagination_class = PaginationPlatform
 
 
 class PlatformLView(generics.ListAPIView):

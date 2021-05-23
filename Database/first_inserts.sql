@@ -1,23 +1,22 @@
 Use my_db;
 
-INSERT INTO `ads_users` VALUES (1,'Tom','tom@gmail.com','1234','2021-02-22 02:11:33'),(2,'Bob','bob@gmail.com','55555','2021-02-22 02:11:55'); INSERT INTO `ads_brands` VALUES (1,'Acura'),(2,'Alfa Romeo'),(3,'Aston Martin'),(4,'Audi'),(5,'Bentley'),(6,'BMW');
-INSERT INTO `ads_platform` VALUES (1,0,'Q7',2019,250000,0,'PLN','https://photoQ7','2021-02-20','https://link-to-audiQ7',4),
-(2,0,'DB9',2010,299000,0,'PLN','https://photoAstonDB9','2021-02-19','https://link-to-astonDB9',3),
-(3,0,'X7',2018,260000,0,'PLN','https://photoBMWX7','2021-02-19','https://link-to-BMWX7',6),
-(4,0,'Continental GT',2018,375000,0,'PLN','https://photoBentley-Conti-GT','2021-02-21','https://link-to-Bentley-conti-GT',5),
-(5,0,'Q7',2019,260000,0,'PLN','https://photoQ7-1','2021-02-19','https://link-to-audiQ7-1',4),
-(6,1,'Q7',2019,58000,0,'EUR','https://photoQ7-2','2021-02-20','https://link-to-audiQ7-2',4),
-(7,1,'Q7',2019,65000,0,'EUR','https://photoQ7-3','2021-02-20','https://link-to-audiQ7-3',4),
-(8,1,'Q7',2019,49000,0,'EUR','https://photoQ7-4','2021-02-20','https://link-to-audiQ7-4',4),
-(9,0,'Q7',2019,250000,0,'PLN','https://photoQ7-5','2021-02-19','https://link-to-audiQ7-5',4),
-(10,0,'Q7',2019,280000,0,'PLN','https://photoQ7-6','2021-02-20','https://link-to-audiQ7-6',4),
-(11,1,'Continental GT',2019,99000,0,'EUR','https://photoBentley-Conti-GT-1','2021-02-18','https://photoBentley-Conti-GT-1',5),
-(12,1,'Continental GT',2018,91000,0,'EUR','https://photoBentley-Conti-GT-2','2021-02-16','https://photoBentley-Conti-GT-2',5),
-(13,0,'Continental GT',2019,450000,0,'PLN','https://photoBentley-Conti-GT-3','2021-02-18','https://photoBentley-Conti-GT-3',5),
-(14,1,'M5',2016,50000,0,'EUR','https://photoBMWM5-1','2021-02-17','https://link-to-BMWM5-1',6),
-(15,0,'M5',2016,250000,0,'PLN','https://photoBMWM5-1','2021-02-17','https://link-to-BMWM5-1',6);
-INSERT INTO `ads_favorites` VALUES (1, 1, 3), (2, 1, 4), (3, 1, 5), (4, 2, 4), (5, 2, 7);    
+INSERT INTO ads_platform VALUES (1,0,'Q7',2019,250000,'PLN','https://prod.pictures.autoscout24.net/listing-images/dad66017-0a50-4c00-81e7-bfc24ea6c764_2706720f-45bd-4a2b-a3c7-3473398d3818.jpg/420x315.jpg','2021-02-20','https://www.autoscout24.com/offers/audi-e-tron-s-sportback-panorama-ahk-matrixled-acc-navi-led-electric-black-33eb7657-4be7-4249-acd6-dc239623571c',4,0),
+(2,0,'DB9',2010,299000,'PLN','https://prod.pictures.autoscout24.net/listing-images/1fbf23c4-2032-4083-b985-6316727455ec_ce4f89b3-3b91-44e6-afde-2de00a226beb.jpg/420x315.jpg','2021-02-19','https://www.autoscout24.com/offers/audi-tt-coupe-2-0-tfsi-quattro-s-tronic-s-lin-gasoline-black-1fbf23c4-2032-4083-b985-6316727455ec',3,0),
+(3,0,'X7',2018,260000,'PLN','https://prod.pictures.autoscout24.net/listing-images/1abbda47-d843-4f86-92b5-b7c5e83b1469_c70fb160-5ddc-45b7-be7f-136d5cae0118.jpg/420x315.jpg','2021-02-19','https://www.autoscout24.com/offers/bmw-x7-xdrive40d-m-sportpaket-gestiksteuerung-dab-diesel-black-bb71da77-eb7d-404e-8a94-a78ae39c143f',6,0),
+(4,0,'Continental GT',2018,375000,'PLN','https://prod.pictures.autoscout24.net/listing-images/84e642cc-2a06-4dff-ba69-dc7dbdad7958_c13a66a1-3306-457f-a64f-f22f04dc5034.jpg/420x315.jpg','2021-02-21','https://www.autoscout24.com/offers/bmw-640-6er-coupe-m-sport-edition-gasoline-grey-31ea560e-bfbb-45f1-bbea-c08e9328b203',5,0),
+(5,0,'Q7',2019,260000,'PLN','https://prod.pictures.autoscout24.net/listing-images/154c0dc1-94d1-6549-e053-0100007f0eca_4482f35b-6d67-403d-905a-023dd47ec7fc.jpg/420x315.jpg','2021-02-19','https://www.autoscout24.com/offers/audi-q7-3-0-tdi-quattro-tiptronic-diesel-grey-a36c967f-6e61-4e98-b447-86ef80a7194e',4,0),
+(6,1,'Q7',2019,58000,'EUR','https://prod.pictures.autoscout24.net/listing-images/154c0dc1-94d1-6549-e053-0100007f0eca_4482f35b-6d67-403d-905a-023dd47ec7fc.jpg/420x315.jpg','2021-02-20','https://www.autoscout24.com/offers/audi-q7-3-0-tdi-quattro-tiptronic-diesel-grey-a36c967f-6e61-4e98-b447-86ef80a7194e',4,0),
+(7,1,'Q7',2019,65000,'EUR','https://prod.pictures.autoscout24.net/listing-images/154c0dc1-94d1-6549-e053-0100007f0eca_4482f35b-6d67-403d-905a-023dd47ec7fc.jpg/420x315.jpg','2021-02-20','https://www.autoscout24.com/offers/audi-q7-3-0-tdi-quattro-tiptronic-diesel-grey-a36c967f-6e61-4e98-b447-86ef80a7194e',4,0),
+(8,1,'Q7',2019,49000,'EUR','https://prod.pictures.autoscout24.net/listing-images/154c0dc1-94d1-6549-e053-0100007f0eca_4482f35b-6d67-403d-905a-023dd47ec7fc.jpg/420x315.jpg','2021-02-20','https://www.autoscout24.com/offers/audi-q7-3-0-tdi-quattro-tiptronic-diesel-grey-a36c967f-6e61-4e98-b447-86ef80a7194e',4,0),
+(9,0,'Q7',2019,250000,'PLN','https://prod.pictures.autoscout24.net/listing-images/154c0dc1-94d1-6549-e053-0100007f0eca_4482f35b-6d67-403d-905a-023dd47ec7fc.jpg/420x315.jpg','2021-02-19','https://www.autoscout24.com/offers/audi-q7-3-0-tdi-quattro-tiptronic-diesel-grey-a36c967f-6e61-4e98-b447-86ef80a7194e',4,0),
+(10,0,'Q7',2019,280000,'PLN','https://prod.pictures.autoscout24.net/listing-images/154c0dc1-94d1-6549-e053-0100007f0eca_4482f35b-6d67-403d-905a-023dd47ec7fc.jpg/420x315.jpg','2021-02-20','https://www.autoscout24.com/offers/audi-q7-3-0-tdi-quattro-tiptronic-diesel-grey-a36c967f-6e61-4e98-b447-86ef80a7194e',4,0),
+(11,1,'Continental GT',2019,99000,'EUR','https://prod.pictures.autoscout24.net/listing-images/51110dc1-3720-f632-e053-0100007f0ecc_ddb2163b-c351-49b4-8b7a-f443b7b3ec92.jpg/420x315.jpg','2021-02-18','https://www.autoscout24.com/offers/audi-a4-allroad-3-0-tdi-272-cv-tiptronic-diesel-grey-5ee8c1c0-ca24-45f4-8f66-96d8d12ab85b',5,0),
+(12,1,'Continental GT',2018,91000,'EUR','https://prod.pictures.autoscout24.net/listing-images/51110dc1-3720-f632-e053-0100007f0ecc_ddb2163b-c351-49b4-8b7a-f443b7b3ec92.jpg/420x315.jpg','2021-02-16','https://www.autoscout24.com/offers/audi-a4-allroad-3-0-tdi-272-cv-tiptronic-diesel-grey-5ee8c1c0-ca24-45f4-8f66-96d8d12ab85b',5,0),
+(13,0,'Continental GT',2019,450000,'PLN','https://prod.pictures.autoscout24.net/listing-images/51110dc1-3720-f632-e053-0100007f0ecc_ddb2163b-c351-49b4-8b7a-f443b7b3ec92.jpg/420x315.jpg','2021-02-18','https://www.autoscout24.com/offers/audi-a4-allroad-3-0-tdi-272-cv-tiptronic-diesel-grey-5ee8c1c0-ca24-45f4-8f66-96d8d12ab85b',5,0),
+(14,1,'M5',2016,50000,'EUR','https://prod.pictures.autoscout24.net/listing-images/23a536d0-e23b-4b2a-bd8d-5c227d78ed1d_dae3098f-3b25-4d98-aeb1-eef6e72db91f.jpg/420x315.jpg','2021-02-17','https://www.autoscout24.com/offers/bmw-m5-x5-0d-headup-laser-lr-1-175--brutto-o-anz-diesel-black-23a536d0-e23b-4b2a-bd8d-5c227d78ed1d',6,0),
+(15,0,'M5',2016,250000,'PLN','https://prod.pictures.autoscout24.net/listing-images/23a536d0-e23b-4b2a-bd8d-5c227d78ed1d_dae3098f-3b25-4d98-aeb1-eef6e72db91f.jpg/420x315.jpg','2021-02-17','https://www.autoscout24.com/offers/bmw-m5-x5-0d-headup-laser-lr-1-175--brutto-o-anz-diesel-black-23a536d0-e23b-4b2a-bd8d-5c227d78ed1d',6,0);
 
-SELECT * From ads_sale_avg;
+SELECT * From ads_platform; 
+
 
 

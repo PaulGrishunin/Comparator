@@ -15,7 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
@@ -37,25 +36,27 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'drf_yasg',
     'rest_framework',
     'rest_framework.authtoken',
-    'corsheaders',
     'ads',
     'authentication',
     'django_filters',
+
 
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware'
+
 ]
 
 ROOT_URLCONF = 'Comparator.urls'
@@ -138,11 +139,16 @@ STATIC_URL = '/static/'
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 #активировать CORS и перечень разрешенных URL
-# CORS_ORIGIN_ALLOW_ALL = False
-#
-# CORS_ORIGIN_WHITELIST = (
-#        'https://127.0.0.1:3000',
-# )
+
+CORS_ORIGIN_ALLOW_ALL = False
+# CORS_ALLOW_CREDENTIALS = False
+
+CORS_ORIGIN_WHITELIST=[
+    'http://localhost:3000',
+    'http://127.0.0.1',
+    'http://localhost',
+]
+
 
 AUTH_USER_MODEL = 'authentication.User'
 
