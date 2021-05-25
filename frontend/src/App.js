@@ -14,14 +14,13 @@ class App extends Component {
 
     contactUsDiv = () => {
         return (
-            <OverPack style={{ overflow: 'hidden' }} playScale={0.1} >
+
                 <QueueAnim style={{ backgroundColor: "#ffffff" }}>
                     <div key="a" style={{ marginTop: "80vh", align: "bottom", padding: "2%", fontWeight: "bold", fontSize: "large" }}>
                         Contact us
                     </div>
                     <div key="b" style={{ paddingLeft: "10%", paddingRight: "10%", display: "flex" }}>
-                        <div style={{ float: "right", fontSize: "larger", textAlign: "center", width: "60vw", margin: "1%" }} >
-                            <br />
+                        <div style={{ float: "right", fontSize: "larger", textAlign: "center", width: "60vw"}} >
                             Phone: XXX-XXX-XXX
                             <br />
                             Email: xxx@email.com
@@ -29,7 +28,7 @@ class App extends Component {
                         </div>
                     </div>
                 </QueueAnim>
-            </OverPack>
+
         );
     }
 

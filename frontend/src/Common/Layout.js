@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
 import { Layout, Menu } from 'antd';
 import { Link, withRouter } from 'react-router-dom';
-import { HomeOutlined, CheckCircleOutlined, PercentageOutlined, ShoppingCartOutlined, HeartOutlined,
+import { HomeOutlined, HeartOutlined,
     UserOutlined, UserAddOutlined, LogoutOutlined } from '@ant-design/icons';
 
 
 const { Header, Content } = Layout;
 
 class CustomLayout extends Component{
-
     constructor () {
         super();
         this.iconPath = '/';

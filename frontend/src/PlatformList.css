@@ -88,3 +88,50 @@
 /*    display: none;*/
 /*}*/
 
+.FilterContainer {
+    border-radius: 0px;
+    border-bottom-style: groove;
+    /*-webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);*/
+    /*box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);*/
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+
+}
+.FilterContainer input {
+    width: 120px;
+    margin-right: 10px;
+}
+.FilterContainer button {
+    display: inline-block;
+    margin-left: 30px;
+    width: 15em;
+    font-size: 80%;
+    color: rgba(255,255,255,.9);
+    text-shadow: #2e7ebd 0 1px 2px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.1;
+    white-space: pre-line;
+    padding: .7em 0;
+    border: 1px solid;
+    border-color: #60a3d8 #2970a9 #2970a9 #60a3d8;
+    border-radius: 6px;
+    outline: none;
+    background: #60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);
+    box-shadow: inset rgba(255,255,255,.5) 1px 1px;
+}
+.FilterContainer button:first-line{
+    font-size: 170%;
+    font-weight: 700;
+}
+.FilterContainer button:hover {
+    color: rgb(255,255,255);
+    background-image: linear-gradient(#9dc7e7, #74afdd 50%, #378bce);
+}
+.FilterContainer button:active {
+    color: rgb(255,255,255);
+    border-color: #2970a9;
+    background-image: linear-gradient(#5796c8, #6aa2ce);
+    box-shadow: none;
+}

@@ -1,57 +1,41 @@
 import  React, { Component } from  'react';
 import './PlatformList.css';
-import Filter from './Filter';
+import Form from './Form';
+
 
 class PlatformList extends Component {
-
     constructor() {
         super();
         this.state = {
             platform: [],
         };
     }
-    year_min="";
-    year_max="";
-    price_min="";
-    price_max="";
 
-
-    onSubmit=(event)=> {
-        console.log("submit")
-        event.preventDefault()
-        console.log("this.year_min=", this.year_min, "this.year_max=", this.year_max, "this.price_min=", this.price_min, "this.price_max=", this.price_max)
-    }
+    // onSubmit=(event)=> {
+    //     console.log("submit")
+    //     event.preventDefault()
+    //     console.log("this.year_min=", this.year_min, "this.year_max=", this.year_max, "this.price_min=", this.price_min, "this.price_max=", this.price_max)
+    // }
 
     // changeHandler = event => {
     //     const { price_min, value } = event.target;
     //     this.setState({ [name]: value });
     // };
 
-    onYearMinChange = (event) => {
-        this.year_min = event.target.value;
-    }
-    onYearMaxChange = (event) => {
-        this.year_max = event.target.value;
-    }
-    onPriceMinChange = (event) => {
-        this.price_min = event.target.value;
-    }
-    onPriceMaxChange = (event) => {
-        this.price_max = event.target.value;
-    }
-
-
-    componentDidMount() {
-        var url = "http://127.0.0.1:8000/api/platforml/price_diff=10"  // + this.props.product
-        // console.log(this.year_min)
-        fetch(url, {
-            mode: 'cors',
-            method: 'GET',
-        })
-            .then(results => {return results.json()}).then(data => {
-            let platform = data.results.map((plat) => {
-                return (
-                    <span key={plat.id} onClick={ e => window.location.href = plat.ad_link } >
+    gettingPlatform = async (e) => {
+        e.preventDefault();
+        var price_diff = e.target.elements.price_diff.value;
+        var year_min = e.target.elements.year_min.value;
+        var year_max = e.target.elements.year_max.value;
+        var price_min = e.target.elements.price_min.value;
+        var price_max = e.target.elements.price_max.value;
+        const api_url = await
+        fetch(`http://127.0.0.1:8000/api/platforml/price_diff=${price_diff}?year_min=${year_min}&year_max=${year_max}&price_min=${price_min}&price_max=${price_max}`);
+        const data = await api_url.json();
+        console.log(data.results);
+        let platform = data.results.map((plat) => {
+            return (
+                <span key={plat.id} onClick={ e => window.location.href = plat.ad_link } >
                     <div className="AdContainer"  >
                         <div className="imageContainer">
                             <img src={plat.photo_link} alt="" />
@@ -66,34 +50,17 @@ class PlatformList extends Component {
                         </div>
                     </div>
                     </span>
-                )
-            })
-            this.setState({platform: platform})
+            )
         })
-
+        this.setState({platform: platform})
     }
 
     render() {
-        return( <div className="FilterContainer">
-                <form onSubmit={this.onSubmit} method="get">
-                    <div>
-                        <label htmlFor="year_min">year_min </label>
-                        <input type="text" name="year_min" onChange={this.onYearMinChange} />
-                        <label htmlFor="year_max"> year_max</label>
-                        <input name="year_max" id="year_max" onChange={this.onYearMaxChange}/>
-
-                        <label htmlFor="price_min"> price_min</label>
-                        <input name="price_min" id="price_min" onChange={this.onPriceMinChange}/>
-                        <label htmlFor="price_max"> price_max</label>
-                        <input name="price_max" id="price_max" onChange={this.onPriceMaxChange}/>
-
-                        <input value="Search"  type="submit"/>
-                    </div>
-                </form>
-
-                {this.state.platform}
-        </div>
-
+        return(
+              <div>
+                  <Form listAds={this.gettingPlatform} />
+                  {this.state.platform}
+              </div>
     )}
 }
 
