@@ -33,7 +33,7 @@ class Form extends React.Component {
                     <label htmlFor="price_max"> price_max</label>
                     <input type="number" name="price_max" onChange={this.onPriceMaxChange}/>
                     <label htmlFor="price_diff"> price_diff</label>
-                    <input type="number" name="price_diff" onChange={this.onPriceDifChange}/>
+                    <input type="number" name="price_diff" required onChange={this.onPriceDifChange}/>
                     <button>Search</button>
                 </div>
             </form>

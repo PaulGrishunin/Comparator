@@ -17,7 +17,6 @@ app_name = 'ads'
 urlpatterns = [
     path('', views.index),
     path('create/', views.create),
-    # path('platform/', views.platform),
     path('brands/', BrandsListView.as_view(), name='brands_list'),
     path('platform/', PlatformListView.as_view(), name='platform_list'),
     path('platforml/price_diff=<int:dif>', PlatformLView.as_view(), name='platform_list'),
@@ -28,8 +27,4 @@ urlpatterns = [
     path('favorites/', FavoritesListView.as_view(), name='favorites_list'),
     path('favorites/add/', FavoritesCreateView.as_view(), name='favorite_create'),
     path('favorites/delete/<int:pk>', FavoritesDeleteView.as_view(), name='favorites_delete'),
-    # path('users/', RegistrationAPIView.as_view()),
-    # path('users/login/', LoginAPIView.as_view()),
-    # path('users/hello/', HelloAPIView.as_view()),
-
 ]

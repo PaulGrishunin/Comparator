@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
-import {
-    BrowserRouter as Router,
-    Route
-} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
 import BaseRouter from './routes';
 import Layout from './Common/Layout.js';
 import 'antd/dist/antd.css';
 import QueueAnim from 'rc-queue-anim';
-import { OverPack } from 'rc-scroll-anim';
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 class App extends Component {
 
     contactUsDiv = () => {
         return (
-
                 <QueueAnim style={{ backgroundColor: "#ffffff" }}>
                     <div key="a" style={{ marginTop: "80vh", align: "bottom", padding: "2%", fontWeight: "bold", fontSize: "large" }}>
                         Contact us
@@ -28,7 +25,6 @@ class App extends Component {
                         </div>
                     </div>
                 </QueueAnim>
-
         );
     }
 

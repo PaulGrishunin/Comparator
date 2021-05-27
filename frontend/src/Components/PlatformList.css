@@ -22,7 +22,7 @@
 .imageContainer{
     width: 200px;
     height: 135px;
-    background-image: url("./pictures/car_no_image.jpg");
+    background-image: url("../pictures/car_no_image.jpg");
     border: 0px;
     background-size: cover;
     border-radius: 15px 0 0 15px;

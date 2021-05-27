@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import { Layout, Menu } from 'antd';
 import { Link, withRouter } from 'react-router-dom';
+import authHeader from '../services/auth-header';
+import AuthService from '../services/auth.service'
 import { HomeOutlined, HeartOutlined,
     UserOutlined, UserAddOutlined, LogoutOutlined } from '@ant-design/icons';
 
@@ -17,25 +19,37 @@ class CustomLayout extends Component{
     }
 
     componentDidMount() {
-        fetch("http://localhost:8000/registred", {credentials:"include"})
+        fetch("http://localhost:8000/api/user",{ headers: authHeader() })
             .then(res => res.json())
             .then(
                 (result) => {
-                    console.log("registred")
-                    this.setState({registred: "ok"})
-                },
-                (error) => {
-                    console.log("error")
-                    this.setState({registred: "not"})
+                    if (result.user.email){
+                        console.log("registred Ok")
+                        this.setState({registred: "ok"})
+                    } else{
+                        console.log("register error")
+                        this.setState({registred: "not"})
+                    }
                 }
+                // (error) => {
+                //     console.log("register error")
+                //     this.setState({registred: "not"})
+                // }
             )
     }
 
-    signOut() {
-        fetch("http://localhost:8000/signOut", {credentials:"include"})
+    // signOut() {
+    //     fetch("http://localhost:8000/signOut", {credentials:"include"})
+    //     setTimeout(() => {
+    //         window.location.reload(false);
+    //     }, 100)
+    // }
+
+    logOut() {
+        AuthService.logout();
         setTimeout(() => {
             window.location.reload(false);
-        }, 100)
+        }, 300)
     }
 
     nonAuthorizedMenu = () => {
@@ -53,12 +67,12 @@ class CustomLayout extends Component{
                 <Menu.Item
                     key="register"
                     style={{float: 'right'}}>
-                    <Link to="/register"><UserAddOutlined />Registration</Link>
+                    <Link to="/auth/register"><UserAddOutlined />Registration</Link>
                 </Menu.Item>
                 <Menu.Item
                     key="login"
                     style={{float: 'right'}}>
-                    <Link to="/login"><UserOutlined />Login</Link>
+                    <Link to="/auth/login"><UserOutlined />Login</Link>
                 </Menu.Item>
             </Menu>
         );
@@ -85,12 +99,12 @@ class CustomLayout extends Component{
                 <Menu.Item
                     key="signout"
                     style={{float: 'right'}}>
-                    <a href="#"  onClick={this.signOut}>< LogoutOutlined />Sign out</a>
+                    <a href="/logout"  onClick={this.logOut}>< LogoutOutlined />Log out</a>
                 </Menu.Item>
                 <Menu.Item
                     key="userpage"
                     style={{float: 'right'}}>
-                    <Link to="/user" >< UserOutlined />Profile</Link>
+                    <Link to="/auth/user" >< UserOutlined />Profile</Link>
                 </Menu.Item>
             </Menu>
         );
