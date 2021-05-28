@@ -1,6 +1,7 @@
 import  React, { Component } from  'react';
 import './PlatformList.css';
 import Form from './Form';
+import authHeader from "../services/auth-header";
 
 
 class PlatformList extends Component {
@@ -8,7 +9,9 @@ class PlatformList extends Component {
         super();
         this.state = {
             platform: [],
+            id: 0,
         };
+        this.addToFavorites = this.addToFavorites.bind(this);
     }
 
     // onSubmit=(event)=> {
@@ -21,6 +24,13 @@ class PlatformList extends Component {
     //     const { price_min, value } = event.target;
     //     this.setState({ [name]: value });
     // };
+
+    addToFavorites(platformId) {
+        fetch(`http://localhost:8000/api/favorites/add/`+ platformId, { method:"POST", headers: authHeader()})
+            .then(res => res.json())
+            .then(console.log)
+        // window.location.reload(false);
+    }
 
     gettingPlatform = async (e) => {
         e.preventDefault();
@@ -35,7 +45,7 @@ class PlatformList extends Component {
         console.log(data.results);
         let platform = data.results.map((plat) => {
             return (
-                <span key={plat.id} onClick={ e => window.location.href = plat.ad_link } >
+                <span key={plat.id}  >
                     <div className="AdContainer"  >
                         <div className="imageContainer">
                             <img src={plat.photo_link} alt="" />
@@ -47,6 +57,7 @@ class PlatformList extends Component {
                         <div className="priceContainer">
                                 <div className="price">Price: {plat.price} EUR</div>
                                 <div className="price_diff"> € {plat.price_diff} </div>
+                            <button className="button blue" href="#" onClick={() => this.addToFavorites(plat.id)}><b>Add to Favorites</b></button>
                         </div>
                     </div>
                     </span>

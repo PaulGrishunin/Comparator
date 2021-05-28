@@ -129,21 +129,26 @@ class FavoritesListView(generics.ListAPIView):
 
 class FavoritesCreateView(APIView):
     """Move ad to Favorites by userId, platformId"""
-    def post(self, request):
+    def post(self, request, pk):
         request.data["userId"] = self.request.user.id
+        request.data["platformId"] = self.kwargs['pk']
+#         print('request.data=', request.data)
         favorite = FavoritesCreateSerializer(data=request.data)
         if favorite.is_valid():
             favorite.save()
         return Response(favorite.data, status=status.HTTP_201_CREATED)
 
 
-class FavoritesDeleteView(generics.DestroyAPIView):
+class FavoritesDeleteView(APIView):
     """Delete Favorite ad with id=pk"""
-    queryset = Favorites.objects.all()
+#     queryset = Favorites.objects.filter(id=pk)
     serializer_class = FavoritesSerializer
 
-
-
+    def delete(self, request, pk):
+        favorites_id = self.kwargs['pk']
+        element = Favorites.objects.filter(id=favorites_id)
+        element.delete()
+        return Response({"message": "This ad delete from favorites."}, status=204)
 
 
 # получение данных из бд

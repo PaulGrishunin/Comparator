@@ -24,7 +24,7 @@ urlpatterns = [
     path('platform/delete', PlatformDestroyView.as_view(), name='platform_delete'),
     path('sale_avg/', Sale_avgView.as_view(), name='sale_avg'),
 
-    path('favorites/', FavoritesListView.as_view(), name='favorites_list'),
-    path('favorites/add/', FavoritesCreateView.as_view(), name='favorite_create'),
+    path('favorites', FavoritesListView.as_view(), name='favorites_list'),
+    path('favorites/add/<int:pk>', FavoritesCreateView.as_view(), name='favorite_create'),
     path('favorites/delete/<int:pk>', FavoritesDeleteView.as_view(), name='favorites_delete'),
 ]
