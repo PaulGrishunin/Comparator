@@ -27,7 +27,7 @@ class CustomLayout extends Component{
                         console.log("registred Ok")
                         this.setState({registred: "ok"})
                     } else{
-                        console.log("register error")
+                        console.log("Not registered")
                         this.setState({registred: "not"})
                     }
                 }

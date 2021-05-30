@@ -45,10 +45,10 @@ class PlatformList extends Component {
         console.log(data.results);
         let platform = data.results.map((plat) => {
             return (
-                <span key={plat.id}  >
+                <span key={plat.id} >
                     <div className="AdContainer"  >
                         <div className="imageContainer">
-                            <img src={plat.photo_link} alt="" />
+                            <img src={plat.photo_link} onClick={ e => window.location.href = plat.ad_link } alt="" />
                         </div>
                         <div className="titleContainer">
                             <p><b>{plat.brandId+' '+plat.model}</b></p>
