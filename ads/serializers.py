@@ -12,7 +12,7 @@ class BrandsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Brands
-        fields = ('id', 'name')
+        fields = "__all__"
 
 
 class PlatformListSerializer(serializers.ModelSerializer):
@@ -25,12 +25,13 @@ class PlatformListSerializer(serializers.ModelSerializer):
 
 
 class PlatformCreateSerializer(serializers.ModelSerializer):
-    # brandId = serializers.StringRelatedField(many=False, read_only=True)
+    # platform_code = serializers.BooleanField()
     # brandId = serializers.PrimaryKeyRelatedField(queryset=Brands.objects.all(), source='brand.id')
-
+    # brandId = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
+    # price_diff = Sale_avg.avg_price - Platform.price
     class Meta:
         model = Platform
-        fields = "__all__"
+        fields = "__all__"  #('id', 'platform_code', 'brandId', 'model', 'year', 'price', 'price_diff', 'currency', 'photo_link', 'date_add', 'ad_link' )
 
 
 
@@ -43,10 +44,10 @@ class Sale_avgSerializer(serializers.ModelSerializer):
 
 
 class Sale_avgCreateSerializer(serializers.ModelSerializer):
-
+    brandId_id = serializers.SlugRelatedField(slug_field="name", read_only=True)
     class Meta:
         model = Sale_avg
-        fields = ('brandId', 'model', 'year', 'avg_price')
+        fields = ('brandId_id', 'model', 'year', 'avg_price')
 
 
 class FavoritesSerializer(serializers.ModelSerializer):

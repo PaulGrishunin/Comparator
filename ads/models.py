@@ -17,29 +17,35 @@ class Brands(models.Model):
     
     def __str__(self):
         return self.name
-    def __repr__(self):
-        return self.id
+
+    # def get_id(self):
+    #     return self.id
 
 
 class Platform(models.Model):
     platform_code = models.BooleanField("0 - ad from sale platform; 1 - ad from buy platform", max_length=1)
     brandId = models.ForeignKey(Brands, on_delete=models.CASCADE)
-    model = models.CharField(max_length=25)
+    model = models.CharField(max_length=50)
     year = models.IntegerField()
     price =  models.IntegerField()
     price_diff = models.IntegerField(default=0)
     currency = models.CharField(max_length=3)
-    photo_link = models.URLField(null=True)
+    photo_link = models.URLField(max_length=300, null=True)
     date_add = models.DateTimeField(auto_now_add=True)
     ad_link = models.URLField()
 
     def __str__(self):
-        return '%s %s %s %s %s %s %s %s'% (self.id, self.platform_code, self.brandId, self.model, self.year, self.price, self.price_diff, self.currency)
+        return ' %s %s %s %s %s %s %s'% (self.platform_code, self.brandId, self.model, self.year, self.price, self.price_diff, self.currency)
 
+    # def create(self, platform_code, brandId, model, year, price, currency, photo_link, ad_link):
+    #     platform = self.create(platform_code=platform_code, brandId=brandId, model=model, year= year,
+    #                            price=price, currency=currency, photo_link=photo_link, ad_link=ad_link)
+
+        # return platform
     
 class Sale_avg(models.Model):
     brandId = models.ForeignKey(Brands, on_delete=models.CASCADE)
-    model = models.CharField(max_length=25)
+    model = models.CharField(max_length=50)
     year = models.IntegerField()
     avg_price =  models.IntegerField()
 
