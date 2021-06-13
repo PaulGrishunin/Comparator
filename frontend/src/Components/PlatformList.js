@@ -9,6 +9,7 @@ class PlatformList extends Component {
         super();
         this.state = {
             platform: [],
+            search:null,
             id: 0,
         };
         this.addToFavorites = this.addToFavorites.bind(this);
@@ -32,6 +33,12 @@ class PlatformList extends Component {
         // window.location.reload(false);
     }
 
+    searchSpace=(event)=>{
+        let model = event.target.value;
+        this.setState({search:model})
+        console.log(this.state.search)
+  }
+
     gettingPlatform = async (e) => {
         e.preventDefault();
         var price_diff = e.target.elements.price_diff.value;
@@ -42,13 +49,19 @@ class PlatformList extends Component {
         const api_url = await
         fetch(`http://127.0.0.1:8000/api/platforml/price_diff=${price_diff}?year_min=${year_min}&year_max=${year_max}&price_min=${price_min}&price_max=${price_max}`);
         const data = await api_url.json();
-        console.log(data.results);
-        let platform = data.results.map((plat) => {
+        console.log(data);
+        let platform = data.filter((plat)=>{
+            if(this.state.search == null)
+                return plat
+            else if(plat.model.toLowerCase().includes(this.state.search.toLowerCase())){
+                return plat
+      }
+    }).map((plat) => {
             return (
                 <span key={plat.id} >
                     <div className="AdContainer"  >
                         <div className="imageContainer">
-                            <img src={plat.photo_link} onClick={ e => window.location.href = plat.ad_link } alt="" />
+                            <img src={plat.photo_link} onClick={ e => window.open(plat.ad_link, "_blank")} alt="" />
                         </div>
                         <div className="titleContainer">
                             <p><b>{plat.brandId+' '+plat.model}</b></p>
@@ -69,7 +82,9 @@ class PlatformList extends Component {
     render() {
         return(
               <div>
+
                   <Form listAds={this.gettingPlatform} />
+                   <input type="search" placeholder="Enter model to be searched" onChange={(e)=>this.searchSpace(e)} />
                   {this.state.platform}
               </div>
     )}

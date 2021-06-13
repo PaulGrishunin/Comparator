@@ -27,6 +27,9 @@ class Platform(models.Model):
     brandId = models.ForeignKey(Brands, on_delete=models.CASCADE)
     model = models.CharField(max_length=50)
     year = models.IntegerField()
+    fuel = models.CharField(max_length=50)
+    country = models.CharField(max_length=10, null=True)
+    place = models.CharField(max_length=50, null=True)
     price =  models.IntegerField()
     price_diff = models.IntegerField(default=0)
     currency = models.CharField(max_length=3)
@@ -35,7 +38,7 @@ class Platform(models.Model):
     ad_link = models.URLField()
 
     def __str__(self):
-        return ' %s %s %s %s %s %s %s'% (self.platform_code, self.brandId, self.model, self.year, self.price, self.price_diff, self.currency)
+        return ' %s %s %s %s %s %s %s %s'% (self.platform_code, self.brandId, self.model, self.year, self.fuel, self.price, self.price_diff, self.currency)
 
     # def create(self, platform_code, brandId, model, year, price, currency, photo_link, ad_link):
     #     platform = self.create(platform_code=platform_code, brandId=brandId, model=model, year= year,
@@ -47,6 +50,7 @@ class Sale_avg(models.Model):
     brandId = models.ForeignKey(Brands, on_delete=models.CASCADE)
     model = models.CharField(max_length=50)
     year = models.IntegerField()
+    fuel = models.CharField(max_length=50)
     avg_price =  models.IntegerField()
 
     def __str__(self):

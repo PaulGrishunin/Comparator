@@ -1,0 +1,637 @@
+marka,model,year,fuel,price,currency,ad_link
+Alfa-Romeo,Romeo Giulia 2.2,2016 ,Diesel,92900,PLN,https://www.otomoto.pl/oferta/alfa-romeo-giulia-super-salon-pl-bixenon-nawigacja-kamera-skora-ID6DUmRN.html#4773cd60f9
+Peugeot,3008,2010 ,Gasoline,26900,PLN,https://www.otomoto.pl/oferta/peugeot-3008-swiezy-import-super-stan-video-zar-w-polsce-ID6DUmRD.html#4773cd60f9
+Volkswagen,Golf VII,2016 ,Diesel,50600,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-2-0tdi-150km-highline-1wlasciciel-salon-pl-serwis-aso-fv-23-ID6DUmRC.html#4773cd60f9
+Renault,Laguna II,2002 ,Diesel,4500,PLN,https://www.otomoto.pl/oferta/renault-laguna-renault-laguna-1-9-dci-2002-ID6DUmRB.html#4773cd60f9
+Volkswagen,Tiguan,2011 ,Diesel,41500,PLN,https://www.otomoto.pl/oferta/volkswagen-tiguan-tiguan-2-0-140-km-bogata-wersja-zadbany-ID6DUmRz.html#4773cd60f9
+Land-Rover,Rover Discovery Sport 2.0,2015 ,Diesel,81900,PLN,https://www.otomoto.pl/oferta/land-rover-discovery-sport-4x4-full-opcja-led-xenon-navi-skora-panorama-ID6DUmRn.html#4773cd60f9
+Renault,Clio 1.2,2003 ,Gasoline,4700,PLN,https://www.otomoto.pl/oferta/renault-clio-2003r-1-2-benzyna-177tys-km-klima-elektryka-swiety-stan-ID6DUmQK.html#4773cd60f9
+Fiat,Bravo 1.9,2007 ,Diesel,9900,PLN,https://www.otomoto.pl/oferta/fiat-bravo-sprzedam-fiat-bravo-ii-ID6DUmQG.html#4773cd60f9
+Subaru,XV 2.0,2017 ,Gasoline,74900,PLN,https://www.otomoto.pl/oferta/subaru-xv-exclusive-z-niemiec-ID6DUmQD.html#4773cd60f9
+BMW,Seria 5 520d,2017 ,Diesel,139000,PLN,https://www.otomoto.pl/oferta/bmw-seria-5-bmw-520-g30-salon-polska-bezwypadkowy-bogate-wyposazenie-ID6DUmQq.html#4773cd60f9
+Ford,KA 1.2,2015 ,Gasoline,20500,PLN,https://www.otomoto.pl/oferta/ford-ka-ID6DUmQ3.html#4773cd60f9
+Volkswagen,Passat,1999 ,Diesel,3500,PLN,https://www.otomoto.pl/oferta/volkswagen-passat-volkswagen-passat-b5-1-9-tdi-90km-ID6DUmPS.html#4773cd60f9
+Ford,Focus 1.6,2008 ,Gasoline,15900,PLN,https://www.otomoto.pl/oferta/ford-focus-focus-mk2-lift-2008-1-6-benzyna-115km-polski-salon-ID6DUmPK.html#4773cd60f9
+Mercedes-Benz,Klasa E,1991 ,Gasoline,5500,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-e-mercedes-benz-klasa-e-w124-ID6DUmPq.html#4773cd60f9
+Opel,Astra IV,2012 ,Gasoline,25900,PLN,https://www.otomoto.pl/oferta/opel-astra-opel-astra-1-4-turbo-2012rok-100tys-km-ID6DUmPi.html#4773cd60f9
+Toyota,Yaris,2014 ,Gasoline+LPG,26500,PLN,https://www.otomoto.pl/oferta/toyota-yaris-toyota-yaris-iii-1-33-lpg-ID6DUmPb.html#4773cd60f9
+Renault,Trafic 2.5,2008 ,Diesel,44900,PLN,https://www.otomoto.pl/oferta/renault-trafic-generation-rozkladane-lozko-stolik-obracane-fotele-stan-perfekcyjny-ID6DUmP9.html#4773cd60f9
+Fiat,Uno,2002 ,Gasoline,5500,PLN,https://www.otomoto.pl/oferta/fiat-uno-fiat-uno-bezwypadkowy-niski-przebieg-ID6DUmP8.html#4773cd60f9
+Mercedes-Benz,Klasa E 350,2005 ,Gasoline+LPG,26900,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-e-3-5l-272km-4matic-lpg-prins-niski-przebieg-ID6DUmP7.html#4773cd60f9
+Honda,Civic 2.0,2018 ,Gasoline,105000,PLN,https://www.otomoto.pl/oferta/honda-civic-honda-civic-type-r-2018r-ID6DUmP4.html#4773cd60f9
+Opel,Insignia 2.0,2009 ,Diesel,17500,PLN,https://www.otomoto.pl/oferta/opel-insignia-opel-insignia-2-0-cdti-hatchback-ID6DUmP2.html#4773cd60f9
+Honda,Accord 2.0,2008 ,Gasoline,35500,PLN,https://www.otomoto.pl/oferta/honda-accord-zadbany-polski-salon-ID6DUmOZ.html#4773cd60f9
+Citroen,C4 Picasso 2.0,2011 ,Diesel,23000,PLN,https://www.otomoto.pl/oferta/citroen-c4-picasso-citroen-c4-2-0-hdi-okazja-ID6DUmON.html#4773cd60f9
+Audi,A3 1.6,2004 ,Gasoline,16900,PLN,https://www.otomoto.pl/oferta/audi-a3-1-6-mpi-102-ps-skora-nowe-opony-i-aku-gwarancja-na-przebieg-ID6DUmOM.html#4773cd60f9
+BMW,Seria 1 M135i,2020 ,Gasoline,3003,PLN,https://www.otomoto.pl/oferta/bmw-seria-1-bmw-m135i-xdrive-f40-2020-zadbany-cesja-leasingu-niski-przebieg-ID6DUmOL.html#4773cd60f9
+Opel,Astra III,2009 ,Diesel,10500,PLN,https://www.otomoto.pl/oferta/opel-astra-astra-h-1-7cdti-tempomat-klima-2009r-uszkodzony-ID6DUmOJ.html#4773cd60f9
+Citroen,Berlingo II,2005 ,Diesel,6200,PLN,https://www.otomoto.pl/oferta/citroen-berlingo-ID6DUmOI.html#4773cd60f9
+Volkswagen,Bora 1.6,2002 ,Gasoline,3999,PLN,https://www.otomoto.pl/oferta/volkswagen-bora-pierwszy-wlasciciel-salon-pl-ID6DUmOH.html#4773cd60f9
+Mazda,626 2.2i,1988 ,Gasoline+LPG,3999,PLN,https://www.otomoto.pl/oferta/mazda-626-mazda-626-2-2-1988-lpg-ID6DUmOF.html#4773cd60f9
+Kia,Sportage 2.0,2007 ,Gasoline+LPG,25000,PLN,https://www.otomoto.pl/oferta/kia-sportage-kia-sportage-2-0-benzyna-lpg-klimatronik-4x4-ID6DUmOD.html#4773cd60f9
+Kia,Carens,2008 ,Diesel,11900,PLN,https://www.otomoto.pl/oferta/kia-carens-polski-salon-historia-serwisowa-ID6DUmOC.html#4773cd60f9
+Alfa-Romeo,Romeo 159,2007 ,Diesel,12900,PLN,https://www.otomoto.pl/oferta/alfa-romeo-159-alfa-romeo-159-1-9-jtdm-ID6DUmOB.html#4773cd60f9
+Volkswagen,Golf 1.4,2009 ,Gasoline,17500,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-6-ID6DUmOz.html#94d144d987
+Skoda,Octavia 1.4,2018 ,Gasoline,56800,PLN,https://www.otomoto.pl/oferta/skoda-octavia-1-4tsi-150km-active-1wlasciciel-salon-pl-serwis-aso-fv23-ID6DUmOv.html#94d144d987
+Toyota,Verso,2016 ,Diesel,45900,PLN,https://www.otomoto.pl/oferta/toyota-verso-toyota-verso-1-6-d-4d-ID6DUmOu.html#94d144d987
+Kia,Ceed,2009 ,Diesel,17000,PLN,https://www.otomoto.pl/oferta/kia-ceed-kia-ceed-ID6DUmOs.html#94d144d987
+Fiat,Panda 1.1,2003 ,Gasoline,4500,PLN,https://www.otomoto.pl/oferta/fiat-panda-fiat-panda-1-1-54km-2003-niski-przebieg-ID6DUmOq.html#94d144d987
+Volvo,V60 CC,2018 ,Gasoline,120000,PLN,https://www.otomoto.pl/oferta/volvo-v60-volvo-v60-cross-country-t5-awd-ID6DUmOp.html#94d144d987
+Mercedes-Benz,Klasa E 220,2017 ,Diesel,154000,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-e-mercedes-benz-e-w213-ID6DUmOm.html#94d144d987
+Volkswagen,Eos 2.0,2015 ,Gasoline,44000,PLN,https://www.otomoto.pl/oferta/volkswagen-eos-ID6DUmOk.html#94d144d987
+BMW,Z4 3.0si,2007 ,Gasoline,79000,PLN,https://www.otomoto.pl/oferta/bmw-z4-idealny-z4-coupe-manual-ID6DUmOh.html#94d144d987
+Volvo,V60 D4,2013 ,Diesel,36000,PLN,https://www.otomoto.pl/oferta/volvo-v60-volvo-v60-ID6DUmOg.html#94d144d987
+Smart,Forfour,2005 ,Diesel,7300,PLN,https://www.otomoto.pl/oferta/smart-forfour-smart-forfour-ID6DUmOe.html#94d144d987
+Volkswagen,up! 1.0,2014 ,Gasoline,22000,PLN,https://www.otomoto.pl/oferta/volkswagen-up-sprzedam-samochod-vw-up-ID6DUmOa.html#94d144d987
+Opel,Mokka 1.6,2013 ,Gasoline,43900,PLN,https://www.otomoto.pl/oferta/opel-mokka-opel-mokka-2013-r-1-6-benzyna-bialy-ksenony-bezwypadkowy-ID6DUmO6.html#94d144d987
+Volkswagen,Golf IV,2001 ,Diesel,3500,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-golf-iv-1-9-tdi-ID6DUmO4.html#94d144d987
+Alfa-Romeo,Romeo 156,2002 ,Gasoline,3900,PLN,https://www.otomoto.pl/oferta/alfa-romeo-156-alfa-berlina-sprowadzony-zarejestrowany-ID6DUmNZ.html#94d144d987
+Audi,A4 Avant,2004 ,Gasoline,14500,PLN,https://www.otomoto.pl/oferta/audi-a4-1-8t-163km-czarna-ID6DUmNP.html#94d144d987
+Renault,Clio 1.5,2006 ,Diesel,6000,PLN,https://www.otomoto.pl/oferta/renault-clio-renault-clio-1-5-dci-2006r-5-drzwiowy-ID6DUmNz.html#94d144d987
+Toyota,Yaris 1.3,2007 ,Gasoline,15500,PLN,https://www.otomoto.pl/oferta/toyota-yaris-m-2008r-1-3benzyna-bezwypadkowa-klimatyzacja-bogata-wersja-gwarancja-ID6DUmNu.html#94d144d987
+Nissan,Qashqai 1.6,2007 ,Gasoline,25900,PLN,https://www.otomoto.pl/oferta/nissan-qashqai-07-1-6-benzyna-panoramadach-klimatronik-orange-ID6DUmNq.html#94d144d987
+Ford,Mondeo 2.0,2012 ,Diesel,25500,PLN,https://www.otomoto.pl/oferta/ford-mondeo-mondeo-mk4-2-0-tdci-163-km-ID6DUmNo.html#94d144d987
+Renault,Master 2.5,2008 ,Diesel,12000,PLN,https://www.otomoto.pl/oferta/renault-master-renault-master-2008-ID6DUmNm.html#94d144d987
+Subaru,Impreza,2008 ,Gasoline+LPG,22500,PLN,https://www.otomoto.pl/oferta/subaru-impreza-subaru-impreza-gh-ID6DUmNl.html#94d144d987
+Skoda,Fabia 1.2,2015 ,Gasoline,21900,PLN,https://www.otomoto.pl/oferta/skoda-fabia-1-2tsi-110km-parktronic-pdc-sensor-tempomat-alu-ID6DUmNj.html#94d144d987
+BMW,Seria 5,1992 ,Gasoline,35000,PLN,https://www.otomoto.pl/oferta/bmw-seria-5-bmw-520i-bezwypadek-ID6DUmNg.html#94d144d987
+BMW,Seria 5 525d,2012 ,Diesel,35900,PLN,https://www.otomoto.pl/oferta/bmw-seria-5-bwm-xdriwe-160kw-ID6DUmNf.html#94d144d987
+Hyundai,ix35 2.0,2010 ,Diesel,33333,PLN,https://www.otomoto.pl/oferta/hyundai-ix35-sprzedam-hyundai-ix35-2-0-diesel-ID6DUmNd.html#94d144d987
+Kia,Sorento,2007 ,Diesel,26000,PLN,https://www.otomoto.pl/oferta/kia-sorento-stan-bardzo-dobry-hak-ful-opcja-samochod-do-jazdy-bez-inwestycji-ID6DUmMW.html#94d144d987
+Kia,Rio 1.4,2014 ,Gasoline,27000,PLN,https://www.otomoto.pl/oferta/kia-rio-kia-rio-iii-1-4-ID6DUmMQ.html#94d144d987
+Renault,Laguna Coupe,2010 ,Diesel,28900,PLN,https://www.otomoto.pl/oferta/renault-laguna-renault-laguna-coupe-monaco-gp-4control-bose-ID6DUmMO.html#94d144d987
+BMW,Seria 3 318i,2017 ,Gasoline,79900,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-318i-136km-klimatronik-automat-led-salon-pl-aso-ID6DUmML.html#94d144d987
+Volkswagen,Transporter T5,2007 ,Diesel,21000,PLN,https://www.otomoto.pl/oferta/volkswagen-transporter-vw-t5-1-9tdi-klimatyzacja-3-osobowy-ID6DUmMH.html#94d144d987
+Fiat,500 1.2,2015 ,Gasoline,30500,PLN,https://www.otomoto.pl/oferta/fiat-500-1-2-pop-polski-salon-klimatyzacja-abs-esp-asr-nowe-hamulce-ID6DUmMF.html#94d144d987
+Honda,Civic 1.8,2012 ,Gasoline,37900,PLN,https://www.otomoto.pl/oferta/honda-civic-1-8i-142km-polski-salon-1wl-oryginalny-lakier-kamera-cofania-ID6DUmMD.html#178c806280
+Audi,A4 Avant,2002 ,Diesel,12300,PLN,https://www.otomoto.pl/oferta/audi-a4-audi-a4-s4-ID6DUmMz.html#178c806280
+Opel,Astra V,2017 ,Diesel,48500,PLN,https://www.otomoto.pl/oferta/opel-astra-1-6-cdti-136km-dynamic-1wlasciciel-salon-pl-serwis-aso-fv23-ID6DUmMm.html#178c806280
+Volkswagen,Polo 1.2,2002 ,Gasoline+LPG,5999,PLN,https://www.otomoto.pl/oferta/volkswagen-polo-sliczny-zdrowy-zadbany-gaz-sekwencja-1-wl-salon-pl-112-tys-km-5-drzwi-ID6DUmMj.html#178c806280
+Opel,Astra II,2003 ,Gasoline,4200,PLN,https://www.otomoto.pl/oferta/opel-astra-sprzedam-opel-astra-ID6DUmMd.html#178c806280
+Fiat,Stilo,2004 ,Diesel,3600,PLN,https://www.otomoto.pl/oferta/fiat-stilo-2004-1-9-jtd-115km-250tkm-sprawna-klima-nowe-opony-el-szyby-ID6DUmM0.html#178c806280
+Kia,Sportage,2006 ,Gasoline+LPG,18500,PLN,https://www.otomoto.pl/oferta/kia-sportage-kia-sportage-2006r-2-0-benzyna-lpg-ID6DUmLO.html#178c806280
+Skoda,Octavia,2015 ,Diesel,41000,PLN,https://www.otomoto.pl/oferta/skoda-octavia-octavia-iii-1-6-tdi-cr-110km-salon-polska-ID6DUmLM.html#178c806280
+Skoda,Superb 1.8T,2002 ,Gasoline+LPG,14900,PLN,https://www.otomoto.pl/oferta/skoda-superb-skoda-superb-i-1-8t-lpg-wersja-elegance-ID6DUmLJ.html#178c806280
+Toyota,RAV4 2.0,2014 ,Gasoline,67700,PLN,https://www.otomoto.pl/oferta/toyota-rav4-2-0-benzyna-prestige-rej-2015-salon-pl-4x4-automat-skora-ID6DUmLH.html#178c806280
+BMW,Seria 3 320d,2007 ,Diesel,18900,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-z-niemiec-320d-ID6DUmLF.html#178c806280
+Volkswagen,Golf VII,2015 ,Diesel,62450,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-gtd-dsg-serwis-polecam-ID6DUmLD.html#178c806280
+Opel,Insignia 2.0,2010 ,Diesel,13600,PLN,https://www.otomoto.pl/oferta/opel-insignia-cdti-2-0-ecoflex-silnik-po-naprawie-ID6DUmLA.html#178c806280
+Hyundai,I30 1.6,2012 ,Diesel,31900,PLN,https://www.otomoto.pl/oferta/hyundai-i30-hyundai-i-30-diesel-110-koni-148-tys-km-ID6DUmLx.html#178c806280
+Toyota,RAV4 2.0,2000 ,Gasoline,16900,PLN,https://www.otomoto.pl/oferta/toyota-rav4-toyota-rav-4-2-0-vvti-4x4-ID6DUmLy.html#178c806280
+Honda,CR-V 2.0,2007 ,Gasoline+LPG,37900,PLN,https://www.otomoto.pl/oferta/honda-cr-v-honda-crv-ID6DUmLw.html#178c806280
+Peugeot,Boxer HDi,2018 ,Diesel,67977,PLN,https://www.otomoto.pl/oferta/peugeot-boxer-2-0hdi-163km-18r-9os-klima-gotowka-lub-odstapie-leasing-zamiana-sanok-ID6DUmLu.html#178c806280
+Opel,Corsa 1.2,2003 ,Gasoline,7300,PLN,https://www.otomoto.pl/oferta/opel-corsa-opel-corsa-c-1-2-warszawa-ID6DUmLt.html#178c806280
+Fiat,Bravo 1.9,2007 ,Diesel,11000,PLN,https://www.otomoto.pl/oferta/fiat-bravo-fiat-bravo-ii-120km-zadbany-bezwypadkowy-komplet-kol-zimowych-ID6DUmLr.html#178c806280
+Opel,Astra 1.4,2011 ,Gasoline,24900,PLN,https://www.otomoto.pl/oferta/opel-astra-opel-astra-1-4-turbo-sport-opc-manual-full-opcja-ID6DUmLo.html#178c806280
+Ford,Galaxy 1.9,2000 ,Diesel,3900,PLN,https://www.otomoto.pl/oferta/ford-galaxy-fort-galaxy-1-9-tdi-ID6DUmLl.html#178c806280
+Ford,Mondeo,2019 ,Diesel,79900,PLN,https://www.otomoto.pl/oferta/ford-mondeo-salon-polska-i-wlasciciel-fv-23-stan-idealny-bezwypadkowy-okazja-ID6DUmLi.html#178c806280
+Lancia,Lybra 2.4,2004 ,Diesel,6500,PLN,https://www.otomoto.pl/oferta/lancia-lybra-lancia-lybra-2-4-jtd-lx-z-2004r-ID6DUmLh.html#178c806280
+MINI,Countryman Cooper,2018 ,Gasoline,99900,PLN,https://www.otomoto.pl/oferta/mini-countryman-mini-countryman-2018-ID6DUmL3.html#178c806280
+Volvo,V70 2.4D5,2005 ,Diesel,15500,PLN,https://www.otomoto.pl/oferta/volvo-v70-7-osobowy-silnik-2-4-d5-fabrycznie-bez-dpf-ID6DUmKU.html#178c806280
+Ford,Focus 1.8,2001 ,Gasoline,3800,PLN,https://www.otomoto.pl/oferta/ford-focus-ford-focus-ID6DUmKT.html#178c806280
+Skoda,Octavia 2.0,2010 ,Diesel,9900,PLN,https://www.otomoto.pl/oferta/skoda-octavia-skoda-octavia-2-0-tdi-ID6DUmKQ.html#178c806280
+BMW,Seria 3 316i,1995 ,Gasoline,10500,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-bmw-e36-ID6DUmKR.html#178c806280
+Audi,A6,2007 ,Gasoline,23500,PLN,https://www.otomoto.pl/oferta/audi-a6-2-8-fsi-210km-2007r-abt-lopatki-webasto-ID6DUmKN.html#178c806280
+Skoda,Felicia,1999 ,Gasoline,9999,PLN,https://www.otomoto.pl/oferta/skoda-felicia-skoda-felicja-fun-pick-up-ID6DUmKJ.html#178c806280
+Volvo,V60 CC,2019 ,Diesel,174900,PLN,https://www.otomoto.pl/oferta/volvo-v60-ID6DUmKH.html#178c806280
+Honda,Civic 1.6i,2005 ,Gasoline+LPG,11900,PLN,https://www.otomoto.pl/oferta/honda-civic-honda-civic-vii-1-6-110-koni-lpg-ID6DUmKE.html#178c806280
+Peugeot,Partner 1.6,2007 ,Diesel,12100,PLN,https://www.otomoto.pl/oferta/peugeot-partner-sprzedam-zadbany-egzeplarz-peugeot-partner-2007-rok-ID6DUmKD.html#e1fa481f46
+Ford,Focus 1.6,2008 ,Gasoline,13600,PLN,https://www.otomoto.pl/oferta/ford-focus-sprzedam-w-dobre-rece-ford-focus-mk2-2008r-ID6DUmKC.html#e1fa481f46
+Jeep,Grand Cherokee,2016 ,Gasoline,75600,PLN,https://www.otomoto.pl/oferta/jeep-grand-cherokee-jeep-grand-cherokee-limited-serwisowany-ID6DUmKB.html#e1fa481f46
+Peugeot,206 1.1,2003 ,Gasoline,6000,PLN,https://www.otomoto.pl/oferta/peugeot-206-krajowy-maly-przebieg-ID6DUmKy.html#e1fa481f46
+Hyundai,ix35 1.6,2015 ,Gasoline,57000,PLN,https://www.otomoto.pl/oferta/hyundai-ix35-hyundai-ix35-salon-polska-ID6DUmKx.html#e1fa481f46
+Audi,A1 1.2,2011 ,Gasoline,23800,PLN,https://www.otomoto.pl/oferta/audi-a1-benzyna-klima-podgrz-siedzenia-czujniki-parkowania-niski-przebieg-ID6DUmKr.html#e1fa481f46
+Citroen,C5 2.2,2012 ,Diesel,37500,PLN,https://www.otomoto.pl/oferta/citroen-c5-citroen-c5-2-2hdi-ID6DUmKp.html#e1fa481f46
+Renault,Grand Espace Gr,2009 ,Diesel,15400,PLN,https://www.otomoto.pl/oferta/renault-grand-espace-2-0dci-150km-bezwypadkowy-full-wersja-7foteli-limited-ID6DUmKh.html#e1fa481f46
+Hyundai,IONIQ Elektro,2020 ,Diesel,109716,PLN,https://www.otomoto.pl/oferta/hyundai-ioniq-elektryk-super-okazja-faktura-vat-ID6DUmKf.html#e1fa481f46
+Mercedes-Benz,Klasa C,2011 ,Diesel,41900,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-c-mercedes-benz-w204-avangarde-super-stan-udokumentowany-przebieg-ID6DUmKe.html#e1fa481f46
+Volkswagen,Golf VII,2017 ,Diesel,52500,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-1-6tdi-115km-trendline-1wlasciciel-salon-pl-serwis-aso-fv-23-ID6DUmKd.html#e1fa481f46
+Jaguar,XF 3.0,2011 ,Diesel,50555,PLN,https://www.otomoto.pl/oferta/jaguar-xf-idealny-jaguar-xf-3-0d-v6-275-ps-99000-km-serwis-szwajcaria-ID6DUmKa.html#e1fa481f46
+Hyundai,Tucson,2017 ,Diesel,74900,PLN,https://www.otomoto.pl/oferta/hyundai-tucson-sprzedam-hyundai-tucson-ID6DUmK6.html#e1fa481f46
+Skoda,Superb 2.0,2019 ,Gasoline,99900,PLN,https://www.otomoto.pl/oferta/skoda-superb-salon-polska-i-wlasciciel-fv23-stan-idealny-atrakcyjny-wyglad-ID6DUmK1.html#e1fa481f46
+Ford,C-MAX,2017 ,Diesel,65000,PLN,https://www.otomoto.pl/oferta/ford-c-max-sprzedam-ford-c-max-ID6DUmK2.html#e1fa481f46
+Ford,C-MAX 1.6,2007 ,Diesel,3900,PLN,https://www.otomoto.pl/oferta/ford-c-max-ford-c-max-16tdci-dpf-2007r-w-pelni-sprawny-ID6DUmJZ.html#e1fa481f46
+Peugeot,508 2.0,2016 ,Gasoline,47000,PLN,https://www.otomoto.pl/oferta/peugeot-508-peugeot-508-2016r-ID6DUmJX.html#e1fa481f46
+Alfa-Romeo,Romeo 147,2010 ,Diesel,10999,PLN,https://www.otomoto.pl/oferta/alfa-romeo-147-alfa-romeo-147-1-6-benzyna-ID6DUmJV.html#e1fa481f46
+Citroen,C4 Picasso 2.0,2015 ,Gasoline,44999,PLN,https://www.otomoto.pl/oferta/citroen-c4-picasso-citroen-c4-grand-picasso-ID6DUmJW.html#e1fa481f46
+MINI,Cooper Standard,2006 ,Diesel,11500,PLN,https://www.otomoto.pl/oferta/mini-cooper-mini-cooper-ID6DUmJS.html#e1fa481f46
+Renault,Talisman,2016 ,Diesel,52900,PLN,https://www.otomoto.pl/oferta/renault-talisman-initiale-paris-automat-ID6DUmJP.html#e1fa481f46
+Ford,Ranger Autm,2018 ,Gasoline+LPG,48000,PLN,https://www.otomoto.pl/oferta/ford-ranger-cesja-leasingu-ford-ranger-black-shadow-ID6DUmJN.html#e1fa481f46
+Kia,Picanto,2005 ,Gasoline,3200,PLN,https://www.otomoto.pl/oferta/kia-picanto-kia-picanto-ID6DUmJM.html#e1fa481f46
+Hyundai,i20 1.2,2009 ,Diesel,11900,PLN,https://www.otomoto.pl/oferta/hyundai-i20-hyundai-i20-z-polskiego-salonu-ID6DUmJI.html#e1fa481f46
+Ford,Galaxy 2.0,2010 ,Diesel,18900,PLN,https://www.otomoto.pl/oferta/ford-galaxy-prywatnie-ID6DUmJa.html#e1fa481f46
+Ford,Focus,2006 ,Diesel,8500,PLN,https://www.otomoto.pl/oferta/ford-focus-ford-focus-mk2-1-8-tdci-115km-bez-dpf-ID6DUmJ2.html#e1fa481f46
+Mercedes-Benz,Klasa C 200,2005 ,Gasoline,15500,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-c-mercedes-benz-w203-sprzedam-ID6DUmIX.html#e1fa481f46
+Honda,Accord 2.0,2012 ,Diesel,50000,PLN,https://www.otomoto.pl/oferta/honda-accord-piekna-zadbana-bezwypadkowa-ID6DUmIY.html#e1fa481f46
+BMW,Seria 3 318d,2015 ,Gasoline,60900,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-bmw-f30-salon-polska-ID6DUmIR.html#e1fa481f46
+Renault,Clio 1.2,2011 ,Gasoline,16700,PLN,https://www.otomoto.pl/oferta/renault-clio-2011r-pierwszy-wlasciciel-ID6DUmIQ.html#e1fa481f46
+Skoda,Fabia 1.0,2019 ,Gasoline,54900,PLN,https://www.otomoto.pl/oferta/skoda-fabia-skoda-fabia-1-0-tsi-style-ID6DUmIP.html#e1fa481f46
+Volkswagen,Golf V,2007 ,Gasoline,9200,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-ID6DUmIL.html#4e435f05af
+Infiniti,Q50 Q50S,2015 ,Electric/Gasoline,95000,PLN,https://www.otomoto.pl/oferta/infiniti-q50-infiniti-q50-s-ID6DUmIJ.html#4e435f05af
+MINI,ONE,2004 ,Gasoline,9999,PLN,https://www.otomoto.pl/oferta/mini-one-zadbany-bezwypadkowy-gwarancja-ID6DUmIG.html#4e435f05af
+Nissan,Almera,2004 ,Gasoline,4200,PLN,https://www.otomoto.pl/oferta/nissan-almera-nissan-almera-1-5-2004r-maly-przebieg-klimatyzacja-ID6DUmIF.html#4e435f05af
+Chrysler,300C,2005 ,Diesel,24500,PLN,https://www.otomoto.pl/oferta/chrysler-300c-chrysler-300c-260km-ID6DUmIE.html#4e435f05af
+Seat,Altea XL 2.0,2008 ,Diesel,22900,PLN,https://www.otomoto.pl/oferta/seat-altea-xl-freetrack-4x4-2-0-tdi-140km-salon-pl-serwis-aso-do-konca-bezwypadkowy-ID6DUmIB.html#4e435f05af
+Opel,Insignia 2.0,2009 ,Diesel,19900,PLN,https://www.otomoto.pl/oferta/opel-insignia-ID6DUmIz.html#4e435f05af
+Opel,Meriva,2010 ,Gasoline,23999,PLN,https://www.otomoto.pl/oferta/opel-meriva-ID6DUmIy.html#4e435f05af
+Porsche,Cayenne Turbo,2009 ,Gasoline,75000,PLN,https://www.otomoto.pl/oferta/porsche-cayenne-ID6DUmIx.html#4e435f05af
+Honda,Civic 1.6i,2004 ,Gasoline+LPG,10800,PLN,https://www.otomoto.pl/oferta/honda-civic-salon-polska-ksiazka-serwisowa-aso-instalacja-gazowa-ID6DUmIu.html#4e435f05af
+BMW,X5,2006 ,Diesel,34900,PLN,https://www.otomoto.pl/oferta/bmw-x5-z-niemiec-3-0-diesel-218km-navi-xenon-skora-sport-pakiet-lift-ID6DUmIt.html#4e435f05af
+Citroen,C4 e-HDi,2013 ,Diesel,24500,PLN,https://www.otomoto.pl/oferta/citroen-c4-1-6-ID6DUmIs.html#4e435f05af
+Volkswagen,California,2010 ,Diesel,146000,PLN,https://www.otomoto.pl/oferta/volkswagen-california-sprzedam-ID6DUmIr.html#4e435f05af
+Audi,A6,2004 ,Diesel,11500,PLN,https://www.otomoto.pl/oferta/audi-a6-a6-c5-2004r-ID6DUmIp.html#4e435f05af
+Land-Rover,Rover Discovery,1999 ,Diesel,10800,PLN,https://www.otomoto.pl/oferta/land-rover-discovery-metalowy-zderzak-wciagarka-ID6DUmIo.html#4e435f05af
+Jeep,Compass,2011 ,Diesel,36900,PLN,https://www.otomoto.pl/oferta/jeep-compass-bezwypadkowy-polski-salon-zadbany-ID6DUmIm.html#4e435f05af
+Audi,A3,2001 ,Gasoline,5900,PLN,https://www.otomoto.pl/oferta/audi-a3-audi-a3-1-6-ID6DUmIk.html#4e435f05af
+Ford,Mondeo Turnier,2008 ,Diesel,14000,PLN,https://www.otomoto.pl/oferta/ford-mondeo-ford-mondeo-mk4-2008r-ID6DUmIj.html#4e435f05af
+BMW,Seria 3 318d,2018 ,Diesel,104100,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-318d-150km-sport-line-automat-1wlasciciel-salon-pl-aso-fv23-ID6DUmIe.html#4e435f05af
+Opel,Corsa 1.3,2008 ,Diesel,11800,PLN,https://www.otomoto.pl/oferta/opel-corsa-opel-corsa-d-2008-1-3-cdti-ID6DUmIa.html#4e435f05af
+Chevrolet,Aveo 1.2,2009 ,Gasoline,8900,PLN,https://www.otomoto.pl/oferta/chevrolet-aveo-1-2-beznyza-2009r-100-tys-km-lakier-oryginal-zobacz-bo-warto-ID6DUmI9.html#4e435f05af
+Opel,Corsa 1.2,2016 ,Gasoline,22500,PLN,https://www.otomoto.pl/oferta/opel-corsa-opel-corsa-1-2-z-lpg-ID6DUmI8.html#4e435f05af
+Skoda,Fabia 1.2,2013 ,Gasoline,23000,PLN,https://www.otomoto.pl/oferta/skoda-fabia-skoda-fabia-2014-ID6DUmI5.html#4e435f05af
+Audi,A3,2012 ,Diesel,38500,PLN,https://www.otomoto.pl/oferta/audi-a3-2-0tdinavixenonledy17-bezwyporyg-lakierful-serwis-aso-audiz-de-ID6DUmHY.html#4e435f05af
+Opel,Astra III,2009 ,Gasoline,14800,PLN,https://www.otomoto.pl/oferta/opel-astra-okazja-piekny-stan-sprowadzony-z-niemiec-serwisowany-ID6DUmHX.html#4e435f05af
+Renault,Megane 1.6,2010 ,Gasoline,20900,PLN,https://www.otomoto.pl/oferta/renault-megane-sprowadzony-zarejestrowany-ID6DUmHS.html#4e435f05af
+Mitsubishi,Lancer 1.8,2009 ,Gasoline,25800,PLN,https://www.otomoto.pl/oferta/mitsubishi-lancer-1-8-140km-2009r-automat-f1-alu-klimatronik-telefon-tempomat-z-niemiec-ID6DUmHP.html#4e435f05af
+BMW,Seria 1 118d,2019 ,Diesel,118600,PLN,https://www.otomoto.pl/oferta/bmw-seria-1-ID6DUmHO.html#4e435f05af
+Toyota,RAV4 2.5,2016 ,Gasoline,86000,PLN,https://www.otomoto.pl/oferta/toyota-rav4-toyota-rav4-bogata-wersja-ID6DUmHL.html#4e435f05af
+Toyota,Land Cruiser VZJ95,2000 ,Gasoline+LPG,30000,PLN,https://www.otomoto.pl/oferta/toyota-land-cruiser-toyota-land-cruiser-prado-95-ID6DUmHK.html#4e435f05af
+Peugeot,2008 1.2,2015 ,Gasoline,38500,PLN,https://www.otomoto.pl/oferta/peugeot-2008-1-2-benzynaprzebieg-108-tyspanorama-dach-super-stan-ID6DUmHJ.html#4e435f05af
+Volkswagen,Golf V,2008 ,Diesel,9999,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-1-9-tdi-90km-2008-klimatyzacja-zadbany-bez-wkladu-okazja-ID6DUmHI.html#4e435f05af
+Volkswagen,Polo 1.2,2005 ,Gasoline,5900,PLN,https://www.otomoto.pl/oferta/volkswagen-polo-1-2-benzyna-54-ps-klima-wsp-kier-lift-ID6DUmHH.html#684eff33c1
+Mercedes-Benz,Klasa E,2003 ,Diesel,14500,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-e-mercedes-benz-e-270-ID6DUmHC.html#684eff33c1
+Volkswagen,Touran 1.9,2009 ,Diesel,22999,PLN,https://www.otomoto.pl/oferta/volkswagen-touran-volkswagen-touran-1-9-ID6DUmHB.html#684eff33c1
+BMW,Seria 5 520d,2017 ,Diesel,112500,PLN,https://www.otomoto.pl/oferta/bmw-seria-5-bmw-5-g30-ID6DUmHx.html#684eff33c1
+Volvo,V40 CC,2016 ,Diesel,49900,PLN,https://www.otomoto.pl/oferta/volvo-v40-volvo-v-40-d2-automat-radar-tylko-60-tys-przebiegu-ID6DUmHi.html#684eff33c1
+Kia,Sportage,2011 ,Gasoline,584,PLN,https://www.otomoto.pl/oferta/kia-sportage-sprzedam-ID6DUmHh.html#684eff33c1
+BMW,Seria 3,2003 ,Diesel,8900,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-bmw-e46-320d-150km-z-skrzynia-automatyczna-ID6DUmHg.html#684eff33c1
+Honda,Accord 2.0,1998 ,Gasoline+LPG,4799,PLN,https://www.otomoto.pl/oferta/honda-accord-honda-accord-ID6DUmHe.html#684eff33c1
+Jaguar,XF 2.7,2008 ,Diesel,37900,PLN,https://www.otomoto.pl/oferta/jaguar-xf-jaguar-xf-2-7d-2008-w-idealnym-stanie-technicznym-ID6DUmHd.html#684eff33c1
+Mercedes-Benz,Klasa B 180,2010 ,Diesel,22599,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-b-mercedes-b-180-cdi-automat-2-wlasciciel-ID6DUmHb.html#684eff33c1
+Toyota,Verso 1.8,2013 ,Gasoline,41900,PLN,https://www.otomoto.pl/oferta/toyota-verso-pierwszy-wlasciciel-salon-polska-automatyczna-klimatyzacja-kamera-ID6DUmHa.html#684eff33c1
+Ford,Focus 1.6,2012 ,Gasoline,29500,PLN,https://www.otomoto.pl/oferta/ford-focus-ford-fokus-3-benzyna-ecoboost-150-km-ID6DUmH9.html#684eff33c1
+MINI,ONE,2019 ,Gasoline,82900,PLN,https://www.otomoto.pl/oferta/mini-one-heddon-street-1-5-aut-9-tys-km-ID6DUmH8.html#684eff33c1
+Toyota,Avensis 2.0,2009 ,Diesel,20700,PLN,https://www.otomoto.pl/oferta/toyota-avensis-toyota-avensis-ID6DUmH7.html#684eff33c1
+BMW,Seria 5,1996 ,Gasoline,3300,PLN,https://www.otomoto.pl/oferta/bmw-seria-5-okazja-ID6DUmH6.html#684eff33c1
+Volkswagen,Multivan,2013 ,Diesel,110000,PLN,https://www.otomoto.pl/oferta/volkswagen-multivan-multivan-orginal-edition25-ID6DUmH3.html#684eff33c1
+Volkswagen,Polo,2004 ,Gasoline+LPG,5999,PLN,https://www.otomoto.pl/oferta/volkswagen-polo-volkswagen-polo-1-2-benzyna-gaz-doinwestowany-ID6DUmH2.html#684eff33c1
+Opel,Meriva 1.6,2006 ,Gasoline,9950,PLN,https://www.otomoto.pl/oferta/opel-meriva-lift-1-6-benzyna-105km-rok-2006-klimatronik-super-stan-ID6DUmH1.html#684eff33c1
+Mazda,3,2007 ,Gasoline,16000,PLN,https://www.otomoto.pl/oferta/mazda-3-slicznie-sie-prezentuje-bardzo-zadbane-osoba-prywatna-bezwypadkowe-ID6DUmH0.html#684eff33c1
+Opel,Corsa 1.2,2007 ,Gasoline,9300,PLN,https://www.otomoto.pl/oferta/opel-corsa-opel-corsa-d-5d-benzyna-1-2-klimatyzacja-ID6DUmGZ.html#684eff33c1
+Opel,Astra,2005 ,Gasoline,15900,PLN,https://www.otomoto.pl/oferta/opel-astra-opc-xenony-skory-full-alu-ID6DUmGX.html#684eff33c1
+Renault,Clio 1.4i,2002 ,Gasoline,4200,PLN,https://www.otomoto.pl/oferta/renault-clio-sprzedam-renault-clio-ID6DUmGW.html#684eff33c1
+Mitsubishi,Lancer 1.8,2011 ,Gasoline+LPG,26000,PLN,https://www.otomoto.pl/oferta/mitsubishi-lancer-mitsubishi-lancer-1-8-143km-lpg-ID6DUmGT.html#684eff33c1
+Mitsubishi,Colt 1.1,2004 ,Gasoline,3100,PLN,https://www.otomoto.pl/oferta/mitsubishi-colt-ID6DUmGS.html#684eff33c1
+Renault,Scenic 1.9,2003 ,Diesel,4200,PLN,https://www.otomoto.pl/oferta/renault-scenic-renault-scenic1-9-dci-ID6DUmGQ.html#684eff33c1
+Honda,Civic 1.4,2006 ,Gasoline,13900,PLN,https://www.otomoto.pl/oferta/honda-civic-2006r-1-4-benzyna-od-prywatnego-uzytkownika-bezwypadek-ID6DUmGP.html#684eff33c1
+Suzuki,SX4 1.6,2007 ,Gasoline,21500,PLN,https://www.otomoto.pl/oferta/suzuki-sx4-1-6-b-107km-4x4-tempomat-klimatyzacja-key-less-alufelgi-ID6DUmGJ.html#684eff33c1
+Mercedes-Benz,ML 500,2007 ,Gasoline,42500,PLN,https://www.otomoto.pl/oferta/mercedes-benz-ml-mercedes-ml500-alufelgi-r20-bdb-stan-zamiana-ID6DUmGI.html#684eff33c1
+Skoda,Octavia 1.6,2008 ,Gasoline+LPG,18500,PLN,https://www.otomoto.pl/oferta/skoda-octavia-skoda-octavia-2-1-6-mpi-102km-gaz-2008r-ID6DUmGH.html#684eff33c1
+Opel,Zafira b-2005-2011,2008 ,Gasoline,18700,PLN,https://www.otomoto.pl/oferta/opel-zafira-1-8-16v-klimatyzacja-lifting-stan-bdb-ID6DUmGG.html#684eff33c1
+Citroen,C3,2011 ,Diesel,16400,PLN,https://www.otomoto.pl/oferta/citroen-c3-citroen-c3-1-4-ID6DUmGF.html#684eff33c1
+Seat,Ibiza 1.4,2012 ,Gasoline,23900,PLN,https://www.otomoto.pl/oferta/seat-ibiza-1-4mpi-klimatyzacja-lift-5drzwi-55tys-km-ID6DUmGz.html#684eff33c1
+Toyota,Auris 1.6,2017 ,Gasoline,57900,PLN,https://www.otomoto.pl/oferta/toyota-auris-auris-2017-salon-pl-serwisowana-1-6-benzyna-132km-oferta-prywatna-ID6DUmGy.html#dd7806c495
+Ford,S-Max 2.0,2018 ,Diesel,109500,PLN,https://www.otomoto.pl/oferta/ford-s-max-st-line-7-os-full-led-panorama-kamera-najbogatszy-f-vat23-ID6DUmGv.html#dd7806c495
+Toyota,Aygo 1.0,2009 ,Gasoline,9300,PLN,https://www.otomoto.pl/oferta/toyota-aygo-toyota-aygo-1-0-ID6DUmGu.html#dd7806c495
+Peugeot,206,2004 ,Gasoline,9300,PLN,https://www.otomoto.pl/oferta/peugeot-206-peugeot-206-quicksilver-1-4-16v-88km-ID6DUmGs.html#dd7806c495
+Volkswagen,Caddy 2.0,2015 ,Diesel,69900,PLN,https://www.otomoto.pl/oferta/volkswagen-caddy-comfortline-webasto-dsg-salon-polska-ID6DUmGq.html#dd7806c495
+Kia,Cerato 1.6,2006 ,Gasoline,7800,PLN,https://www.otomoto.pl/oferta/kia-cerato-kia-cerato-1-6-ID6DUmGp.html#dd7806c495
+Skoda,Octavia 2.0,2003 ,Gasoline,8499,PLN,https://www.otomoto.pl/oferta/skoda-octavia-octavia-style-2-0-mpi-piekna-xenon-bezwyp-full-opcja-ID6DUmGn.html#dd7806c495
+Nissan,350 Z 3.5,2004 ,Gasoline,45000,PLN,https://www.otomoto.pl/oferta/nissan-350-z-wersja-europejska-szpera-brembo-doinwestowany-ID6DUmGe.html#dd7806c495
+Volkswagen,Golf V,2005 ,Gasoline,12900,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-ladny-w-super-stanie-ID6DUmGd.html#dd7806c495
+Fiat,Grande Punto 1.4,2006 ,Gasoline,3999,PLN,https://www.otomoto.pl/oferta/fiat-grande-punto-1-4-8v-klimatyzacja-okazja-ID6DUmG8.html#dd7806c495
+Dacia,Sandero 1.5,2011 ,Diesel,19500,PLN,https://www.otomoto.pl/oferta/dacia-sandero-dacia-sandero-stepway-diesel-ID6DUmG7.html#dd7806c495
+Ford,Focus,2017 ,Diesel,41500,PLN,https://www.otomoto.pl/oferta/ford-focus-1-5-tdci-120km-nawigacja-serwisowany-ID6DUmG6.html#dd7806c495
+Volkswagen,Golf 1.8,1994 ,Gasoline,1400,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-golf-3-1994r-ID6DUmG5.html#dd7806c495
+Citroen,C5,2005 ,Diesel,7800,PLN,https://www.otomoto.pl/oferta/citroen-c5-citroen-c5-osoba-prywatna-ID6DUmG3.html#dd7806c495
+Opel,Vectra 1.8,1997 ,Gasoline,2000,PLN,https://www.otomoto.pl/oferta/opel-vectra-opel-vectra-b-sedan-1-8-16v-ID6DUmG1.html#dd7806c495
+BMW,Seria 3 320d,2009 ,Diesel,24700,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-bmw-seria-3-320d-xdrive-ID6DUmG0.html#dd7806c495
+Kia,Sportage 1.7,2014 ,Diesel,49900,PLN,https://www.otomoto.pl/oferta/kia-sportage-kia-sportage-dobry-stan-prywatnie-ID6DUmFY.html#dd7806c495
+Volvo,V60 D4,2012 ,Diesel,38200,PLN,https://www.otomoto.pl/oferta/volvo-v60-volvo-v60-2-0-d4-5-cylindrow-polski-salon-ID6DUmFX.html#dd7806c495
+Chevrolet,Orlando 1.8,2011 ,Gasoline,28600,PLN,https://www.otomoto.pl/oferta/chevrolet-orlando-prywatne-ID6DUmFS.html#dd7806c495
+Citroen,C4 1.2,2017 ,Gasoline,38900,PLN,https://www.otomoto.pl/oferta/citroen-c4-ID6DUmFP.html#dd7806c495
+Audi,A3,2011 ,Gasoline,23500,PLN,https://www.otomoto.pl/oferta/audi-a3-audi-a3-8p-1-4tfsi-sline-ID6DUmFL.html#dd7806c495
+Ford,Focus 1.5,2016 ,Diesel,29900,PLN,https://www.otomoto.pl/oferta/ford-focus-ford-focus-1-5-2016-ID6DUmFJ.html#dd7806c495
+Volkswagen,Passat Alltrack,2013 ,Diesel,41999,PLN,https://www.otomoto.pl/oferta/volkswagen-passat-2-0-tdi-140km-alltrack-blue-motion-navi-tempomat-klimatronic-rej-pl-ID6DUmFI.html#dd7806c495
+Audi,A8,2009 ,Diesel,54500,PLN,https://www.otomoto.pl/oferta/audi-a8-sprzedam-audi-a8-ID6DUmFH.html#dd7806c495
+Peugeot,407 2.0,2007 ,Diesel,8400,PLN,https://www.otomoto.pl/oferta/peugeot-407-ID6DUmFG.html#dd7806c495
+Renault,Captur 1.5,2016 ,Diesel,38500,PLN,https://www.otomoto.pl/oferta/renault-captur-renault-captur-2016r-zarejestrowany-i-ubezp-0-wkladu-ID6DUmFF.html#dd7806c495
+BMW,X3 xDrive20d,2012 ,Diesel,59500,PLN,https://www.otomoto.pl/oferta/bmw-x3-ID6DUmFz.html#dd7806c495
+BMW,Seria 7 740d,2016 ,Diesel,204999,PLN,https://www.otomoto.pl/oferta/bmw-seria-7-bmw-g11-740-xdrive-320-km-laser-soft-close-webasto-mpakiet-hud-full-ID6DUmFy.html#dd7806c495
+Honda,Prelude 2.0,2000 ,Gasoline,8400,PLN,https://www.otomoto.pl/oferta/honda-prelude-sprzedam-honde-prelude-v-ID6DUmFv.html#dd7806c495
+Peugeot,307 1.6,2003 ,Gasoline,7400,PLN,https://www.otomoto.pl/oferta/peugeot-307-peugeot-307-1-6-xt-bogate-wyposazenie-ID6DUmFu.html#dd7806c495
+Renault,Megane dCi,2014 ,Diesel,25000,PLN,https://www.otomoto.pl/oferta/renault-megane-sprzedam-megane-iii-ID6DUmFt.html#dd7806c495
+Opel,Astra III,2005 ,Gasoline+LPG,10900,PLN,https://www.otomoto.pl/oferta/opel-astra-1-8-lpg-z-niemiec-ID6DUmFs.html#dd7806c495
+Citroen,Xsara Picasso 1.6i,2009 ,Gasoline+LPG,10999,PLN,https://www.otomoto.pl/oferta/citroen-xsara-picasso-citroen-xsara-picasso-benzyna-lpg-ID6DUmFq.html#f8556b6db3
+Mercedes-Benz,Klasa E 200,2008 ,Gasoline,31900,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-e-avantgarde-184ps-bi-xenon-automat-sport-pakiet-oryginal-idealny-tempom-ID6DUmFp.html#f8556b6db3
+Citroen,C3 Pluriel 1.6,2003 ,Gasoline,4800,PLN,https://www.otomoto.pl/oferta/citroen-c3-pluriel-1-6-16v-110-ps-cabrio-automat-klimatronic-ID6DUmFo.html#f8556b6db3
+Mazda,6 2.0,2016 ,Gasoline,68000,PLN,https://www.otomoto.pl/oferta/mazda-6-skypassion-salon-polska-bezwypadkowy-ID6DUmFn.html#f8556b6db3
+Renault,Fluence 1.6,2015 ,Gasoline+LPG,31900,PLN,https://www.otomoto.pl/oferta/renault-fluence-renault-fluence-1-6-limited-lpg-pierwszy-wlasciciel-salon-polska-ID6DUmFm.html#f8556b6db3
+Audi,A4,2005 ,Diesel,16500,PLN,https://www.otomoto.pl/oferta/audi-a4-audi-a4-b7-1-9-tdi-ID6DUmFl.html#f8556b6db3
+Chevrolet,Camaro,2017 ,Gasoline,140000,PLN,https://www.otomoto.pl/oferta/chevrolet-camaro-camaro-ss-6-2-2017-ID6DUmFi.html#f8556b6db3
+Hyundai,I30 1.6,2010 ,Diesel,15990,PLN,https://www.otomoto.pl/oferta/hyundai-i30-pl-salon-f-vat-23-climatronic-ID6DUmFg.html#f8556b6db3
+Citroen,C3 1.4,2012 ,Gasoline,17900,PLN,https://www.otomoto.pl/oferta/citroen-c3-citroen-c3-bezwypadkowy-z-polskiego-salonu-ID6DUmFc.html#f8556b6db3
+Seat,Altea 1.9,2007 ,Diesel,11599,PLN,https://www.otomoto.pl/oferta/seat-altea-seat-altea-1-9-tdi-105-km-dobrze-wyposazony-navigacja-ID6DUmFb.html#f8556b6db3
+Mercedes-Benz,Klasa B 200,2011 ,Diesel,31000,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-b-mercedes-benz-klasa-b-200-diesel-1991cm3-ID6DUmF6.html#f8556b6db3
+Peugeot,207 CC 120,2007 ,Gasoline,8900,PLN,https://www.otomoto.pl/oferta/peugeot-207-cc-peugeot-207cc-wersja-sport-wiatrolap-opony-zimowe-letnie-ID6DUmF0.html#f8556b6db3
+Nissan,Terrano II,2004 ,Diesel,8900,PLN,https://www.otomoto.pl/oferta/nissan-terrano-ii-2005r-3-0-4x4-klimatyzacja-zarejestrowany-w-kraju-ID6DUmEZ.html#f8556b6db3
+BMW,Seria 5,2001 ,Diesel,2600,PLN,https://www.otomoto.pl/oferta/bmw-seria-5-okazja-sprzedam-ID6DUmEY.html#f8556b6db3
+Mazda,323F,2001 ,Gasoline+LPG,3000,PLN,https://www.otomoto.pl/oferta/mazda-323f-mazda-323f-2001r-1-6-lpg-ID6DUmEV.html#f8556b6db3
+Opel,Zafira 1.8,2007 ,Gasoline,14900,PLN,https://www.otomoto.pl/oferta/opel-zafira-opel-zafira-1-8-nowy-rozrzad-oleje-i-filtr-ID6DUmEU.html#f8556b6db3
+Audi,A6 2.7,2007 ,Diesel,12900,PLN,https://www.otomoto.pl/oferta/audi-a6-2-7-tdi-180km-2007-navi-skory-automat-full-okazja-ID6DUmET.html#f8556b6db3
+Kia,Ceed Cee'd,2017 ,Gasoline,41900,PLN,https://www.otomoto.pl/oferta/kia-ceed-kia-ceed-1-4-i-wlasciciel-ID6DUmEQ.html#f8556b6db3
+Audi,A4 2.0,2010 ,Diesel,45900,PLN,https://www.otomoto.pl/oferta/audi-a4-audi-b8-2-0-tdi-170-ps-allroad-4x4-xenon-igla-ID6DUmEP.html#f8556b6db3
+Audi,A4,2000 ,Diesel,4000,PLN,https://www.otomoto.pl/oferta/audi-a4-audi-a4b5-ID6DUmEO.html#f8556b6db3
+Skoda,Superb 1.9,2009 ,Diesel,27000,PLN,https://www.otomoto.pl/oferta/skoda-superb-skoda-superb-ii-1-9-tdi-polski-salon-drugi-wlasciciel-ID6DUmEL.html#f8556b6db3
+Toyota,Aygo 1.0,2018 ,Gasoline,33900,PLN,https://www.otomoto.pl/oferta/toyota-aygo-toyota-aygo-2018-rok-wersja-x-skory-ledy-duzy-ekran-ID6DUmEK.html#f8556b6db3
+Volkswagen,CC 2.0,2013 ,Gasoline,48999,PLN,https://www.otomoto.pl/oferta/volkswagen-cc-volkswagen-cc-2-0tsi-dsg-bixenon-ID6DUmEJ.html#f8556b6db3
+Fiat,Scudo,2014 ,Diesel,27000,PLN,https://www.otomoto.pl/oferta/fiat-scudo-fiat-scudo-ID6DUmEH.html#f8556b6db3
+Citroen,C2 1.1,2006 ,Gasoline,4900,PLN,https://www.otomoto.pl/oferta/citroen-c2-citroen-c2-1-1-limonka-drugi-wlasciciel-ID6DUmED.html#f8556b6db3
+BMW,Seria 3 320i,2008 ,Gasoline,34400,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-bmw-e92-coupe-seria-3-320i-170-km-ID6DUmEC.html#f8556b6db3
+Ford,S-Max 2.0,2012 ,Diesel,43900,PLN,https://www.otomoto.pl/oferta/ford-s-max-2-0-tdci-duratorq-automat-power-shift-convers-i-wlasciciel-ks-serwis-ID6DUmEA.html#f8556b6db3
+Volkswagen,Touran,2007 ,Diesel,14900,PLN,https://www.otomoto.pl/oferta/volkswagen-touran-volkswagen-touran-1-9-tdi-90-km-ID6DUmEz.html#f8556b6db3
+Renault,Clio 1.2,2012 ,Gasoline,21000,PLN,https://www.otomoto.pl/oferta/renault-clio-renault-clio-ID6DUmEv.html#f8556b6db3
+Opel,Astra III,2006 ,Gasoline,12900,PLN,https://www.otomoto.pl/oferta/opel-astra-cabrio-1-8-benzyna-140km-bogata-wersja-ID6DUmEw.html#f8556b6db3
+Fiat,Freemont 2.0,2015 ,Diesel,49900,PLN,https://www.otomoto.pl/oferta/fiat-freemont-2-0-mjet-140km-kamera-nawigacja-dvd-7os-alpine-ID6DUmEs.html#f8556b6db3
+Volkswagen,Polo 1.2,2010 ,Gasoline,16499,PLN,https://www.otomoto.pl/oferta/volkswagen-polo-v-ID6DUmEp.html#f8556b6db3
+Hyundai,ix35 1.7,2011 ,Diesel,36900,PLN,https://www.otomoto.pl/oferta/hyundai-ix35-ID6DUmEf.html#f2e2499bed
+Kia,Venga,2011 ,Gasoline,21000,PLN,https://www.otomoto.pl/oferta/kia-venga-ID6DUmE6.html#f2e2499bed
+Opel,Corsa 1.2,2007 ,Gasoline,9600,PLN,https://www.otomoto.pl/oferta/opel-corsa-opel-corsa-2007-ID6DUmE3.html#f2e2499bed
+Mercedes-Benz,Klasa C,2008 ,Gasoline,29900,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-c-salon-polska-1-8-automat-bogate-wyposazenie-stan-b-dobry-okazja-ID6DUmE1.html#f2e2499bed
+Toyota,RAV4 2.0,2019 ,Gasoline,116000,PLN,https://www.otomoto.pl/oferta/toyota-rav4-toyota-rav4-ID6DUmDT.html#f2e2499bed
+Audi,A6,2004 ,Diesel,8500,PLN,https://www.otomoto.pl/oferta/audi-a6-kombi-2-5tdi-automat-ID6DUmDK.html#f2e2499bed
+Mazda,3 2.0,2018 ,Gasoline,79500,PLN,https://www.otomoto.pl/oferta/mazda-3-mazda-3-sedan-120-km-poj-2-0-ID6DUmDI.html#f2e2499bed
+Citroen,C6,2007 ,Diesel,11900,PLN,https://www.otomoto.pl/oferta/citroen-c6-2-2-hdi-170km-2007-navi-klima-skory-hed-up-full-okazja-ID6DUmDH.html#f2e2499bed
+BMW,X1 sDrive18d,2016 ,Diesel,85000,PLN,https://www.otomoto.pl/oferta/bmw-x1-bmw-x1-sdrive18d-hak-ID6DUmDG.html#f2e2499bed
+Audi,A4 2.0,2011 ,Gasoline,42500,PLN,https://www.otomoto.pl/oferta/audi-a4-audi-a4-quatro-s-line-2011-ID6DUmDF.html#f2e2499bed
+Mercedes-Benz,Klasa E,1995 ,Diesel,7200,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-e-sprzedam-mercedes-e200-diesel-w-124-e-klasse-ID6DUmDC.html#f2e2499bed
+Volkswagen,Touran,2006 ,Diesel,15800,PLN,https://www.otomoto.pl/oferta/volkswagen-touran-7-osobowy-skrzynia-6-biegowa-klimatyzacja-nawigacja-oplacony-ID6DUmDz.html#f2e2499bed
+Hyundai,Galloper,2001 ,Diesel,20000,PLN,https://www.otomoto.pl/oferta/hyundai-galloper-galloper-4szt-2-5-td-klima-ID6DUmDu.html#f2e2499bed
+Peugeot,3008 HDi,2010 ,Diesel,29900,PLN,https://www.otomoto.pl/oferta/peugeot-3008-peugeot-3008-diesel-automat-panorama-nawigacja-bogata-wersja-ID6DUmDr.html#f2e2499bed
+Mercedes-Benz,Klasa E 350,2011 ,Diesel,39000,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-e-mercedes-w212-4x4-265km-ID6DUmDc.html#f2e2499bed
+Chrysler,Grand Voyager 2.8,2006 ,Diesel,8300,PLN,https://www.otomoto.pl/oferta/chrysler-grand-voyager-2-8crd-grand-limited-automat-lift-full-wersja-ID6DUmDb.html#f2e2499bed
+BMW,Seria 3 316,1984 ,Gasoline,62000,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-316-tylko-93000km-perfekt-stan-kolekcjonerski-ID6DUmDa.html#f2e2499bed
+Fiat,Freemont 2.0,2013 ,Diesel,25000,PLN,https://www.otomoto.pl/oferta/fiat-freemont-sprzedam-fiata-freemont-ID6DUmD8.html#f2e2499bed
+Jaguar,XF 3.0,2013 ,Diesel,57500,PLN,https://www.otomoto.pl/oferta/jaguar-xf-pakiet-r-sport-3-0-diesel-s-pelna-wersja-ID6DUmD5.html#f2e2499bed
+Opel,Signum 1.8,2006 ,Gasoline,12400,PLN,https://www.otomoto.pl/oferta/opel-signum-pdcx2niski-przebieg-134tkm1-8klimatronikx2duza-nawigacjazobacz-ID6DUmD3.html#f2e2499bed
+Volkswagen,Golf Plus,2005 ,Gasoline,10700,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-plus-volkswagen-golf-5-plus-1-4-mpi-ID6DUmD2.html#f2e2499bed
+Volkswagen,Golf,2001 ,Diesel,7500,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-volkswagen-golf-iv-1-9-tdi-ID6DUmD1.html#f2e2499bed
+Mercedes-Benz,Klasa E,2018 ,Diesel,111500,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-e-avantgarde-led-performance-ID6DUmD0.html#f2e2499bed
+Renault,Clio,2009 ,Gasoline,17250,PLN,https://www.otomoto.pl/oferta/renault-clio-1-2-benzyna-cztery-cylindry-100-bezwypadkowy-perfekcjaserwisowany-ID6DUmCZ.html#f2e2499bed
+Ford,Focus,2007 ,Diesel,8900,PLN,https://www.otomoto.pl/oferta/ford-focus-foed-focus-ghia-07-1-8tdci-super-stan-ID6DUmCY.html#f2e2499bed
+Opel,Astra IV,2011 ,Diesel,22500,PLN,https://www.otomoto.pl/oferta/opel-astra-auto-osobowe-ID6DUmCW.html#f2e2499bed
+Peugeot,207 1.4,2007 ,Diesel,7000,PLN,https://www.otomoto.pl/oferta/peugeot-207-piekny-peugeot-207-1-4-hdi-diesel-ID6DUmCU.html#f2e2499bed
+Ford,S-Max 2.0,2011 ,Gasoline,42900,PLN,https://www.otomoto.pl/oferta/ford-s-max-ford-s-max-2-0-eccoboost-203km-p-shift-salonpl-panorama-ID6DUmCT.html#f2e2499bed
+Audi,A4 Avant,1998 ,Gasoline,4600,PLN,https://www.otomoto.pl/oferta/audi-a4-a4-b5-1-8t-ID6DUmCR.html#f2e2499bed
+Hyundai,i20 1.0,2017 ,Gasoline,25900,PLN,https://www.otomoto.pl/oferta/hyundai-i20-klima-5-drzwi-i-wl-serwis-52tys-km-ID6DUmCP.html#f2e2499bed
+Hyundai,i30 N Fastback,2019 ,Gasoline,120000,PLN,https://www.otomoto.pl/oferta/hyundai-i30-n-hyundai-i30-n-fastback-ID6DUmCO.html#f2e2499bed
+Renault,Grand Scenic,2006 ,Gasoline,13900,PLN,https://www.otomoto.pl/oferta/renault-grand-scenic-renault-grand-scenic-fl-ID6DUmCN.html#f2e2499bed
+MINI,Cooper John,2012 ,Gasoline,35500,PLN,https://www.otomoto.pl/oferta/mini-cooper-mini-cooper-roadster-ID6DUmCM.html#e206119c7c
+Ford,Mondeo,2013 ,Diesel,11000,PLN,https://www.otomoto.pl/oferta/ford-mondeo-ford-mondeo-ID6DUmCI.html#e206119c7c
+Mercedes-Benz,Klasa C 200,2007 ,Gasoline+LPG,27900,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-c-ID6DUmCC.html#e206119c7c
+Audi,A4 Avant,2002 ,Gasoline+LPG,11000,PLN,https://www.otomoto.pl/oferta/audi-a4-sprzedam-audi-a4-b6-ID6DUmCx.html#e206119c7c
+Volkswagen,Golf V,2006 ,Gasoline,7000,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-vw-golf-5-silnik-uszkodzony-stan-dobry-ID6DUmCv.html#e206119c7c
+Hyundai,Tucson 2.0,2015 ,Diesel,69900,PLN,https://www.otomoto.pl/oferta/hyundai-tucson-hyundai-tucson-2-0-ID6DUmCw.html#e206119c7c
+BMW,Seria 3,2009 ,Diesel,29700,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-3-0d-245km-330xd-manual-kombi-4x4-m-pakiet-ID6DUmCu.html#e206119c7c
+Skoda,Octavia 2.0,2013 ,Diesel,49900,PLN,https://www.otomoto.pl/oferta/skoda-octavia-2-0tdi184km-vrs-black-edition-vrs-ID6DUmCt.html#e206119c7c
+Peugeot,206 1.1,2001 ,Gasoline,3500,PLN,https://www.otomoto.pl/oferta/peugeot-206-peugeot-206-1-1-ID6DUmCr.html#e206119c7c
+Seat,Leon 1.6,2015 ,Diesel,42900,PLN,https://www.otomoto.pl/oferta/seat-leon-seat-leon-3-stan-idealny-ID6DUmCq.html#e206119c7c
+Hyundai,Santa Fe 2.2,2010 ,Diesel,46000,PLN,https://www.otomoto.pl/oferta/hyundai-santa-fe-hyundai-santa-fe-ii-2-2-crdi-4x4-aut-ID6DUmCp.html#e206119c7c
+Opel,Vectra 1.8,2002 ,Gasoline+LPG,7000,PLN,https://www.otomoto.pl/oferta/opel-vectra-opel-vectra-c-ID6DUmCo.html#e206119c7c
+Subaru,Forester 2.0,2005 ,Gasoline,15500,PLN,https://www.otomoto.pl/oferta/subaru-forester-2-0-benzyna-lpg-lift-4x4-klima-alu-hak-z-niemiec-ID6DUmCm.html#e206119c7c
+Volkswagen,Polo 1.6,2009 ,Diesel,17000,PLN,https://www.otomoto.pl/oferta/volkswagen-polo-volkswagen-polo-1-6-tdi-ID6DUmCl.html#e206119c7c
+BMW,X5 3.0i,2003 ,Gasoline,28000,PLN,https://www.otomoto.pl/oferta/bmw-x5-bmw-x5-e53-ID6DUmCk.html#e206119c7c
+Skoda,RAPID 1.6,2015 ,Diesel,28900,PLN,https://www.otomoto.pl/oferta/skoda-rapid-skoda-rapid-spaceback-2015-1-6-tdi-ID6DUmCi.html#e206119c7c
+Skoda,Fabia 1.4,2001 ,Gasoline,4900,PLN,https://www.otomoto.pl/oferta/skoda-fabia-skoda-fabia-1-4-ID6DUmCh.html#e206119c7c
+Fiat,Bravo,2008 ,Diesel,9000,PLN,https://www.otomoto.pl/oferta/fiat-bravo-ID6DUmCg.html#e206119c7c
+Opel,Meriva,2008 ,Diesel,8500,PLN,https://www.otomoto.pl/oferta/opel-meriva-meriva-1-7cdti-101km-klima-alufelgi-zadbany-maly-przebieg-ksiazki-ID6DUmCf.html#e206119c7c
+Toyota,Avensis 2.2,2005 ,Diesel,10900,PLN,https://www.otomoto.pl/oferta/toyota-avensis-toyota-avensis-warta-uwagi-ID6DUmCe.html#e206119c7c
+Opel,Mokka 1.4,2013 ,Gasoline,48500,PLN,https://www.otomoto.pl/oferta/opel-mokka-1-4-turbo-4x4-cosmo-bezwypadkowy-salon-pl-maly-przebieg-ID6DUmCd.html#e206119c7c
+Ford,Fiesta,2004 ,Gasoline,4400,PLN,https://www.otomoto.pl/oferta/ford-fiesta-ladny-niemcy-klima-ID6DUmCc.html#e206119c7c
+BMW,X3 xDrive20d,2012 ,Diesel,49000,PLN,https://www.otomoto.pl/oferta/bmw-x3-xdrive-2-0-nowy-rozrzad-turbo-dwumas-sprzeglo-ID6DUmCa.html#e206119c7c
+Volkswagen,Passat 1.9,2000 ,Diesel,3500,PLN,https://www.otomoto.pl/oferta/volkswagen-passat-volkswagen-passat-b5-2000r-ID6DUmC9.html#e206119c7c
+Mazda,6 Sport,2007 ,Gasoline,20700,PLN,https://www.otomoto.pl/oferta/mazda-6-mazda-6-kombi-ID6DUmC8.html#e206119c7c
+Ford,Mondeo,2008 ,Gasoline+LPG,19990,PLN,https://www.otomoto.pl/oferta/ford-mondeo-2-0i-gaz-lpgtitaniumclimatronicalunavipelna-elektrykazadbany-ID6DUmC6.html#e206119c7c
+Peugeot,4007,2007 ,Diesel,9999,PLN,https://www.otomoto.pl/oferta/peugeot-4007-2-2-hdi-160km-2007-navi-klima-skory-szyberdach-full-7-soob-okazja-ID6DUmC4.html#e206119c7c
+Opel,Zafira 1.8,2002 ,Gasoline,4800,PLN,https://www.otomoto.pl/oferta/opel-zafira-opel-zafira-1-8-16v-ID6DUmC0.html#e206119c7c
+Audi,A4,2014 ,Diesel,61500,PLN,https://www.otomoto.pl/oferta/audi-a4-3xs-line2-0tdinavixenonledybezwyporyg-lakierful-serwisz-de-ID6DUmBZ.html#e206119c7c
+Opel,Astra III,2009 ,Gasoline,14500,PLN,https://www.otomoto.pl/oferta/opel-astra-1-4-benzyna-klima-elektryka-lift-ID6DUmBV.html#e206119c7c
+Citroen,C4 Picasso,2007 ,Gasoline+LPG,15500,PLN,https://www.otomoto.pl/oferta/citroen-c4-picasso-citroen-c4-picasso-benzyna-gaz-ID6DUmBW.html#e206119c7c
+Audi,A8 3.0,2008 ,Diesel,32000,PLN,https://www.otomoto.pl/oferta/audi-a8-audi-a8-quattro-2008-r-ID6DUmBT.html#e206119c7c
+Dacia,Duster 1.2,2017 ,Gasoline,55000,PLN,https://www.otomoto.pl/oferta/dacia-duster-dacia-duster-2x4-125km-prestige-z-bogato-wyposazona-leasing-cesja-ID6DUmBS.html#2ac65adb54
+Ford,S-Max 2.0,2007 ,Diesel,18900,PLN,https://www.otomoto.pl/oferta/ford-s-max-salon-polska-super-stan-od-osoby-prywatnej-ID6DUmBQ.html#2ac65adb54
+Volkswagen,Sharan 2.0,2012 ,Diesel,46900,PLN,https://www.otomoto.pl/oferta/volkswagen-sharan-vw-sharan-highline-2-0-tdi-140km-dsg-zadbany-4-lata-wl-serwis-wlkp-ID6DUmBO.html#2ac65adb54
+Renault,Megane II,2004 ,Gasoline+LPG,7400,PLN,https://www.otomoto.pl/oferta/renault-megane-1-4-98km-161tys-km-lpg-kombi-klima-ID6DUmBN.html#2ac65adb54
+Mazda,6 2.0,2015 ,Gasoline,78900,PLN,https://www.otomoto.pl/oferta/mazda-6-mazda-6-2-0-skypassion-i-eloop-ID6DUmBL.html#2ac65adb54
+Mercedes-Benz,Klasa C 350,2012 ,Gasoline,57500,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-c-ID6DUmBK.html#2ac65adb54
+Audi,A5 2.0,2012 ,Diesel,61000,PLN,https://www.otomoto.pl/oferta/audi-a5-audi-a5-org-przebieg-ID6DUmBI.html#2ac65adb54
+Mercedes-Benz,Klasa E,2012 ,Diesel,71000,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-e-mercedes-e250-4matic-2012-r-stan-idealny-ID6DUmBH.html#2ac65adb54
+Smart,Fortwo &,2002 ,Gasoline,4300,PLN,https://www.otomoto.pl/oferta/smart-fortwo-smart-fortwo-600-passion-ID6DUmBG.html#2ac65adb54
+Ford,EDGE 2.0,2018 ,Diesel,99900,PLN,https://www.otomoto.pl/oferta/ford-edge-2-0biturbo210km-st-line-maxx-full-opcja-ID6DUmBF.html#2ac65adb54
+Opel,Corsa 1.4,2006 ,Gasoline,11200,PLN,https://www.otomoto.pl/oferta/opel-corsa-corsa-1-4-ID6DUmBE.html#2ac65adb54
+Toyota,RAV4 2.0,2000 ,Gasoline+LPG,16900,PLN,https://www.otomoto.pl/oferta/toyota-rav4-4x4-klima-elektryka-stan-bdb-ID6DUmBC.html#2ac65adb54
+Toyota,Corolla Verso 2.0,2005 ,Diesel,12900,PLN,https://www.otomoto.pl/oferta/toyota-corolla-verso-toyota-corolla-verso-2-0-d4d-7-osobowa-ID6DUmBB.html#2ac65adb54
+Renault,Laguna 2.0,2010 ,Diesel,24700,PLN,https://www.otomoto.pl/oferta/renault-laguna-2-0-150-km-diesel-salon-polska-ID6DUmBA.html#2ac65adb54
+Kia,Sportage,2012 ,Diesel,48900,PLN,https://www.otomoto.pl/oferta/kia-sportage-piekna-kia-sportage-11-miesiecy-gwarancji-ID6DUmBz.html#2ac65adb54
+Subaru,Forester,2008 ,Gasoline+LPG,20500,PLN,https://www.otomoto.pl/oferta/subaru-forester-subaru-forester-bi-fuel-ID6DUmBy.html#2ac65adb54
+Ford,Focus 1.8,2003 ,Diesel,3300,PLN,https://www.otomoto.pl/oferta/ford-focus-ford-focus-1-8-tdci-2003r-polski-salon-doinwestowany-okazja-ID6DUmBv.html#2ac65adb54
+BMW,Seria 3 318i,2008 ,Gasoline,26500,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-ID6DUmBl.html#2ac65adb54
+Audi,A3,1999 ,Gasoline+LPG,6900,PLN,https://www.otomoto.pl/oferta/audi-a3-audi-a3-1-8-t-ID6DUmBj.html#2ac65adb54
+Ford,Fiesta,2015 ,Gasoline,31500,PLN,https://www.otomoto.pl/oferta/ford-fiesta-ford-fiesta-polski-salon-niski-przebieg-1-wlasciciel-stan-bardzo-dobry-ID6DUmBd.html#2ac65adb54
+Ford,Focus 1.6,2006 ,Gasoline,7800,PLN,https://www.otomoto.pl/oferta/ford-focus-1-6-ID6DUmBc.html#2ac65adb54
+Alfa-Romeo,Romeo Giulietta 1.4,2012 ,Gasoline,22500,PLN,https://www.otomoto.pl/oferta/alfa-romeo-giulietta-1-4turbo-benzynaniski-przebiegalufelgi-ID6DUmBb.html#2ac65adb54
+Opel,Frontera 2.2,1998 ,Gasoline,15700,PLN,https://www.otomoto.pl/oferta/opel-frontera-opel-frontera-b-2-2-benzyna-ID6DUmB5.html#2ac65adb54
+Citroen,C4 Grand Picasso e-HDi,2014 ,Diesel,35000,PLN,https://www.otomoto.pl/oferta/citroen-c4-grand-picasso-bogata-wersja-wyposazenia-7-osob-bezwypadkowy-ID6DUmB4.html#2ac65adb54
+Toyota,Corolla Verso 1.8,2004 ,Gasoline,15500,PLN,https://www.otomoto.pl/oferta/toyota-corolla-verso-toyota-corolla-verso-1-8-ID6DUmB3.html#2ac65adb54
+Opel,Insignia 2.0,2010 ,Diesel,23500,PLN,https://www.otomoto.pl/oferta/opel-insignia-moze-byc-zamiana-ID6DUmB0.html#2ac65adb54
+Aston,Martin V8 Vantage S,2013 ,Gasoline,349000,PLN,https://www.otomoto.pl/oferta/aston-martin-v8-vantage-aston-martin-v8-vantage-s-roadster-2013-ID6DUmAZ.html#2ac65adb54
+Alfa-Romeo,Romeo 147 1.9,2008 ,Diesel,7700,PLN,https://www.otomoto.pl/oferta/alfa-romeo-147-1-9-jtd-120-km-klimatyzacja-alufelgi-kurtyny-powietrzne-radio-cd-ID6DUmAV.html#2ac65adb54
+Opel,Astra,2016 ,Gasoline+LPG,32500,PLN,https://www.otomoto.pl/oferta/opel-astra-salon-pl-i-wlasciciel-instalacja-gazowa-bogate-wyposazenie-okazja-ID6DUmAW.html#2ac65adb54
+Mercedes-Benz,Klasa C 180,2011 ,Gasoline,42900,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-c-1-8-benz-156km-lift-piekny-kolor-navigacja-alu-18-jak-nowy-ID6DUmAU.html#2ac65adb54
+Renault,Twingo 1.2,2009 ,Gasoline,13500,PLN,https://www.otomoto.pl/oferta/renault-twingo-rip-curl-1-2-benzyna-76-km-klimatyzacja-alu-stan-bdb-kredyt-bez-bik-ID6DUmAS.html#2ac65adb54
+Saab,9-5,2004 ,Diesel,8000,PLN,https://www.otomoto.pl/oferta/saab-9-5-saab-9-5-ID6DUmAN.html#2ac65adb54
+Volvo,V70,2001 ,Gasoline+LPG,6600,PLN,https://www.otomoto.pl/oferta/volvo-v70-volvo-v70-2-4-170-km-lpg-ID6DUmAO.html#20a55c681a
+Opel,Corsa,2012 ,Diesel,14590,PLN,https://www.otomoto.pl/oferta/opel-corsa-1-3-cdti-ID6DUmAL.html#20a55c681a
+Opel,Zafira,2011 ,Diesel,19990,PLN,https://www.otomoto.pl/oferta/opel-zafira-ID6DUmAC.html#20a55c681a
+Volkswagen,Golf vi-2008-2013,2009 ,Gasoline,18500,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-golf-6-1-4-benzyna-zarejestrowane-ID6DUmAl.html#20a55c681a
+Seat,Altea XL,2012 ,Diesel,28900,PLN,https://www.otomoto.pl/oferta/seat-altea-xl-1-6-tdi-150-km-ksiazka-serwisowa-2-komplety-kol-czujniki-parkowania-ID6DUmAk.html#20a55c681a
+Peugeot,208 1.4,2014 ,Diesel,22900,PLN,https://www.otomoto.pl/oferta/peugeot-208-salon-polska-od-wlascicielabez-nakladu-finansowego-ID6DUmAj.html#20a55c681a
+Opel,Astra II,2005 ,Gasoline,5700,PLN,https://www.otomoto.pl/oferta/opel-astra-sprzedam-okazyjnie-samochod-w-b-dobrym-stanie-technicznym-ID6DUmAi.html#20a55c681a
+Volkswagen,Golf GTD,2016 ,Diesel,70900,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-2-0tdi184km-gtd-maxx-full-opcja-gtd-ID6DUmAe.html#20a55c681a
+Ford,Focus 1.6,2010 ,Diesel,14299,PLN,https://www.otomoto.pl/oferta/ford-focus-ford-focus-1-6-tdci-2010r-109km-ID6DUmAd.html#20a55c681a
+Mazda,5 2.0,2008 ,Diesel,13000,PLN,https://www.otomoto.pl/oferta/mazda-5-do-sprzedania-mazda-5-bogato-wyposazona-ID6DUmAc.html#20a55c681a
+BMW,Seria 3,2011 ,Diesel,29000,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-bmw-e91-2-0-184km-ID6DUmAb.html#20a55c681a
+Mazda,5 1.8,2008 ,Gasoline,17900,PLN,https://www.otomoto.pl/oferta/mazda-5-sprzedam-mazde-v-w-bardzo-zadbanym-stanie-ID6DUmA9.html#20a55c681a
+Renault,Scenic 1.6,1997 ,Gasoline+LPG,3300,PLN,https://www.otomoto.pl/oferta/renault-scenic-scenic-1-6-8v-z-gazem-klimatyzacja-sprawna-dlugie-oplaty-hak-ID6DUmA7.html#20a55c681a
+Toyota,Aygo Standard,2006 ,Gasoline,7800,PLN,https://www.otomoto.pl/oferta/toyota-aygo-bezwypadkowa-dwa-komplety-opon-ID6DUmA6.html#20a55c681a
+Dodge,Charger 5.7,2018 ,Gasoline,125000,PLN,https://www.otomoto.pl/oferta/dodge-charger-5-7-380km-ID6DUmA4.html#20a55c681a
+Mazda,3 1.6,2009 ,Gasoline,22900,PLN,https://www.otomoto.pl/oferta/mazda-3-gwarancjapewny-przebieg-ID6DUmA0.html#20a55c681a
+Peugeot,107,2008 ,Gasoline,8200,PLN,https://www.otomoto.pl/oferta/peugeot-107-peugeot-107-5-drzwi-ID6DUmA1.html#20a55c681a
+Audi,A4 Allroad 2.0,2009 ,Diesel,45500,PLN,https://www.otomoto.pl/oferta/audi-a4-allroad-ID6DUmzX.html#20a55c681a
+Audi,A3 1.9,2006 ,Diesel,16500,PLN,https://www.otomoto.pl/oferta/audi-a3-audi-a3-ID6DUmzW.html#20a55c681a
+Volkswagen,Golf,2002 ,Diesel,4600,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-iv-1-9d-2002r-klimatyzacja-ID6DUmzS.html#20a55c681a
+Citroen,Jumpy Combi,2012 ,Diesel,23900,PLN,https://www.otomoto.pl/oferta/citroen-jumpy-combi-ID6DUmzQ.html#20a55c681a
+Citroen,C4 Picasso 1.6,2009 ,Diesel,16000,PLN,https://www.otomoto.pl/oferta/citroen-c4-picasso-1-6-hdi-109km-159000km-klima-automatyczna-skrzynia-nawigacja-ID6DUmzO.html#20a55c681a
+BMW,X5 4.4i,2004 ,Gasoline+LPG,36500,PLN,https://www.otomoto.pl/oferta/bmw-x5-bmw-x5-4-4-gaz-full-ID6DUmzP.html#20a55c681a
+Citroen,C4 HDi,2012 ,Diesel,24900,PLN,https://www.otomoto.pl/oferta/citroen-c4-ID6DUmzN.html#20a55c681a
+Renault,Laguna II,2006 ,Gasoline,9900,PLN,https://www.otomoto.pl/oferta/renault-laguna-ID6DUmzM.html#20a55c681a
+Mercedes-Benz,Klasa C 180,2015 ,Gasoline,84900,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-c-pierwszy-wlasciciel-kupiony-w-salonie-maly-przebieg-ID6DUmzI.html#20a55c681a
+Mitsubishi,Lancer 1.8,2009 ,Gasoline+LPG,27900,PLN,https://www.otomoto.pl/oferta/mitsubishi-lancer-super-stan-1-wlasciciel-mod-2010-bi-xenon-navi-serwis-oplacony-ID6DUmzH.html#20a55c681a
+Hyundai,IONIQ Hybrid,2017 ,Electric/Gasoline,73000,PLN,https://www.otomoto.pl/oferta/hyundai-ioniq-hyundai-ioniq-hybryda-1-6-gdi-i-motion-niski-przebieg-ID6DUmzF.html#20a55c681a
+Fiat,500 1.4,2012 ,Gasoline,23999,PLN,https://www.otomoto.pl/oferta/fiat-500-fiat-500-sport-6-biegoow-klima-ID6DUmzE.html#20a55c681a
+Renault,Megane,2003 ,Gasoline,5500,PLN,https://www.otomoto.pl/oferta/renault-megane-renault-megane-ii-1-4-ID6DUmzB.html#20a55c681a
+Nissan,Juke 1.6,2013 ,Gasoline,44900,PLN,https://www.otomoto.pl/oferta/nissan-juke-witam-mam-do-sprzedania-nissana-juka-pierwszy-wlasciciel-ID6DUmzz.html#20a55c681a
+Audi,Q2 1.6,2016 ,Diesel,9300,PLN,https://www.otomoto.pl/oferta/audi-q2-audi-q2-1-6d-2016-manual-ID6DUmzv.html#20a55c681a
+Dacia,Logan MCV,2008 ,Diesel,8900,PLN,https://www.otomoto.pl/oferta/dacia-logan-klima-z-niemiec-ID6DUmzw.html#ac7236e7d9
+BMW,X5 3.0si,2010 ,Gasoline+LPG,51999,PLN,https://www.otomoto.pl/oferta/bmw-x5-bmw-x5-3-0si-xdrive-272km-benzyna-lpg-3-5-tony-na-haku-ID6DUmzu.html#ac7236e7d9
+Volvo,XC 60 T6,2013 ,Gasoline,77900,PLN,https://www.otomoto.pl/oferta/volvo-xc-60-volvo-xc60-3-0-awd-t6-mozliwa-zamiana-ID6DUmzt.html#ac7236e7d9
+BMW,Seria 5 528i,1995 ,Gasoline+LPG,8400,PLN,https://www.otomoto.pl/oferta/bmw-seria-5-e34-2-8i-1995r-lpg-klimatyzacja-ID6DUmzs.html#ac7236e7d9
+Audi,A3,2001 ,Diesel,6900,PLN,https://www.otomoto.pl/oferta/audi-a3-1-9-tdiliftklimagrzane-fotelezadbanadoinwestowanawlasciciel-ID6DUmzq.html#ac7236e7d9
+Renault,Scenic 1.9,2008 ,Diesel,9500,PLN,https://www.otomoto.pl/oferta/renault-scenic-renault-scenic-ii-1-9-ID6DUmzk.html#ac7236e7d9
+Nissan,X-Trail 2.2,2006 ,Diesel,14500,PLN,https://www.otomoto.pl/oferta/nissan-x-trail-nissan-x-trail-2-2-dci-wersja-columbia-comfort-2006-2007-suv-4x4-ID6DUmzj.html#ac7236e7d9
+Smart,Roadster,2000 ,Gasoline,7500,PLN,https://www.otomoto.pl/oferta/smart-roadster-cabrio-benzyna-ID6DUmza.html#ac7236e7d9
+Peugeot,407 1.8,2007 ,Gasoline+LPG,11200,PLN,https://www.otomoto.pl/oferta/peugeot-407-peugeot-407-1-8-lpg-polski-salon-bezwypadkowy-bardzo-dobry-stan-ID6DUmz8.html#ac7236e7d9
+Audi,A4 Avant,2012 ,Diesel,50000,PLN,https://www.otomoto.pl/oferta/audi-a4-audi-a4-2012-2-0-tdi-s-line-ID6DUmz6.html#ac7236e7d9
+Renault,Clio 1.2,2009 ,Gasoline,6500,PLN,https://www.otomoto.pl/oferta/renault-clio-sprzedam-renault-clio-campus-2-polecam-ID6DUmz4.html#ac7236e7d9
+Ford,S-Max 2.0,2007 ,Diesel,15900,PLN,https://www.otomoto.pl/oferta/ford-s-max-ford-s-max-webasto-ID6DUmz3.html#ac7236e7d9
+Toyota,Yaris 1.0,2014 ,Gasoline,22950,PLN,https://www.otomoto.pl/oferta/toyota-yaris-1-0-polski-salon-bezwypadkowy-serwisowany-polecam-ID6DUmz2.html#ac7236e7d9
+Volkswagen,Multivan,1998 ,Diesel,22999,PLN,https://www.otomoto.pl/oferta/volkswagen-multivan-t4-zarejestrowany-klimatyzacja-wazne-oplaty-stan-bardzo-dobry-ID6DUmz1.html#ac7236e7d9
+Honda,Civic Hybrid,2008 ,Electric/Gasoline,12900,PLN,https://www.otomoto.pl/oferta/honda-civic-1-3i-ima-dsi-hybrid-2008-automat-navi-skory-alumt-full-ID6DUmyZ.html#ac7236e7d9
+Volvo,V50 2.0D,2004 ,Diesel,9700,PLN,https://www.otomoto.pl/oferta/volvo-v50-volvo-v50-2-0d-ID6DUmyY.html#ac7236e7d9
+Honda,Civic,2009 ,Gasoline+LPG,27900,PLN,https://www.otomoto.pl/oferta/honda-civic-honda-civic-1-8-i-vtec-140-km-lpg-ID6DUmyV.html#ac7236e7d9
+Peugeot,407,2007 ,Diesel,6400,PLN,https://www.otomoto.pl/oferta/peugeot-407-peugeot-407-sw-2-0-hdi-136km-ID6DUmyW.html#ac7236e7d9
+Volkswagen,Passat 2.0,2016 ,Diesel,70900,PLN,https://www.otomoto.pl/oferta/volkswagen-passat-polski-salon-i-pierwszy-wlasciciel-ID6DUmyS.html#ac7236e7d9
+Ford,Fiesta 1.25,2011 ,Gasoline,20900,PLN,https://www.otomoto.pl/oferta/ford-fiesta-ford-fiesta-1-25-duratec-82-km-serwis-ford-ID6DUmyQ.html#ac7236e7d9
+Mercedes-Benz,Klasa E 220,2018 ,Diesel,162000,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-e-e-coup-4-matic-220d-ID6DUmyP.html#ac7236e7d9
+Lada,Kalina,2008 ,Gasoline,7999,PLN,https://www.otomoto.pl/oferta/lada-kalina-lada-kalina-ID6DUmyL.html#ac7236e7d9
+BMW,Seria 1 118d,2007 ,Diesel,16900,PLN,https://www.otomoto.pl/oferta/bmw-seria-1-bmw-seria1-118d-ID6DUmyG.html#ac7236e7d9
+Renault,Scenic,2004 ,Gasoline,8900,PLN,https://www.otomoto.pl/oferta/renault-scenic-1-6-16v-zadbana-czujniki-parkowania-hak-ID6DUmyA.html#ac7236e7d9
+Audi,A8 4.2,2003 ,Gasoline,35000,PLN,https://www.otomoto.pl/oferta/audi-a8-audi-a8-d3-benzyna-2003-r-niski-przebieg-125tys-ID6DUmyy.html#ac7236e7d9
+Opel,Adam 1.4,2018 ,Gasoline,42000,PLN,https://www.otomoto.pl/oferta/opel-adam-ID6DUmyx.html#ac7236e7d9
+Lexus,IS 200,1999 ,Gasoline,13000,PLN,https://www.otomoto.pl/oferta/lexus-is-lexus-is-200-1999-ID6DUmyw.html#ac7236e7d9
+BMW,Seria 5,2008 ,Diesel,27000,PLN,https://www.otomoto.pl/oferta/bmw-seria-5-bmw-5-e60-ID6DUmyt.html#ac7236e7d9
+Mazda,CX-3,2017 ,Gasoline,64500,PLN,https://www.otomoto.pl/oferta/mazda-cx-3-mazda-cx-3-ID6DUmys.html#ac7236e7d9
+Volkswagen,Jetta,2005 ,Gasoline,13900,PLN,https://www.otomoto.pl/oferta/volkswagen-jetta-2006r-bezwypadkowy-benzyna-1-6-mpi-dorze-wyposazony-i-zadbany-ID6DUmyr.html#ac7236e7d9
+Renault,Megane II,2003 ,Diesel,3150,PLN,https://www.otomoto.pl/oferta/renault-megane-renault-megane-ii-1-5-dci-ID6DUmyq.html#ac7236e7d9
+Opel,Vivaro,2004 ,Diesel,14700,PLN,https://www.otomoto.pl/oferta/opel-vivaro-opel-vivaro-1-9-cdti-5-osob-brygadowka-ID6DUmyl.html#ac7236e7d9
+Volkswagen,CC 2.0,2014 ,Diesel,63800,PLN,https://www.otomoto.pl/oferta/volkswagen-cc-vw-cc-r-line-r-line-4-motion-4x4-dsg-navi-led-bi-xenon-skora-ID6DUmym.html#e8f5480481
+Volkswagen,Arteon 2.0,2017 ,Gasoline,113000,PLN,https://www.otomoto.pl/oferta/volkswagen-arteon-2-0-tsi-190km-dsg-elegance-salon-polska-pierwszy-wlasciciel-ID6DUmyk.html#e8f5480481
+Volkswagen,Phaeton 3.2,2004 ,Gasoline+LPG,19000,PLN,https://www.otomoto.pl/oferta/volkswagen-phaeton-ladny-vw-phaeton-3-2-v6-lpg-full-zamiana-ID6DUmyi.html#e8f5480481
+BMW,Seria 3 330d,2006 ,Diesel,27500,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-bmw-e91-330d-m-pakiet-ID6DUmyf.html#e8f5480481
+Audi,A6 2.4,2004 ,Gasoline+LPG,23900,PLN,https://www.otomoto.pl/oferta/audi-a6-audi-a6-2-4-benzyna-gaz-bixenon-18cali-ID6DUmy5.html#e8f5480481
+BMW,Seria 7 730d,2013 ,Diesel,115000,PLN,https://www.otomoto.pl/oferta/bmw-seria-7-bezwypadkowa-piekna-biala-perla-ID6DUmxY.html#e8f5480481
+Ford,Fiesta 1.1,2018 ,Gasoline,33300,PLN,https://www.otomoto.pl/oferta/ford-fiesta-jeden-wlasciciel-start-stop-serwisowany-asystent-pasa-ruchu-ID6DUmxV.html#e8f5480481
+Fiat,Seicento,2003 ,Gasoline,3950,PLN,https://www.otomoto.pl/oferta/fiat-seicento-sprzedam-fiat-seicento-1-1-nowe-opony-zimowe-ID6DUmxU.html#e8f5480481
+BMW,X3 xDrive35i,2016 ,Gasoline,129150,PLN,https://www.otomoto.pl/oferta/bmw-x3-3-0-306km-oryginalny-przebieg-tylko-42000-km-x-line-harman-kardon-ID6DUmxT.html#e8f5480481
+Audi,A6 2.0,2004 ,Diesel,19900,PLN,https://www.otomoto.pl/oferta/audi-a6-bardzo-ladna-i-zadbana-a6c6-ID6DUmxO.html#e8f5480481
+Peugeot,307 2.0,2002 ,Diesel,5900,PLN,https://www.otomoto.pl/oferta/peugeot-307-peugeot-307-2-0-hdi-diesel-ID6DUmxN.html#e8f5480481
+Toyota,Avensis 1.8,2016 ,Gasoline,63000,PLN,https://www.otomoto.pl/oferta/toyota-avensis-1-8-premium-stan-wzorcowy-ID6DUmxM.html#e8f5480481
+Honda,Accord 2.0,2008 ,Gasoline,32900,PLN,https://www.otomoto.pl/oferta/honda-accord-honda-accord-viii-ID6DUmxI.html#e8f5480481
+Renault,Grand Scenic 1.6,2009 ,Gasoline+LPG,25900,PLN,https://www.otomoto.pl/oferta/renault-grand-scenic-renault-grand-scenic-1-6-16v-gaz-czujniki-parkowania-ID6DUmxH.html#e8f5480481
+Mazda,3,2006 ,Diesel,6100,PLN,https://www.otomoto.pl/oferta/mazda-3-mazda-3-1-6-diesel-109hp-2006-rok-klimatyzacja-automatyczna-ID6DUmxG.html#e8f5480481
+Volkswagen,Passat 1.9,2003 ,Diesel,7799,PLN,https://www.otomoto.pl/oferta/volkswagen-passat-volkswagen-passat-b5-fl-1-9-tdi-180km-chip-przelot-turbo-brd-6-biegow-ID6DUmxy.html#e8f5480481
+Renault,Kadjar 1.5,2017 ,Diesel,66500,PLN,https://www.otomoto.pl/oferta/renault-kadjar-renault-kadjar-1-5-dci-ID6DUmxv.html#e8f5480481
+BMW,Seria 5 530d,2008 ,Diesel,34900,PLN,https://www.otomoto.pl/oferta/bmw-seria-5-bmw-530-xd-prywatnie-od-7-lat-u-nas-bezwypadkowy-ID6DUmx1.html#e8f5480481
+Seat,Ateca 1.5,2019 ,Gasoline,105000,PLN,https://www.otomoto.pl/oferta/seat-ateca-fr-150-km-dsg-stan-idealny-gwarancja-cesja-lub-zakup-bogata-opcja-ID6DUmvS.html#e8f5480481
+Volkswagen,Golf VI,2009 ,Gasoline,23500,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-vi-1-4-tsi-highline-ID6DUmvR.html#e8f5480481
+Toyota,Corolla 2.0,2020 ,Electric/Gasoline,119800,PLN,https://www.otomoto.pl/oferta/toyota-corolla-toyota-corolla-2-0-hybrid-executive-184km-ID6DUmvQ.html#e8f5480481
+Mitsubishi,Lancer 1.8,2010 ,Gasoline,22900,PLN,https://www.otomoto.pl/oferta/mitsubishi-lancer-pierwszy-wlasciciel-bezwypadkowy-z-polskiego-salonu-ID6DUmvO.html#e8f5480481
+Ford,Focus 1.6,2013 ,Diesel,20900,PLN,https://www.otomoto.pl/oferta/ford-focus-ID6DUmvM.html#e8f5480481
+Volkswagen,Golf Plus 1.9,2007 ,Diesel,19400,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-plus-1-9-tdi-cross-climatronic-alu-bezwypadkowy-z-niemiec-ID6DUmvL.html#e8f5480481
+Renault,Espace,2011 ,Diesel,20600,PLN,https://www.otomoto.pl/oferta/renault-espace-ID6DUmvK.html#e8f5480481
+Volkswagen,Polo 1.4,2004 ,Gasoline,4800,PLN,https://www.otomoto.pl/oferta/volkswagen-polo-1-4-benzyna-klimatyzacja-tempomat-zadbany-ID6DUmvJ.html#e8f5480481
+Opel,Agila,2008 ,Gasoline+LPG,11900,PLN,https://www.otomoto.pl/oferta/opel-agila-opel-agila-2008-1-0-65-km-benzyn-gaz-ID6DUmvH.html#e8f5480481
+BMW,X4 M40i,2017 ,Gasoline,154980,PLN,https://www.otomoto.pl/oferta/bmw-x4-m-performance-360-km-4-9s-do-100km-h-harman-kardon-kamera-360-ID6DUmvG.html#e8f5480481
+BMW,Seria 6 645,2005 ,Gasoline,69900,PLN,https://www.otomoto.pl/oferta/bmw-seria-6-import-japonia-tylko-33-tys-km-pierwszy-lakier-ID6DUmvD.html#e8f5480481
+Hyundai,i20 1.2,2012 ,Gasoline,17400,PLN,https://www.otomoto.pl/oferta/hyundai-i20-1-2-8v-z-niemiec-po-oplatach-serwisowany-klima-ID6DUmvA.html#e8f5480481
+Opel,Corsa 1.2,2004 ,Gasoline,4500,PLN,https://www.otomoto.pl/oferta/opel-corsa-opel-corsa-c-1-2-ID6DUmvz.html#e8f5480481
+Citroen,C5 2.2,2003 ,Diesel,1500,PLN,https://www.otomoto.pl/oferta/citroen-c5-citroen-c5-hydraulika-zawieszenia-uszkodzona-ID6DUmvv.html#e8f5480481
+BMW,X3 xDrive20d,2011 ,Diesel,64999,PLN,https://www.otomoto.pl/oferta/bmw-x3-bmw-x3-salon-polska-1-wlasciciel-m-pakiet-ID6DUmvw.html#b6da004052
+Citroen,C4 1.4,2008 ,Gasoline,9999,PLN,https://www.otomoto.pl/oferta/citroen-c4-serwis-krajowy-climatronic-ID6DUmvu.html#b6da004052
+Volkswagen,Multivan,2009 ,Diesel,41500,PLN,https://www.otomoto.pl/oferta/volkswagen-multivan-1-9tdi-multivan-startline-klimatyzacja-tempomat-lozko-zarejestrowany-ID6DUmvs.html#b6da004052
+Seat,Altea,2005 ,Diesel,9900,PLN,https://www.otomoto.pl/oferta/seat-altea-seat-altea-ID6DUmvr.html#b6da004052
+MINI,Cooper,2003 ,Gasoline,11700,PLN,https://www.otomoto.pl/oferta/mini-cooper-mini-cooper-r50-1-6-benzyna-2003-ID6DUmvp.html#b6da004052
+Skoda,Fabia 1.4,2008 ,Gasoline+LPG,14900,PLN,https://www.otomoto.pl/oferta/skoda-fabia-skoda-fabia-ii-1-4-16v-style-lpg-stag-ID6DUmvn.html#b6da004052
+Opel,Meriva 1.4,2015 ,Gasoline,38500,PLN,https://www.otomoto.pl/oferta/opel-meriva-opel-meriva-b-2015-polski-salon-1-wlasciciel-jak-nowy-ID6DUmvg.html#b6da004052
+Suzuki,Grand Vitara 2.0,2006 ,Gasoline+LPG,24900,PLN,https://www.otomoto.pl/oferta/suzuki-grand-vitara-suzuki-grand-vitara-ID6DUmvf.html#b6da004052
+Volkswagen,Eos 1.4,2008 ,Gasoline,21900,PLN,https://www.otomoto.pl/oferta/volkswagen-eos-vw-eos-ID6DUmvd.html#b6da004052
+Audi,A4 Avant,2006 ,Diesel,11000,PLN,https://www.otomoto.pl/oferta/audi-a4-sprzedam-audi-a4-b7-z-2006-roku-ID6DUmvc.html#b6da004052
+Renault,Clio,2008 ,Diesel,12500,PLN,https://www.otomoto.pl/oferta/renault-clio-renoult-clio-1-5-automat-ID6DUmva.html#b6da004052
+Opel,Astra,2018 ,Gasoline,47900,PLN,https://www.otomoto.pl/oferta/opel-astra-salon-polska-i-wlasciciel-fv-23-stan-idealny-bezwypadkowy-okazja-ID6DUmv3.html#b6da004052
+Fiat,500,2016 ,Gasoline,28000,PLN,https://www.otomoto.pl/oferta/fiat-500-fiat-500-ID6DUmv2.html#b6da004052
+Toyota,Corolla Verso 1.8,2005 ,Gasoline,10500,PLN,https://www.otomoto.pl/oferta/toyota-corolla-verso-ID6DUmwZ.html#b6da004052
+Mercedes-Benz,Klasa C 180,2004 ,Gasoline,14000,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-c-mercedes-benz-c180-ID6DUmwS.html#b6da004052
+BMW,Seria 3,2012 ,Diesel,59500,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-bmw-f30-modern-line-320d-ID6DUmwR.html#b6da004052
+Kia,Ceed 1.6,2013 ,Diesel,27500,PLN,https://www.otomoto.pl/oferta/kia-ceed-kia-ceed-ii-1-6-128km-kombi-serwisowana-do-konca-ID6DUmwQ.html#b6da004052
+Mercedes-Benz,Klasa S 320,2007 ,Diesel,49000,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-s-mercedes-w221-salon-pl-3-0diesel-263tys-km-ID6DUmwE.html#b6da004052
+Peugeot,307 1.6,2007 ,Gasoline,13200,PLN,https://www.otomoto.pl/oferta/peugeot-307-1-6-benzyna109km-face-lift2007-bialezegary-panorama-alu-pieknyoplacony-ID6DUmwB.html#b6da004052
+Citroen,C5,2012 ,Diesel,34900,PLN,https://www.otomoto.pl/oferta/citroen-c5-sprzedam-citroena-c-5-2-0-hdi-lift-nawi-led-pneumatyka-ID6DUmwA.html#b6da004052
+Mercedes-Benz,Viano 3.0,2009 ,Diesel,57999,PLN,https://www.otomoto.pl/oferta/mercedes-benz-viano-long-fun-3-0-cdi-v6-camper-navi-klima-automat-ID6DUmwy.html#b6da004052
+Volkswagen,Golf 2.0,2014 ,Diesel,45900,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-vw-golf-2-0-tdi-dsg-navi-alu-radar-ID6DUmwx.html#b6da004052
+Volkswagen,Golf V,2007 ,Gasoline,11440,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-volkswagen-golf-v-salon-polska-serwisowany-pierwszy-wlasciciel-ID6DUmwv.html#b6da004052
+Ford,Transit 300,2011 ,Diesel,29500,PLN,https://www.otomoto.pl/oferta/ford-transit-transit-9-miejsc-klimatyzacja-tempomat-ID6DUmww.html#b6da004052
+Volkswagen,Transporter T5,2005 ,Diesel,29800,PLN,https://www.otomoto.pl/oferta/volkswagen-transporter-plsalon9-osob1-9-tdi-105-kmdlugioryginal-przebieg-235-tys-kmwlsc-ID6DUmwu.html#b6da004052
+Honda,Civic 1.4i,2004 ,Gasoline+LPG,9500,PLN,https://www.otomoto.pl/oferta/honda-civic-honda-civic-vii-sport-152-tys-wawa-ID6DUmwr.html#b6da004052
+Jeep,Cherokee 2.0,2014 ,Diesel,68500,PLN,https://www.otomoto.pl/oferta/jeep-cherokee-jeep-cherokee-2-0-limited-active-drive-ii-ID6DUmwq.html#b6da004052
+Audi,A3,2003 ,Gasoline,9600,PLN,https://www.otomoto.pl/oferta/audi-a3-audi-a3-1-6-benzyna-klimatronic-ID6DUmwo.html#b6da004052
+Volkswagen,Passat Variant,2012 ,Diesel,28500,PLN,https://www.otomoto.pl/oferta/volkswagen-passat-vw-passat-1-6-d-ID6DUmwn.html#b6da004052
+Volvo,S60 D3,2016 ,Diesel,56900,PLN,https://www.otomoto.pl/oferta/volvo-s60-piekne-volvo-s60-ID6DUmwh.html#b6da004052
+Seat,Cordoba Vario,2003 ,Gasoline,5500,PLN,https://www.otomoto.pl/oferta/seat-cordoba-ID6DUmwi.html#b6da004052
+Volvo,S70 2.5,1998 ,Gasoline,4900,PLN,https://www.otomoto.pl/oferta/volvo-s70-i-wlasciciel-2-4-170km-stan-bardzo-dobry-wazne-oplaty-okaja-ID6DUmwd.html#b6da004052
+Skoda,Kodiaq,2019 ,Gasoline,121000,PLN,https://www.otomoto.pl/oferta/skoda-kodiaq-sprzedam-ID6DUmwc.html#aa09966527
+Audi,A6,1999 ,Gasoline+LPG,12900,PLN,https://www.otomoto.pl/oferta/audi-a6-audi-a6-2-4-v6-ID6DUmw8.html#aa09966527
+Mercedes-Benz,Klasa A 200,2004 ,Gasoline,13700,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-a-2-0b-136km-avantgarde-navi-czarny-czujniki-panorama-serwis-z-niemiec-ID6DUmw6.html#aa09966527
+Volkswagen,Golf Plus 1.9,2007 ,Diesel,15900,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-plus-golf-plus-1-9tdi-ID6DUmw5.html#aa09966527
+BMW,X6 M M50d,2015 ,Diesel,249000,PLN,https://www.otomoto.pl/oferta/bmw-x6-m-bmw-x6-m50d-3-0-diesel-r6-381km-salon-pl-produkcja-2015-ID6DUmw0.html#aa09966527
+Peugeot,206 CC 2.0,2002 ,Gasoline,9400,PLN,https://www.otomoto.pl/oferta/peugeot-206-cc-peugeot-206cc-cabrio-2-0-warszawa-stan-idealny-szwajcaria-ID6DUmuP.html#aa09966527
+Toyota,Avensis 2.0,2017 ,Diesel,61900,PLN,https://www.otomoto.pl/oferta/toyota-avensis-toyota-avensis-2-0-d-4d-143km-salon-polska-1-wl-ID6DUmuN.html#aa09966527
+Seat,Altea XL 1.6,2011 ,Diesel,25500,PLN,https://www.otomoto.pl/oferta/seat-altea-xl-1-6-tdi-serwisowany-2011-rok-przebieg-172-tys-ID6DUmuM.html#aa09966527
+Opel,Astra,2013 ,Diesel,31900,PLN,https://www.otomoto.pl/oferta/opel-astra-opel-astra-2013-1-7cdti-salon-polska-aso-klimatronik-tempomat-ID6DUmuL.html#aa09966527
+BMW,Seria 3 320d,2002 ,Diesel,9500,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-2-0d-150km-bixenon-oryginalny-przebieg-super-stan-ID6DUmuJ.html#aa09966527
+Volvo,S40 2.0D,2005 ,Diesel,8400,PLN,https://www.otomoto.pl/oferta/volvo-s40-volvo-s40-ii-ID6DUmuI.html#aa09966527
+Hyundai,i20 1.4,2016 ,Gasoline,37900,PLN,https://www.otomoto.pl/oferta/hyundai-i20-1-4-100km-alu-klima-grzane-fotele-i-kier-lane-assist-pdc-tempom-serwis-ID6DUmuF.html#aa09966527
+Opel,Astra 1.4,2015 ,Gasoline,47500,PLN,https://www.otomoto.pl/oferta/opel-astra-led-intellilux-salon-polska-1-wlasciciel-ID6DUmuB.html#aa09966527
+Audi,A4 2.0,2009 ,Gasoline,30500,PLN,https://www.otomoto.pl/oferta/audi-a4-audi-a4-b8-2-0-tfsi-211km-ID6DUmuA.html#aa09966527
+Toyota,Avensis 2.0,2009 ,Diesel,26900,PLN,https://www.otomoto.pl/oferta/toyota-avensis-avensis-salon-pl-serwisowany-ID6DUmux.html#aa09966527
+Volkswagen,Passat,2004 ,Diesel,7990,PLN,https://www.otomoto.pl/oferta/volkswagen-passat-1-9-tdi-130highlineclimatronicaluskorypelna-elektrykazadbany-ID6DUmuq.html#aa09966527
+Honda,Civic 1.4i,2003 ,Gasoline,7500,PLN,https://www.otomoto.pl/oferta/honda-civic-dla-ceniacych-dobra-jakosc-ID6DUmup.html#aa09966527
+BMW,X3 xDrive30i,2018 ,Gasoline,219000,PLN,https://www.otomoto.pl/oferta/bmw-x3-sprzedam-bmw-x3-30i-ID6DUmum.html#aa09966527
+Hyundai,Tucson,2021 ,Gasoline,26700,PLN,https://www.otomoto.pl/oferta/hyundai-tucson-executive-1-6t-150km-ID6DUmuf.html#aa09966527
+Toyota,Yaris,2012 ,Gasoline,3400,PLN,https://www.otomoto.pl/oferta/toyota-yaris-idealny-stan-100-bezwypadkowy-niski-przebieg-ID6DUmue.html#aa09966527
+Honda,Accord,2000 ,Gasoline,28900,PLN,https://www.otomoto.pl/oferta/honda-accord-honda-accord-2000r-ID6DUmua.html#aa09966527
+Mercedes-Benz,Klasa R 320,2007 ,Diesel,49900,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-r-long-4matic-stan-b-dobry-bogate-wyposazenie-3-2-cdi-zamiana-okazja-ID6DUmu9.html#aa09966527
+Renault,Clio 1.2,2015 ,Gasoline,9000,PLN,https://www.otomoto.pl/oferta/renault-clio-clio-iv-gt-120-km-automat-nowy-silnik-rzadki-model-ID6DUmtZ.html#aa09966527
+Skoda,Fabia 1.2,2004 ,Gasoline,5500,PLN,https://www.otomoto.pl/oferta/skoda-fabia-skoda-fabia-jak-nowa-ID6DUmtY.html#aa09966527
+Opel,Corsa,2004 ,Gasoline,28000,PLN,https://www.otomoto.pl/oferta/opel-corsa-w-bardzo-dobrym-stanie-z-szyberdachem-ID6DUmtV.html#aa09966527
+BMW,Seria 3 320i,2007 ,Gasoline,120000,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-sprzedam-bmw-e92-ID6DUmtP.html#aa09966527
+Opel,Insignia Grand,2019 ,Gasoline,12500,PLN,https://www.otomoto.pl/oferta/opel-insignia-sprzedam-ID6DUmtH.html#aa09966527
+Renault,Clio 1.5,2007 ,Diesel,5500,PLN,https://www.otomoto.pl/oferta/renault-clio-renault-clio-iii-1-5-dci-bardzo-zadbane-salon-polska-ID6DUmtG.html#aa09966527
+Volvo,V50 1.6D,2007 ,Diesel,73900,PLN,https://www.otomoto.pl/oferta/volvo-v50-volvo-v50-uszkodzony-silnik-ID6DUmtF.html#aa09966527
+BMW,X3 xDrive20d,2012 ,Diesel,9200,PLN,https://www.otomoto.pl/oferta/bmw-x3-bmw-x3-xdrive20d-ID6DUmtE.html#aa09966527
+Mitsubishi,Grandis,2005 ,Diesel,11200,PLN,https://www.otomoto.pl/oferta/mitsubishi-grandis-grandis-stan-idealny-ID6DUmtC.html#aa09966527
+Opel,Vivaro 1.6,2016 ,Diesel,49900,PLN,https://www.otomoto.pl/oferta/opel-vivaro-bezwypadkowy-ID6DUmtx.html#16ddcf84f0
+Volkswagen,Passat 2.0,2011 ,Diesel,30900,PLN,https://www.otomoto.pl/oferta/volkswagen-passat-alumy-klimatronic-tempomat-2-0tdi-140km-serwis-z-niemiec-oplacony-ID6DUmtw.html#16ddcf84f0
+Skoda,Citigo 1.0,2013 ,Gasoline,21900,PLN,https://www.otomoto.pl/oferta/skoda-citigo-1-0-mpi-5-drzwi-panorama-dach-unikatowy-kolor-przebieg-56-tys-km-ID6DUmtt.html#16ddcf84f0
+Volkswagen,Golf e-Golf,2016 ,Diesel,65000,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-volkswagen-e-golf-ID6DUmtp.html#16ddcf84f0
+Citroen,C5,2006 ,Diesel,6750,PLN,https://www.otomoto.pl/oferta/citroen-c5-citroen-c5-ii-sedan-diesel-ID6DUmtl.html#16ddcf84f0
+Opel,Astra III,2007 ,Gasoline,15200,PLN,https://www.otomoto.pl/oferta/opel-astra-opel-astra-opc-line-ID6DUmtj.html#16ddcf84f0
+Fiat,Grande Punto 1.4,2009 ,Gasoline,11600,PLN,https://www.otomoto.pl/oferta/fiat-grande-punto-fiat-grande-punto-sprowadzony-z-niemiec-stan-idealny-ID6DUmth.html#16ddcf84f0
+Volkswagen,Golf V,2005 ,Diesel,12900,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-5-drzwi-nowe-opony-przeglad-do-2022-isofix-climatronic-esp-ID6DUmtf.html#16ddcf84f0
+Nissan,Note 1.5,2007 ,Diesel,8500,PLN,https://www.otomoto.pl/oferta/nissan-note-ID6DUmtd.html#16ddcf84f0
+Audi,A3 2.0,2016 ,Gasoline,68900,PLN,https://www.otomoto.pl/oferta/audi-a3-piekna-a3-s-line-ledy-klimatronic-bezwypadkowy-ID6DUmtc.html#16ddcf84f0
+Volkswagen,Scirocco 1.4,2011 ,Diesel,34900,PLN,https://www.otomoto.pl/oferta/volkswagen-scirocco-volkswagen-scirocco-1-4-dsg-ID6DUmt9.html#16ddcf84f0
+Audi,A6 3.0,2012 ,Gasoline,39500,PLN,https://www.otomoto.pl/oferta/audi-a6-sprzedam-bardzo-ladna-audi-a6-3-0-313-koni-ID6DUmt8.html#16ddcf84f0
+Hyundai,Getz 1.1,2007 ,Diesel,9900,PLN,https://www.otomoto.pl/oferta/hyundai-getz-hyundai-getz-1-1-stan-bardzo-dobry-ID6DUmt3.html#16ddcf84f0
+Audi,A6 Avant,2015 ,Diesel,84900,PLN,https://www.otomoto.pl/oferta/audi-a6-navi-xenon-led-alumy-lift-aktywny-wydech-super-stan-z-niemiec-ID6DUmsV.html#16ddcf84f0
+Opel,Vectra 3.0,2007 ,Gasoline,7000,PLN,https://www.otomoto.pl/oferta/opel-vectra-opel-vectra-c-3-0-lift-ID6DUmsQ.html#16ddcf84f0
+Renault,Laguna 2.0,2011 ,Gasoline,31900,PLN,https://www.otomoto.pl/oferta/renault-laguna-iii-phase-ii-polski-salon-1-wlasciciel-ID6DUmsN.html#16ddcf84f0
+Toyota,Yaris 1.33,2010 ,Diesel,23900,PLN,https://www.otomoto.pl/oferta/toyota-yaris-toyota-yaris-2010-ID6DUmsJ.html#16ddcf84f0
+Kia,Ceed Cee'd,2008 ,Gasoline,13500,PLN,https://www.otomoto.pl/oferta/kia-ceed-kia-ceed-polski-salon-bezwypadkowy-2gi-wlasciciel-ID6DUmsB.html#16ddcf84f0
+Opel,Zafira,2015 ,Diesel,40900,PLN,https://www.otomoto.pl/oferta/opel-zafira-1-4t140kmduza-navi2xparktronik7-foteliaso-opel-ID6DUmst.html#16ddcf84f0
+BMW,X4 xDrive20d,2015 ,Diesel,113000,PLN,https://www.otomoto.pl/oferta/bmw-x4-x4-ladna-zobacz-warto-ID6DUmsq.html#16ddcf84f0
+Land-Rover,Rover Discovery,2008 ,Diesel,39500,PLN,https://www.otomoto.pl/oferta/land-rover-discovery-land-rover-discovery-3-full-opcja-hse-prywatny-salon-polska-ID6DUmsp.html#16ddcf84f0
+Ford,Mondeo,2010 ,Diesel,22900,PLN,https://www.otomoto.pl/oferta/ford-mondeo-2-0tdci140kmtitanium-sskory18-aluparktr-ID6DUmso.html#16ddcf84f0
+Nissan,Navara DC,2017 ,Diesel,68500,PLN,https://www.otomoto.pl/oferta/nissan-navara-ful-wersja-niemcy-bezwypadek-automat-skory-grzane-wentylowane-ID6DUmsm.html#16ddcf84f0
+BMW,Seria 3 320d,2006 ,Diesel,22900,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-2-0d163kmskoryduza-navigrz-fotelei-wlalu-17-aso-bmw-ID6DUmsi.html#16ddcf84f0
+Skoda,Superb 2.0,2017 ,Diesel,106000,PLN,https://www.otomoto.pl/oferta/skoda-superb-skoda-superb-190km-najbogatsza-wersja-l-ampampampampampk-2-0tdi-ID6DUmse.html#16ddcf84f0
+Audi,A3,2008 ,Gasoline,20990,PLN,https://www.otomoto.pl/oferta/audi-a3-audi-a3-zadbane-ID6DUmsd.html#16ddcf84f0
+BMW,Seria 3 318i,2006 ,Gasoline,18500,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-bmw-e90-ID6DUmsc.html#16ddcf84f0
+Mercedes-Benz,Klasa V 230,1997 ,Diesel,11900,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-v-v230160tyskmhiszpaniaklimatrend-ID6DUmsb.html#16ddcf84f0
+Audi,Q5 3.0,2013 ,Gasoline,69900,PLN,https://www.otomoto.pl/oferta/audi-q5-3-0tdi-245kmliftradarnaviskoryel-fotelekamerafull-opcja-ID6DUmsa.html#16ddcf84f0
+BMW,Seria 3 316i,2000 ,Gasoline,2850,PLN,https://www.otomoto.pl/oferta/bmw-seria-3-sprzedam-bmw-316i-compact-ID6DUms9.html#16ddcf84f0
+Audi,A4,2008 ,Gasoline,34900,PLN,https://www.otomoto.pl/oferta/audi-a4-s-line-b-o-bezwypadkowa-skora-alcantara-ID6DUms8.html#16ddcf84f0
+Mercedes-Benz,Klasa C 200,2008 ,Gasoline,33900,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-c-kompressor184kmavantgardexenonnavikameraskoryharman-kardon-ID6DUms6.html#8e84774f61
+Ford,Fiesta 1.0,2014 ,Gasoline,22900,PLN,https://www.otomoto.pl/oferta/ford-fiesta-ID6DUms5.html#8e84774f61
+Hyundai,Getz 1.5,2005 ,Diesel,4400,PLN,https://www.otomoto.pl/oferta/hyundai-getz-hyundai-getz-bezwypadkowy-od-2009r-w-kraju-jedyny-wlasciciel-ID6DUms1.html#8e84774f61
+Mercedes-Benz,Vaneo,2003 ,Diesel,4500,PLN,https://www.otomoto.pl/oferta/mercedes-benz-vaneo-mercedes-vaneo-1-7-ID6DUmrT.html#8e84774f61
+Ford,Transit Connect (Lang),2012 ,Diesel,18325,PLN,https://www.otomoto.pl/oferta/ford-transit-connect-ford-transit-connect-trend-max-salon-pl-ii-wlasciciel-f-ra-vat-ID6DUmrS.html#8e84774f61
+Hyundai,Tucson,2021 ,Gasoline,33900,PLN,https://www.otomoto.pl/oferta/hyundai-tucson-nline-executive-ID6DUmrR.html#8e84774f61
+Mercedes-Benz,ML 320,2007 ,Diesel,22800,PLN,https://www.otomoto.pl/oferta/mercedes-benz-ml-mercedes-benz-ml-w164-320-cdi-v6-diesel-4matic-bez-pneumatyki-22-cale-ID6DUmrQ.html#8e84774f61
+Volkswagen,Golf 1.4,2009 ,Gasoline,41800,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-ID6DUmrO.html#8e84774f61
+Renault,Captur 0.9,2019 ,Gasoline,43000,PLN,https://www.otomoto.pl/oferta/renault-captur-renault-captur-0-9-ID6DUmrN.html#8e84774f61
+Kia,Optima 1.7,2012 ,Diesel,16400,PLN,https://www.otomoto.pl/oferta/kia-optima-kia-optima-1-7-crdi-wersja-xl-2012-rok-ID6DUmrM.html#8e84774f61
+Volkswagen,Passat 2.0,2008 ,Diesel,11900,PLN,https://www.otomoto.pl/oferta/volkswagen-passat-volkswagen-passat-dsg-ID6DUmrH.html#8e84774f61
+Peugeot,206 plus 206+,2009 ,Gasoline,11900,PLN,https://www.otomoto.pl/oferta/peugeot-206-plus-peugeot-206-plus-ID6DUmrD.html#8e84774f61
+Volkswagen,Polo 1.2,2006 ,Gasoline+LPG,7500,PLN,https://www.otomoto.pl/oferta/volkswagen-polo-volkswagen-polo-iv-ID6DUmrz.html#8e84774f61
+Hyundai,i20,2009 ,Gasoline+LPG,25900,PLN,https://www.otomoto.pl/oferta/hyundai-i20-benzyna-z-lpg-ID6DUmry.html#8e84774f61
+Opel,Insignia 2.0,2009 ,Diesel,35000,PLN,https://www.otomoto.pl/oferta/opel-insignia-opel-insignia-2009-rok-diesel-ID6DUmrv.html#8e84774f61
+Toyota,Yaris,2017 ,Gasoline,7900,PLN,https://www.otomoto.pl/oferta/toyota-yaris-toyota-yaris-2017-benzyna-ID6DUmrw.html#8e84774f61
+Citroen,Xsara Picasso 1.6,2007 ,Diesel,65000,PLN,https://www.otomoto.pl/oferta/citroen-xsara-picasso-120tys-km-ID6DUmrr.html#8e84774f61
+Cadillac,Escalade 6.2,2007 ,Gasoline+LPG,7200,PLN,https://www.otomoto.pl/oferta/cadillac-escalade-cadillac-escalade-6-2-v8-409-km-lpg-2-komplety-kol-doinwestowany-ID6DUmrq.html#8e84774f61
+Chevrolet,Lacetti 1.4,2006 ,Gasoline,17700,PLN,https://www.otomoto.pl/oferta/chevrolet-lacetti-wymieniony-rozrzad-po-serwisie-olejowym-wazne-oc-i-przeglad-ID6DUmrp.html#8e84774f61
+Ford,C-MAX 1.6,2011 ,Diesel,22900,PLN,https://www.otomoto.pl/oferta/ford-c-max-auto-sprowadzone-bogate-wyposazenie-serwisowany-ID6DUmrl.html#8e84774f61
+Opel,Astra,2010 ,Gasoline,7999,PLN,https://www.otomoto.pl/oferta/opel-astra-1-616vpo-oplatachklimatronikxenonlednavi-ID6DUmrg.html#8e84774f61
+Opel,Vectra,2007 ,Diesel,74900,PLN,https://www.otomoto.pl/oferta/opel-vectra-opel-vectra-c-lift-2007-ID6DUmrf.html#8e84774f61
+Audi,A6 2.0,2013 ,Diesel,34000,PLN,https://www.otomoto.pl/oferta/audi-a6-xenon-led-sedan-servis-oryginal-igla-prywatnie-ID6DUmre.html#8e84774f61
+Hyundai,i20,2017 ,Gasoline,79990,PLN,https://www.otomoto.pl/oferta/hyundai-i20-sprzedam-hyundai-i20-2017-43-tys-przebiegu-34000-zl-ID6DUmrc.html#8e84774f61
+Jaguar,XK,2007 ,Gasoline,6500,PLN,https://www.otomoto.pl/oferta/jaguar-xk-xk-r-4-2-kompressor-420-km-skora-xenon-lopatki-klima-alufelgi-ID6DUmqL.html#8e84774f61
+Daihatsu,YRV,2002 ,Gasoline,89000,PLN,https://www.otomoto.pl/oferta/daihatsu-yrv-4wd-2002-rok-benzyna-4x4-ID6DUmqG.html#8e84774f61
+Mazda,CX-5,2017 ,Gasoline,31900,PLN,https://www.otomoto.pl/oferta/mazda-cx-5-mazda-cx-5-2017r-automat-ID6DUmqA.html#8e84774f61
+Audi,A3 1.6,2011 ,Diesel,49990,PLN,https://www.otomoto.pl/oferta/audi-a3-audi-a3-1-6-tdi-ID6DUmqh.html#8e84774f61
+BMW,Seria 1,2009 ,Gasoline,29000,PLN,https://www.otomoto.pl/oferta/bmw-seria-1-128i-3-0-benzyna-233-km-klima-skora-automat-isofix-szyberdach-ID6DUmqe.html#8e84774f61
+Ford,Mondeo 2.0,2011 ,Diesel,1150,PLN,https://www.otomoto.pl/oferta/ford-mondeo-ford-mondeo-kombi-titanium-140-km-faktura-vat-ID6DUmqa.html#8e84774f61
+Seat,Cordoba 1.6,1998 ,Gasoline,112800,PLN,https://www.otomoto.pl/oferta/seat-cordoba-zarezerwowany-seat-cordoba-1-gen-1-6-ID6DUmq4.html#8e84774f61
+Mazda,3,2009 ,Diesel,22000,PLN,https://www.otomoto.pl/oferta/mazda-3-sprzedaz-ID6DUmpC.html#cde402e340
+Seat,Leon 1.6,2005 ,Gasoline,13950,PLN,https://www.otomoto.pl/oferta/seat-leon-05r-1-6-sr-102km-klima-wspomaganie-alu-sprowadzony-oplacony-ID6DUmpv.html#cde402e340
+Audi,A3 2.0T,2005 ,Gasoline,18500,PLN,https://www.otomoto.pl/oferta/audi-a3-audi-a3-2-0-tfsi-quattro-2005-rok-ID6DUmpt.html#cde402e340
+Volkswagen,Tiguan 2.0,2012 ,Diesel,61900,PLN,https://www.otomoto.pl/oferta/volkswagen-tiguan-serwisowany-w-aso-stan-idealny-bogata-wersja-ID6DUmoX.html#cde402e340
+BMW,Seria 5 520d,2015 ,Diesel,97500,PLN,https://www.otomoto.pl/oferta/bmw-seria-5-190km-m-pakiet-ID6DUmoU.html#cde402e340
+MINI,ONE,2007 ,Gasoline,16900,PLN,https://www.otomoto.pl/oferta/mini-one-stylowy-elegancki-nie-okazja-ID6DUmoM.html#cde402e340
+Citroen,C4 1.6,2006 ,Gasoline+LPG,7500,PLN,https://www.otomoto.pl/oferta/citroen-c4-citroen-c4-1-6-16v-magic-hatchback-2006-ID6DUmoq.html#cde402e340
+Audi,A3 1.9,2005 ,Diesel,16500,PLN,https://www.otomoto.pl/oferta/audi-a3-sprzedam-audi-a3-1-9-tdi-105-km-ID6DUmo9.html#cde402e340
+Toyota,RAV4 Hybrid,2016 ,Electric/Gasoline,98000,PLN,https://www.otomoto.pl/oferta/toyota-rav4-ID6DUmo0.html#cde402e340
+Lexus,GS,2007 ,Electric/Gasoline,36900,PLN,https://www.otomoto.pl/oferta/lexus-gs-lexus-gs-450h-ID6DUmnD.html#cde402e340
+Opel,Astra IV,2015 ,Gasoline+LPG,34900,PLN,https://www.otomoto.pl/oferta/opel-astra-1-4i-mfi-turbo-140km-fabryczny-lpg-super-stan-bezwypadkowy-serwisowany-ID6DUmnm.html#cde402e340
+Honda,Civic 2.0,2017 ,Gasoline,118999,PLN,https://www.otomoto.pl/oferta/honda-civic-honda-civic-type-r-bezwypadkowy-polski-salon-1-wlasciciel-ID6DUmmY.html#cde402e340
+Volvo,V50,2007 ,Diesel,11700,PLN,https://www.otomoto.pl/oferta/volvo-v50-ID6DUmmN.html#cde402e340
+Kia,Carnival 2.9,2005 ,Diesel,2100,PLN,https://www.otomoto.pl/oferta/kia-carnival-kia-carnival-2-9-ID6DUmmA.html#cde402e340
+BMW,Seria 6 640d,2014 ,Diesel,129900,PLN,https://www.otomoto.pl/oferta/bmw-seria-6-grand-coupe-m-pakiet-xdrive-zamiana-ID6DUmmr.html#cde402e340
+Honda,Civic 1.8,2007 ,Gasoline,18500,PLN,https://www.otomoto.pl/oferta/honda-civic-honda-civic-executive-1-8-sal-pol-i-wlasciciel-ID6DUmmh.html#cde402e340
+Alfa-Romeo,Romeo Giulietta 1.4,2013 ,Gasoline,42900,PLN,https://www.otomoto.pl/oferta/alfa-romeo-giulietta-1-4-benzyna-automat-salon-pl-170-km-2xkpl-alufelg-lato-zima-ID6DUmm8.html#cde402e340
+Opel,Astra,2016 ,Gasoline+LPG,38500,PLN,https://www.otomoto.pl/oferta/opel-astra-1-6-16v-salon-polska-1-wlasciciel-gaz-skora-klima-tempomat-ID6DUmm3.html#cde402e340
+Opel,Insignia,2015 ,Gasoline,46000,PLN,https://www.otomoto.pl/oferta/opel-insignia-vauxhall-insignia-1-4-limited-edition-s-s-ID6DUmm1.html#cde402e340
+Ford,Focus,2015 ,Gasoline,36000,PLN,https://www.otomoto.pl/oferta/ford-focus-1-6-i-salon-polska-serwis-aso-klima-ID6DUmlK.html#cde402e340
+Ford,Focus 1.8,2004 ,Diesel,2600,PLN,https://www.otomoto.pl/oferta/ford-focus-focus-2004-rok-ddi-ID6DUmlx.html#cde402e340
+Audi,A3 2.0,2005 ,Diesel,13500,PLN,https://www.otomoto.pl/oferta/audi-a3-audi-a3-8p-sportback-s-line-2-0-tdi-ID6DUmlw.html#cde402e340
+Mitsubishi,Colt 1.3,2006 ,Gasoline,7900,PLN,https://www.otomoto.pl/oferta/mitsubishi-colt-oplacony-bogata-wersja-atrakcyjny-wyglad-ID6DUmle.html#cde402e340
+MINI,Cooper Standard,2006 ,Gasoline,11999,PLN,https://www.otomoto.pl/oferta/mini-cooper-ID6DUmkV.html#cde402e340
+Citroen,C2 1.1,2005 ,Gasoline,5300,PLN,https://www.otomoto.pl/oferta/citroen-c2-sprzedam-citroen-c2-2005r-przebieg-122600-km-stan-bardzo-dobry-ID6DUmkR.html#cde402e340
+Volkswagen,Passat 1.6,1999 ,Gasoline,8700,PLN,https://www.otomoto.pl/oferta/volkswagen-passat-bezwypadkowy-pierwszy-wlasciciel-ID6DUmkN.html#cde402e340
+Opel,Insignia 2.0,2009 ,Diesel,27500,PLN,https://www.otomoto.pl/oferta/opel-insignia-opel-insignia-2-0-160km-ID6DUmkC.html#cde402e340
+Toyota,Auris 1.4,2008 ,Diesel,17000,PLN,https://www.otomoto.pl/oferta/toyota-auris-toyota-auris-pierwszy-wlasciciel-salon-polska-ID6DUmkx.html#cde402e340
+Opel,Insignia 2.0,2009 ,Diesel,18900,PLN,https://www.otomoto.pl/oferta/opel-insignia-opel-insignia-2-0cdti-combi-ID6DUmkn.html#cde402e340
+Volkswagen,Polo 1.2,2012 ,Gasoline,22500,PLN,https://www.otomoto.pl/oferta/volkswagen-polo-1-2-mpi-2012r-kubelki-pol-skory-dobrze-wyposazony-gwarancaj-film-ID6DUmkh.html#cde402e340
+Renault,Clio 1.2,2015 ,Gasoline,35500,PLN,https://www.otomoto.pl/oferta/renault-clio-renault-clio-1-2-74km-klima-navi-tempomat-ID6DUmk8.html#cde402e340
+Mitsubishi,Outlander 2.2,2011 ,Diesel,35000,PLN,https://www.otomoto.pl/oferta/mitsubishi-outlander-mitsubishi-outlander-2-2-ID6DUmk3.html#cde402e340
+Mazda,6,2006 ,Diesel,5500,PLN,https://www.otomoto.pl/oferta/mazda-6-skora-xenon-ID6DUmk0.html#cae3759e3b
+Ford,Focus 1.6,2007 ,Gasoline,10500,PLN,https://www.otomoto.pl/oferta/ford-focus-1-6-benzyna-klima-elektryka-5-drzwi-lift-oplacony-zarejestrowany-ID6DUmjW.html#cae3759e3b
+Citroen,C2 1.1,2007 ,Gasoline,7650,PLN,https://www.otomoto.pl/oferta/citroen-c2-1-1-vtr-2007r-sprawna-klima-bez-rdzy-zadbany-gwarancja-film-yt-ID6DUmjR.html#cae3759e3b
+Citroen,C4,2007 ,Gasoline+LPG,7800,PLN,https://www.otomoto.pl/oferta/citroen-c4-1-4-vti-benzyna-lpg-2007-ID6DUmjP.html#cae3759e3b
+Volkswagen,Golf,2003 ,Diesel,6200,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-golf-4-pacific-1-9-tdi-100km-klimatronik-ID6DUmjO.html#cae3759e3b
+Opel,Vectra 1.9,2006 ,Diesel,10800,PLN,https://www.otomoto.pl/oferta/opel-vectra-1-9-gts-ID6DUmjI.html#cae3759e3b
+Volkswagen,Passat 2.0,2018 ,Diesel,68899,PLN,https://www.otomoto.pl/oferta/volkswagen-passat-salon-fv23-gwarancja-serwisowa-pakiet-zimowy-business-kamera-ID6DUmjC.html#cae3759e3b
+Lincoln,MKZ,2012 ,Gasoline,38500,PLN,https://www.otomoto.pl/oferta/lincoln-mkz-lincoln-mkz-nie-mondeo-ID6DUmjs.html#cae3759e3b
+Audi,A1 1.6,2010 ,Diesel,11900,PLN,https://www.otomoto.pl/oferta/audi-a1-1-6tdi-105km-manual-ID6DUmjo.html#cae3759e3b
+Volkswagen,Passat 2.0,2006 ,Diesel,12900,PLN,https://www.otomoto.pl/oferta/volkswagen-passat-passat-b6-kombi-full-opcja-2-kluczyki-skora-alcantara-ID6DUmiO.html#cae3759e3b
+Audi,A6 2.4,2004 ,Gasoline,13800,PLN,https://www.otomoto.pl/oferta/audi-a6-ID6DUmik.html#cae3759e3b
+Skoda,Roomster,2008 ,Diesel,10900,PLN,https://www.otomoto.pl/oferta/skoda-roomster-ful-max-klima-tempom-alu-6bieg-grz-fotele-serwis-bezwkladu-okazja-gwar-ID6DUmib.html#cae3759e3b
+Chevrolet,Aveo,2008 ,Gasoline,9900,PLN,https://www.otomoto.pl/oferta/chevrolet-aveo-full-klima-pl-ele-lift-alu-serwis-superstan-bezwkladu-okazja-gwarancja-ID6DUmhP.html#cae3759e3b
+Volkswagen,Passat 2.0,2015 ,Gasoline,79500,PLN,https://www.otomoto.pl/oferta/volkswagen-passat-salon-pl-ID6DUmhK.html#cae3759e3b
+Peugeot,308 1.2,2018 ,Gasoline,61900,PLN,https://www.otomoto.pl/oferta/peugeot-308-opel-crossland-x-ID6DUmhJ.html#cae3759e3b
+Opel,Astra II,2002 ,Diesel,900,PLN,https://www.otomoto.pl/oferta/opel-astra-opel-astra-hatchback-2002r-1-7-diesel-ID6DUmhF.html#cae3759e3b
+Mercedes-Benz,Klasa R 320,2006 ,Diesel,22000,PLN,https://www.otomoto.pl/oferta/mercedes-benz-klasa-r-mercedes-r320-cdi-polski-salon-3-wlasciciel-prywatnie-ID6DUmhA.html#cae3759e3b
+Opel,Zafira,2006 ,Gasoline,11900,PLN,https://www.otomoto.pl/oferta/opel-zafira-full-klima-7osob-1-6pb-tempomat-superstan-serwis-bezwkladu-okazja-gwar-ID6DUmhv.html#cae3759e3b
+Kia,Ceed Cee'd,2012 ,Gasoline,31999,PLN,https://www.otomoto.pl/oferta/kia-ceed-1-4-mpi-100km-serwis-aso-129-tys-ladna-ceed-2-ii-alufelgi-gwarancja-ID6DUmhj.html#cae3759e3b
+Opel,Astra 1.6,2011 ,Gasoline,26000,PLN,https://www.otomoto.pl/oferta/opel-astra-opel-astra-h-2011-benzyna-1-6-115km-zadbany-garazowany-ID6DUmhb.html#cae3759e3b
+Volkswagen,Golf,1999 ,Gasoline+LPG,7900,PLN,https://www.otomoto.pl/oferta/volkswagen-golf-full-klima-gaz-lpg-alu-2xkola-super-stan-serwis-bez-wkladu-okazja-gwar-ID6DUmh6.html#cae3759e3b
+Fiat,Grande Punto 1.4T-Jet,2007 ,Gasoline,13900,PLN,https://www.otomoto.pl/oferta/fiat-grande-punto-1-4-turbo-sporting-120-km-ID6DUmh2.html#cae3759e3b
+Ford,Fiesta 1.25,2010 ,Gasoline,19500,PLN,https://www.otomoto.pl/oferta/ford-fiesta-sprzedam-forda-fiesta-sprowadzony-oplacony-wersja-titanium-ID6DUmgS.html#cae3759e3b
+Volvo,XC 60 D3,2017 ,Diesel,79990,PLN,https://www.otomoto.pl/oferta/volvo-xc-60-momentum-el-klapa-kamera-digital-tacho-skora-navi-automat-gwarancja-ID6DUmgO.html#cae3759e3b
+Ford,C-MAX 1.6,2007 ,Diesel,11700,PLN,https://www.otomoto.pl/oferta/ford-c-max-1-6tdci109kmklimatronicsuper-stanz-niemiecoplacony-ID6DUmgw.html#cae3759e3b
+Opel,Astra III,2005 ,Diesel,8000,PLN,https://www.otomoto.pl/oferta/opel-astra-opel-astra-h-1-7-cdti-2005-rok-ID6DUmgr.html#cae3759e3b
+Skoda,Fabia 1.2,2004 ,Gasoline,5200,PLN,https://www.otomoto.pl/oferta/skoda-fabia-sprzedam-pilnie-ID6DUmgn.html#cae3759e3b
+Opel,Zafira,2013 ,Diesel,22900,PLN,https://www.otomoto.pl/oferta/opel-zafira-cosmo-cosmo-ID6DUmgk.html#cae3759e3b
+Honda,Civic,2015 ,Gasoline,53900,PLN,https://www.otomoto.pl/oferta/honda-civic-1-8-benzyna-kombi-ladne-i-zadbane-auto-bezwypadkowe-ID6DUmg5.html#cae3759e3b
+Suzuki,SX4 2.0,2011 ,Diesel,20999,PLN,https://www.otomoto.pl/oferta/suzuki-sx4-suzuki-sx4-4x4-2011r-2-0d-135km-ID6DUmg4.html#cae3759e3b
+Renault,Laguna 1.5,2011 ,Diesel,22900,PLN,https://www.otomoto.pl/oferta/renault-laguna-renault-laguna-iii-1-5-dci-2011-r-ID6DUmfP.html#cae3759e3b
+Peugeot,207 1.4,2008 ,Diesel,8499,PLN,https://www.otomoto.pl/oferta/peugeot-207-peugeot-207-1-4-szary-metalik-stan-dobry-ID6DUmfI.html#cae3759e3b

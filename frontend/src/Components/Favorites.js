@@ -43,7 +43,7 @@ class Favorites extends Component {
                         <span key={favs.id}  >
                     <div className="AdContainer"  >
                         <div className="imageContainer">
-                            <img src={favs.platformId.photo_link} alt="" />
+                            <img src={favs.platformId.photo_link} onClick={ e => window.open(favs.platformId.ad_link, "_blank")} alt="" />
                         </div>
                         <div className="titleContainer">
                             <p><b>{favs.platformId.brandId+' '+favs.platformId.model}</b></p>

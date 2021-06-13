@@ -20,7 +20,7 @@ class PlatformListSerializer(serializers.ModelSerializer):
     # price_diff = Sale_avg.avg_price - Platform.price
     class Meta:
         model = Platform
-        fields = ('id', 'platform_code', 'brandId', 'model', 'year', 'price', 'price_diff', 'currency', 'photo_link', 'date_add', 'ad_link' )
+        fields = ('id', 'platform_code', 'brandId', 'model', 'year', 'fuel', 'country', 'place', 'price', 'price_diff', 'currency', 'photo_link', 'date_add', 'ad_link' )
 
 
 
@@ -40,14 +40,14 @@ class Sale_avgSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Sale_avg
-        fields = ('id', 'brandId', 'model', 'year', 'avg_price')
+        fields = ('id', 'brandId', 'model', 'year', 'fuel', 'avg_price')
 
 
 class Sale_avgCreateSerializer(serializers.ModelSerializer):
     brandId_id = serializers.SlugRelatedField(slug_field="name", read_only=True)
     class Meta:
         model = Sale_avg
-        fields = ('brandId_id', 'model', 'year', 'avg_price')
+        fields = ('brandId_id', 'model', 'year', 'fuel', 'avg_price')
 
 
 class FavoritesSerializer(serializers.ModelSerializer):
