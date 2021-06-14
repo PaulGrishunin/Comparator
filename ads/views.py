@@ -44,6 +44,7 @@ class PlatformLView(generics.ListAPIView):
     # pagination_class = PaginationPlatform
 
     def get_queryset(self):
+        create_platform_buy(self)
         price_dif = self.kwargs['dif']
         filtered_ids=[]
         plat_list=Platform.objects.filter(platform_code=1)
@@ -201,12 +202,11 @@ def create_platform_sale(self):
 
 # сохранение данных from home(sale) platform в бд
 def create_platform_buy(self):
-    # subprocess.Popen(['scrapy', 'runspider', './Parsing/scrapy_mobile/spiders/mobilespider.py', '-O', './Parsing/mobile_data.csv']).wait(timeout=None)
+    subprocess.Popen(['scrapy', 'runspider', './Parsing/scrapy_mobile/spiders/mobilespider.py', '-O', './Parsing/mobile_data.csv']).wait(timeout=None)
     fav_ids=[]
     favs = Favorites.objects.all()
     for f in favs:
-        fav_ids.append(f.platformId_id)
-    print('fav_ids=', fav_ids)
+        fav_ids.append(f.platformId_id)                 # don't delete ads, which have relations in Favorites.
     elements = Platform.objects.filter(platform_code=1)
     elements = elements.exclude(pk__in=fav_ids)
     elements.delete()
@@ -238,6 +238,7 @@ def create_platform_buy(self):
 
 """Create examples with average price"""
 def create_sale_avg_examples(self):
+    create_platform_sale(self)
     examples = Platform.objects.filter(platform_code=0).order_by('brandId_id').values_list(
             'brandId_id', 'model', 'year', 'fuel', 'price').iterator()
     grouped_cars_by_brand_model_year = defaultdict(list)

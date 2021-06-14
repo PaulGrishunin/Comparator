@@ -65,12 +65,15 @@ class PlatformList extends Component {
                         </div>
                         <div className="titleContainer">
                             <p><b>{plat.brandId+' '+plat.model}</b></p>
-                            <p> {plat.year}</p>
+                            <p> {plat.year+'   '+plat.fuel}</p>
                         </div>
                         <div className="priceContainer">
                                 <div className="price">Price: {plat.price} EUR</div>
-                                <div className="price_diff"> € {plat.price_diff} </div>
+                                <div className="price_diff">Price difference: € {plat.price_diff} </div>
                             <button className="button blue" href="#" onClick={() => this.addToFavorites(plat.id)}><b>Add to Favorites</b></button>
+                        </div >
+                        <div className="locationContainer">
+                            <div className="location">Location: {plat.country+' '+plat.place}</div>
                         </div>
                     </div>
                     </span>

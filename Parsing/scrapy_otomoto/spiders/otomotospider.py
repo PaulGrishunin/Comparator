@@ -3,12 +3,18 @@ import scrapy
 from scrapy.utils.python import to_native_str
 #import time
 from scrapy import Selector
+from scrapy.utils.project import get_project_settings
 
 class OtomotorSpider(scrapy.Spider):
     name = 'otomotospider'
     allowed_domains = ['www.otomoto.pl', 'otomoto.pl']
     start_urls = ['https://www.otomoto.pl/osobowe/?search%5Border%5D=created_at_first%3Adesc&search%5Bbrand_program_id%5D%5B0%5D=&search%5Bcountry%5D=&page='+'%s' % page for page in range(1,21)]
     #print('start_urls=', start_urls)
+    
+    settings = {
+        'USER_AGENT' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0',
+        'DOWNLOAD_DELAY': '1',
+        }
     
     def parse(self, response):
         #print('RESPOOOOONSEEEEEEE=', response.text)
@@ -28,9 +34,9 @@ class OtomotorSpider(scrapy.Spider):
         for item in zip(marka, year, fuel, price, ad_link):
             scraped_data = {
                 'marka': item[0][:item[0].find(' ')].replace('Škoda', 'Skoda').replace('Citroën','Citroen').replace('Land','Land-Rover').replace('Alfa','Alfa-Romeo'),  
-                'model': item[0].split(' ', 1)[1],
+                'model': item[0].split(' ')[1],
                 'year': item[1],
-                'fuel': item[2].replace('Benzyna', 'Gasoline').replace('Hybryda', 'Electric/Gasoline').replace('Benzyna+LPG', 'Gasoline').replace('Elektryczny', 'Electric'), 
+                'fuel': item[2].replace('Benzyna+LPG', 'Gasoline').replace('Benzyna', 'Gasoline').replace('Hybryda', 'Electric/Gasoline').replace('Elektryczny', 'Electric'), 
                 'price': item[3].replace(' ', ''),
                 'currency': 'PLN',
                 'ad_link': item[4],

@@ -17,8 +17,8 @@ app_name = 'ads'
 
 urlpatterns = [
     path('', views.index),
-    path('create/buy', views.create_platform_buy),            #collect data from buy_platform csv
-    path('create/sale', views.create_platform_sale),          #collect data from sale_platform csv
+    path('create/buy', views.create_platform_buy),            #collect data from buy_platform
+    path('create/sale', views.create_platform_sale),          #collect data from sale_platform
     path('brands/', BrandsListView.as_view(), name='brands_list'),
 
     path('platform/', PlatformListView.as_view(), name='platform_list'),
