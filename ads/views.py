@@ -105,10 +105,6 @@ class Sale_avgView(generics.ListAPIView):
     serializer_class = Sale_avgSerializer
     pagination_class = PaginationPlatform
 
-    # def get(self, request):
-    #     serializer = Sale_avg.objects.all().order_by('brandId')
-    #     serializer = Sale_avgSerializer(serializer, many=True)
-    #     return Response({"sale_avg": serializer.data})
 
 class Sale_avgDestroyView(APIView):
     """Delete all elements in Sale_avg"""
@@ -124,7 +120,6 @@ class FavoritesListView(generics.ListAPIView):
     # pagination_class = PaginationPlatform
 
     def get_queryset(self):
-        # print('request.user=', self.request.user.id)
         try:
             return Favorites.objects.filter(userId=self.request.user.id)
         except Exception as e:
@@ -141,10 +136,18 @@ class FavoritesCreateView(APIView):
     def post(self, request, pk):
         request.data["userId"] = self.request.user.id
         request.data["platformId"] = self.kwargs['pk']
-#         print('request.data=', request.data)
+        print('request.data=', request.data)
         favorite = FavoritesCreateSerializer(data=request.data)
-        if favorite.is_valid():
-            favorite.save()
+        fav_ids=[]
+        favs = Favorites.objects.filter(userId=self.request.user.id)
+        for f in favs:
+            fav_ids.append(f.platformId_id)
+        print('fav_ids=', fav_ids)
+        if self.kwargs['pk'] in fav_ids:
+            return Response({"message": "This ad is already in your favorites!"})
+        else:
+            if favorite.is_valid():
+                favorite.save()
         return Response(favorite.data, status=status.HTTP_201_CREATED)
 
 
@@ -155,6 +158,7 @@ class FavoritesDeleteView(APIView):
 
     def delete(self, request, pk):
         favorites_id = self.kwargs['pk']
+        print('favorites_id to delete=', favorites_id)
         element = Favorites.objects.filter(id=favorites_id)
         element.delete()
         return Response({"message": "This ad delete from favorites."}, status=204)

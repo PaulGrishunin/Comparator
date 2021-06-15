@@ -2,9 +2,6 @@ import React from "react";
 
 class Form extends React.Component {
 
-    onModelChange = (event) => {
-        this.model = event.target.value;
-    }
     onYearMinChange = (event) => {
         this.year_min = event.target.value;
     }
@@ -26,11 +23,11 @@ class Form extends React.Component {
         return(
             <form className="FilterContainer" onSubmit={this.props.listAds} method="get">
                     <fieldset>
-                        <legend>First registration (date)</legend>
+                        <legend>Year of manufacture</legend>
                         <div className="select-row">
                             {/*<input id="price_min" className='form-control' name="price_min" autoComplete='off' placeholder="from" onChange={this.onYearMinChange}/>*/}
-                            <select name= "year_min" className="form-control form-control--combobox ab-normalcombo-variant" onChange={this.onYearMinChange} data-default-index="-1">
-                                <option value="">From</option>
+                            <select name= "year_min" className="form-control form-control--combobox ab-normal combo-variant" onChange={this.onYearMinChange}>
+                                <option value="">from</option>
                                 <option value="2021">2021</option>
                                 <option value="2020">2020</option>
                                 <option value="2019">2019</option>
@@ -64,8 +61,8 @@ class Form extends React.Component {
                                 <option value="1991">1991</option>
                                 <option value="1990">1990</option>
                            </select>
-                            <select name= "year_max" className="form-control form-control--combobox ab-normal combo-variant" placeholder="to" onChange={this.onYearMaxChange} data-default-index="-1">
-                                <option value="">To</option>
+                            <select name= "year_max" className="form-control form-control--combobox ab-normal combo-variant" onChange={this.onYearMaxChange}>
+                                <option value="">to</option>
                                 <option value="2021">2021</option>
                                 <option value="2020">2020</option>
                                 <option value="2019">2019</option>
@@ -98,20 +95,132 @@ class Form extends React.Component {
                                 <option value="1992">1992</option>
                                 <option value="1991">1991</option>
                                 <option value="1990">1990</option>
-
                             </select>
                         </div>
                     </fieldset>
                     <fieldset>
-                        <legend>Price</legend>
+                        <legend>Price, €</legend>
                         <div className="select-row">
-                            <input type="number" name="price_min" onChange={this.onPriceMinChange}/>
-                            <input type="number" name="price_max" onChange={this.onPriceMaxChange}/>
+                            <select name= "price_min" className="form-control form-control--combobox ab-normal combo-variant" onChange={this.onPriceMinChange}>
+                                <option value="">from</option>
+                                <option value="1">1</option>
+                                <option value="100">100</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                                <option value="1500">1500</option>
+                                <option value="2000">2000</option>
+                                <option value="2500">2500</option>
+                                <option value="3000">3000</option>
+                                <option value="4000">4000</option>
+                                <option value="5000">5000</option>
+                                <option value="6000">6000</option>
+                                <option value="7000">7000</option>
+                                <option value="8000">8000</option>
+                                <option value="9000">9000</option>
+                                <option value="10000">10000</option>
+                                <option value="11000">11000</option>
+                                <option value="12000">12000</option>
+                                <option value="13000">13000</option>
+                                <option value="14000">14000</option>
+                                <option value="15000">15000</option>
+                                <option value="16000">16000</option>
+                                <option value="17000">17000</option>
+                                <option value="18000">18000</option>
+                                <option value="19000">19000</option>
+                                <option value="20000">20000</option>
+                                <option value="25000">25000</option>
+                                <option value="30000">30000</option>
+                                <option value="40000">40000</option>
+                                <option value="50000">50000</option>
+                                <option value="60000">60000</option>
+                                <option value="70000">70000</option>
+                                <option value="80000">80000</option>
+                                <option value="90000">90000</option>
+                                <option value="100000">100000</option>
+                                <option value="150000">150000</option>
+                                <option value="200000">200000</option>
+                                </select>
+                                <select name= "price_max" className="form-control form-control--combobox ab-normal combo-variant" onChange={this.onPriceMaxChange}>
+                                    <option value="">to</option>
+                                    <option value="1">1</option>
+                                    <option value="100">100</option>
+                                    <option value="500">500</option>
+                                    <option value="1000">1000</option>
+                                    <option value="1500">1500</option>
+                                    <option value="2000">2000</option>
+                                    <option value="2500">2500</option>
+                                    <option value="3000">3000</option>
+                                    <option value="4000">4000</option>
+                                    <option value="5000">5000</option>
+                                    <option value="6000">6000</option>
+                                    <option value="7000">7000</option>
+                                    <option value="8000">8000</option>
+                                    <option value="9000">9000</option>
+                                    <option value="10000">10000</option>
+                                    <option value="11000">11000</option>
+                                    <option value="12000">12000</option>
+                                    <option value="13000">13000</option>
+                                    <option value="14000">14000</option>
+                                    <option value="15000">15000</option>
+                                    <option value="16000">16000</option>
+                                    <option value="17000">17000</option>
+                                    <option value="18000">18000</option>
+                                    <option value="19000">19000</option>
+                                    <option value="20000">20000</option>
+                                    <option value="25000">25000</option>
+                                    <option value="30000">30000</option>
+                                    <option value="40000">40000</option>
+                                    <option value="50000">50000</option>
+                                    <option value="60000">60000</option>
+                                    <option value="70000">70000</option>
+                                    <option value="80000">80000</option>
+                                    <option value="90000">90000</option>
+                                    <option value="100000">100000</option>
+                                    <option value="150000">150000</option>
+                                    <option value="200000">200000</option>
+                                    </select>
                         </div>
                     </fieldset>
-                    <input type="number" name="price_diff" required onChange={this.onPriceDifChange}/>
+                <fieldset>
+                    <legend>Price difference, €</legend>
+                    <div className="select-row-dif">
+                        <select name="price_diff" required className="form-control form-control--combobox ab-normal combo-variant" onChange={this.onPriceDifChange}>
+                            <option value="1">from</option>
+                            <option value="1">1</option>
+                            <option value="100">100</option>
+                            <option value="500">500</option>
+                            <option value="1000">1000</option>
+                            <option value="1500">1500</option>
+                            <option value="2000">2000</option>
+                            <option value="2500">2500</option>
+                            <option value="3000">3000</option>
+                            <option value="4000">4000</option>
+                            <option value="5000">5000</option>
+                            <option value="6000">6000</option>
+                            <option value="7000">7000</option>
+                            <option value="8000">8000</option>
+                            <option value="9000">9000</option>
+                            <option value="10000">10000</option>
+                            <option value="11000">11000</option>
+                            <option value="12000">12000</option>
+                            <option value="13000">13000</option>
+                            <option value="14000">14000</option>
+                            <option value="15000">15000</option>
+                            <option value="16000">16000</option>
+                            <option value="17000">17000</option>
+                            <option value="18000">18000</option>
+                            <option value="19000">19000</option>
+                            <option value="20000">20000</option>
+                            <option value="25000">25000</option>
+                            <option value="30000">30000</option>
+                            <option value="40000">40000</option>
+                            <option value="50000">50000</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
                     <button>Search</button>
-
+                </fieldset>
             </form>
         );
     }

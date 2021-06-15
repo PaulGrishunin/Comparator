@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AuthService from "../services/auth.service";
+import './PlatformList.css';
 
 export default class Profile extends Component {
     constructor(props) {
@@ -14,30 +15,25 @@ export default class Profile extends Component {
         const { currentUser } = this.state;
 
         return (
-            <div className="container">
-                <header className="jumbotron">
-                    <h3>
+            <div className="ProfileContainer">
+                <div className="ProfileimageContainer">
+                    <img src={"../pictures/user.png"} alt="" />
+                </div>
+                <div className="titleContainer">
+                    <h4>
                         <strong>{currentUser.username}</strong> Profile
-                    </h3>
-                </header>
+                    </h4>
+                <br/>
                 <p>
-                    <p>Token:</p>{" "}
-                    {currentUser.token.substring(0, 20)} ...{" "}
-                    {currentUser.token.substr(currentUser.token.length - 20)}
+                    <p>Email:{" "}{currentUser.email} </p>
+
                 </p>
-                {/*<p>*/}
-                {/*    <strong>Id:</strong>{" "}*/}
-                {/*    {currentUser.id}*/}
-                {/*</p>*/}
                 <p>
-                    <p>Email:</p>{" "}
-                    {currentUser.email}
+                    <p>Token:{" "}
+                        {currentUser.token.substring(0, 20)} ...{" "}
+                        {currentUser.token.substr(currentUser.token.length - 20)}</p>
                 </p>
-                {/*<strong>Authorities:</strong>*/}
-                {/*<ul>*/}
-                {/*    {currentUser.roles &&*/}
-                {/*    currentUser.roles.map((role, index) => <li key={index}>{role}</li>)}*/}
-                {/*</ul>*/}
+                </div>
             </div>
         );
     }

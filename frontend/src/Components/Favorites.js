@@ -7,78 +7,85 @@ class Favorites extends Component {
         super();
         this.state = {
             favorites: [],
-            isDeleted: false
+            isDeleted: false,
         };
         this.deleteFromFavorites = this.deleteFromFavorites.bind(this);
     }
 
-    deleteFromFavorites(favoritesId) {
-        fetch(`http://localhost:8000/api/favorites/delete/` + favoritesId, {
+    deleteFromFavorites = async (id) => {
+        // e.preventDefault();
+        const api_url = await
+        fetch(`http://localhost:8000/api/favorites/delete/` + id, {
+            // mode: 'cors',
             method: "DELETE",
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            }
+            // headers: authHeader(),
         })
-            .then(res => res.json())
-            .then(result => {
-                // console.log(result);
-                    this.setState({isDeleted: true});
-                // window.location.reload(false);
-            }, (error) => {
-                    // console.log(error);
-                }
-            )
+            // .then(res => res.json())
+            // .then(result => {
+            //     console.log(result);
+                    // console.log("deletefrom", this.state.isDeleted)
+            // })
+        document.location.reload()
     }
 
 
     gettingFavorites = async () => {
         // e.preventDefault();
         const api_url = await
-        fetch( "http://localhost:8000/api/favorites", { headers: authHeader() })
+            fetch( "http://localhost:8000/api/favorites", { headers: authHeader() })
         const data = await api_url.json();
         let favorites = data.map((favs) => {
-                    console.log(favs.id)
-                    return (      // onClick={ e => window.location.href = favs.platformId.ad_link }
-                        <span key={favs.id}  >
+            return (
+                <span key={favs.id}  >
                     <div className="AdContainer"  >
                         <div className="imageContainer">
                             <img src={favs.platformId.photo_link} onClick={ e => window.open(favs.platformId.ad_link, "_blank")} alt="" />
                         </div>
                         <div className="titleContainer">
                             <p><b>{favs.platformId.brandId+' '+favs.platformId.model}</b></p>
-                            <p> {favs.platformId.year}</p>
+                            <p> {favs.platformId.year+'   '+favs.platformId.fuel}</p>
+                            <div className="locationContainer">
+                                <br/>
+                            <div className="location">Location: {favs.platformId.country+' '+favs.platformId.place}</div>
+                        </div>
                         </div>
                         <div className="priceContainer">
                                 <div className="price">Price: {favs.platformId.price} EUR</div>
                                 <div className="price_diff"> € {favs.platformId.price_diff} </div>
-                                <button className="button red"  onClick={() => this.deleteFromFavorites(favs.id)}><b>Delete from Favorites</b></button>
+                                <a href="#" className="knopka01"  onClick={() => this.deleteFromFavorites(favs.id)}>Delete</a>
                         </div>
 
                     </div>
                     </span>
-                            )
-                        })
-                        this.setState({favorites:favorites});
+            )
+        })
+        this.setState({favorites:favorites});
 
-        }
+    }
 
     componentDidMount() {
         this.gettingFavorites()
     }
 
     render() {
-        if (!this.state.isDeleted){
-            console.log("1+", this.state.isDeleted)
+        // if (!this.state.isDeleted){
+        //     console.log("1+", this.state.isDeleted)
+
         return (
             <div>
                 {this.state.favorites}
             </div>
-        )}
-        else {
-            console.log("2+", this.state.isDeleted)
-            window.location.reload(true);
-        }
+        )
+    //     }
+    //     else {
+    //         console.log("2+", this.state.isDeleted)
+    //         this.setState({isDeleted: false})
+    //         return (
+    //             <div>
+    //                 {this.state.favorites}
+    //             </div>
+    //         )
+    //     }
     }
 }
 

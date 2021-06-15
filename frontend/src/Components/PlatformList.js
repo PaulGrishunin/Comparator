@@ -30,18 +30,19 @@ class PlatformList extends Component {
         fetch(`http://localhost:8000/api/favorites/add/`+ platformId, { method:"POST", headers: authHeader()})
             .then(res => res.json())
             .then(console.log)
-        // window.location.reload(false);
     }
 
-    searchSpace=(event)=>{
-        let model = event.target.value;
-        this.setState({search:model})
-        console.log(this.state.search)
-  }
+  //   searchSpace=(event)=>{
+  //       let model = event.target.value;
+  //       this.setState({search:model})
+  //       console.log(this.state.search)
+  // }
 
     gettingPlatform = async (e) => {
         e.preventDefault();
+
         var price_diff = e.target.elements.price_diff.value;
+        console.log('price_diff', price_diff)
         var year_min = e.target.elements.year_min.value;
         var year_max = e.target.elements.year_max.value;
         var price_min = e.target.elements.price_min.value;
@@ -66,15 +67,16 @@ class PlatformList extends Component {
                         <div className="titleContainer">
                             <p><b>{plat.brandId+' '+plat.model}</b></p>
                             <p> {plat.year+'   '+plat.fuel}</p>
-                        </div>
-                        <div className="priceContainer">
-                                <div className="price">Price: {plat.price} EUR</div>
-                                <div className="price_diff">Price difference: € {plat.price_diff} </div>
-                            <button className="button blue" href="#" onClick={() => this.addToFavorites(plat.id)}><b>Add to Favorites</b></button>
-                        </div >
-                        <div className="locationContainer">
+                            <div className="locationContainer">
                             <div className="location">Location: {plat.country+' '+plat.place}</div>
                         </div>
+                        </div>
+                        <div className="priceContainer">
+                            <div className="price">Price: {plat.price} EUR</div>
+                            <div className="price_diff">Price difference: € {plat.price_diff} </div>
+                            <a href="#" className="knopka01" onClick={() => this.addToFavorites(plat.id)}>Add</a>
+                        </div >
+
                     </div>
                     </span>
             )
@@ -87,7 +89,7 @@ class PlatformList extends Component {
               <div>
 
                   <Form listAds={this.gettingPlatform} />
-                   <input type="search" placeholder="Enter model to be searched" onChange={(e)=>this.searchSpace(e)} />
+                   {/*<input type="search" placeholder="Enter model to be searched" onChange={(e)=>this.searchSpace(e)} />*/}
                   {this.state.platform}
               </div>
     )}
