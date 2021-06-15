@@ -9,8 +9,11 @@ https://docs.djangoproject.com/en/3.1/howto/deployment/wsgi/
 
 import os
 
+
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", 'Comparator.settings')
 from django.core.wsgi import get_wsgi_application
+#application = get_wsgi_application()
+from dj_static import Cling
 
-os.environ.setdefault('settings.heroku', 'Comparator.settings')
-
-application = get_wsgi_application()
+application = Cling(get_wsgi_application())
