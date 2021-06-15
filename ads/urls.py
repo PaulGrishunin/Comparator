@@ -21,7 +21,7 @@ urlpatterns = [
     path('create/sale', views.create_platform_sale),          #collect data from sale_platform
     path('brands/', BrandsListView.as_view(), name='brands_list'),
 
-    path('platform/', PlatformListView.as_view(), name='platform_list'),
+    path('/', PlatformListView.as_view(), name='platform_list'),
     path('platforml/price_diff=<int:dif>', PlatformLView.as_view(), name='platform_list_filtered'),
     # path('platform/add', PlatformCreateView.as_view(), name='platform_create'),
     path('platform/delete', PlatformDestroyView.as_view(), name='platform_delete'),
