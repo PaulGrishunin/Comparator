@@ -89,10 +89,10 @@ WSGI_APPLICATION = 'Comparator.wsgi.application'
 DATABASES = {
 'default': {
 'ENGINE': 'django.db.backends.mysql',
-'NAME': 'my_db',
-        'USER': 'root',
-        'PASSWORD': '555555',
-        'HOST': 'localhost',
+'NAME': 'heroku_4808438aaa5dc30',
+        'USER': 'b6e9f0fa210fa8',
+        'PASSWORD': 'd7494209',
+        'HOST': 'eu-cdbr-west-01.cleardb.com',
         'PORT': '3306',
 'OPTIONS': {
 'read_default_file': '/etc/mysql/my.cnf',
