@@ -19,12 +19,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-import os
 SECRET_KEY = '3t$3$653h%+_sk#!^w&1=w(e(g0-1d@auc=s$x0g_l%yh8^cd1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
+# ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'http://127.0.0.1:8000']
 ALLOWED_HOSTS = ['*']
 
 
@@ -50,7 +50,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -63,6 +63,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'Comparator.urls'
 
+import os
 
 TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 TEMPLATES = [
@@ -87,15 +88,17 @@ WSGI_APPLICATION = 'Comparator.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-
-
 DATABASES = {
 'default': {
 'ENGINE': 'django.db.backends.mysql',
-'NAME': 'heroku_4808438aaa5dc30',
+'NAME': '/heroku_4808438aaa5dc30',
         'USER': 'b6e9f0fa210fa8',
         'PASSWORD': 'd7494209',
         'HOST': 'eu-cdbr-west-01.cleardb.com',
+# 'NAME': 'my_db',
+#         'USER': 'root',
+#         'PASSWORD': '555555',
+#         'HOST': 'localhost',
         'PORT': '3306',
 'OPTIONS': {
 'read_default_file': '/etc/mysql/my.cnf',
@@ -139,7 +142,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 #активировать CORS и перечень разрешенных URL
 
@@ -162,7 +165,7 @@ REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend', ),
 }
 
-# Heroku: Update database configuration from $DATABASE_URL.
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
+import dj-database-url
+
+db_from_env = dj-database-url.config()
+DATABASE['default'].update(db_from_env)

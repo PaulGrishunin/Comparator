@@ -40,7 +40,6 @@ class PlatformList extends Component {
 
     gettingPlatform = async (e) => {
         e.preventDefault();
-
         var price_diff = e.target.elements.price_diff.value;
         console.log('price_diff', price_diff)
         var year_min = e.target.elements.year_min.value;

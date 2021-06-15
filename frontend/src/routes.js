@@ -11,7 +11,7 @@ import './App.css';
 const BaseRouter = () => (
    <Switch>
 
-       <Route exact path="/" component={PlatformList}/>
+       <Route exact path="/platform" component={PlatformList}/>
        <Route exact path="/auth/login" component={Login}/>
        <Route exact path="/auth/register" component={Register}/>
        <Route exact path="/auth/user" component={Profile}/>
