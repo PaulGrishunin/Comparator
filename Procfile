@@ -1,2 +1,2 @@
-web: gunicorn appname.wsgi compar
+web: gunicorn Comparator.wsgi --log-file -
 
