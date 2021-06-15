@@ -9,6 +9,8 @@ coreapi==2.3.3
 coreschema==0.0.4
 cryptography==3.4.6
 cssselect==1.1.0
+dj-database-url==0.5.0
+dj-static==0.0.6
 Django @ git+https://github.com/django/django@e3e2276e6fe6fd77e4fbdeeb2a287288d31de3bb
 django-cors-headers==3.7.0
 django-extensions==3.1.1
@@ -16,9 +18,7 @@ django-filter==2.4.0
 djangorestframework==3.12.4
 djangorestframework-jwt==1.11.0
 djangorestframework-simplejwt==4.5.0
-dj-database-url==0.4.1
 drf-yasg==1.20.0
-gunicorn==19.6.0
 h2==3.2.0
 hpack==3.0.0
 hyperframe==5.2.0
@@ -55,9 +55,9 @@ Scrapy==2.5.0
 service-identity==21.1.0
 six==1.16.0
 sqlparse==0.4.1
+static3==0.7.0
 Twisted==21.2.0
 uritemplate==3.0.1
 urllib3==1.26.4
 w3lib==1.22.0
-whitenoise==3.2.2
 zope.interface==5.4.0

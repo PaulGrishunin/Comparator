@@ -166,7 +166,6 @@ REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend', ),
 }
 
-# import dj-database-url
-#
-# db_from_env = dj-database-url.config()
-# DATABASE['default'].update(db_from_env)
+import dj_database_url
+
+db_from_env = dj_database_url.config()
