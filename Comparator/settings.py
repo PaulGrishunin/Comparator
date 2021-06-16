@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 
+import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
     'ads',
     'authentication',
     'django_filters',
+
 ]
 
 MIDDLEWARE = [
@@ -90,7 +92,7 @@ WSGI_APPLICATION = 'Comparator.wsgi.application'
 DATABASES = {
 'default': {
 'ENGINE': 'django.db.backends.mysql',
-'NAME': '/heroku_4808438aaa5dc30',
+'NAME': 'heroku_4808438aaa5dc30',
         'USER': 'b6e9f0fa210fa8',
         'PASSWORD': 'd7494209',
         'HOST': 'eu-cdbr-west-01.cleardb.com',
@@ -141,6 +143,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 #активировать CORS и перечень разрешенных URL
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'   #
+
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_ALL_ORIGINS = True
@@ -165,3 +169,5 @@ import dj_database_url
 
 db_from_env = dj_database_url.config()
 # DATABASE['default'].update(db_from_env)
+
+django_heroku.settings(locals())
