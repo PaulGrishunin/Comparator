@@ -54,7 +54,6 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -169,4 +168,4 @@ REST_FRAMEWORK = {
 import dj_database_url
 
 db_from_env = dj_database_url.config()
-DATABASE['default'].update(db_from_env)
+# DATABASE['default'].update(db_from_env)
