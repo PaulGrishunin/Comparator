@@ -37,7 +37,7 @@ class OtomotorSpider(scrapy.Spider):
                 'model': item[0].split(' ')[1],
                 'year': item[1],
                 'fuel': item[2].replace('Benzyna+LPG', 'Gasoline').replace('Benzyna', 'Gasoline').replace('Hybryda', 'Electric/Gasoline').replace('Elektryczny', 'Electric'), 
-                'price': item[3].replace(' ', ''),
+                'price': item[3].replace(' ', '').split(',')[0],
                 'currency': 'PLN',
                 'ad_link': item[4],
                 
