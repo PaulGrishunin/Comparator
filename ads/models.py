@@ -38,7 +38,7 @@ class Platform(models.Model):
     ad_link = models.URLField()
 
     def __str__(self):
-        return ' %s %s %s %s %s %s %s %s'% (self.platform_code, self.brandId, self.model, self.year, self.fuel, self.price, self.price_diff, self.currency)
+        return ' %s %s %s %s %s %s %s %s'% (self.platform_code, self.brandId_id, self.model, self.year, self.fuel, self.price, self.price_diff, self.currency)
 
     # def create(self, platform_code, brandId, model, year, price, currency, photo_link, ad_link):
     #     platform = self.create(platform_code=platform_code, brandId=brandId, model=model, year= year,
