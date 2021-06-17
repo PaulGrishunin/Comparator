@@ -49,12 +49,12 @@ class PlatformLView(generics.ListAPIView):
         filtered_ids=[]
         plat_list=Platform.objects.filter(platform_code=1)
         sale_avg_list=Sale_avg.objects.all()
-        print('plat_list=', plat_list)
+        # print('plat_list=', plat_list)
         # print('sale_list=', sale_avg_list)
         for p in plat_list:
-            print('p=', p)
+            # print('p=', p)
             for s in sale_avg_list:
-                print('s=', s)
+                # print('s=', s)
                 if (p.brandId, p.year, p.fuel)==(s.brandId, s.year, p.fuel) and (p.model.lower() in s.model.lower()) and (s.avg_price - p.price) >= price_dif :
                     p.price_diff = s.avg_price - p.price
                     print("result=", p)
@@ -218,11 +218,12 @@ def create_platform_buy(self):
     CSV_PATH = './Parsing/mobile_data.csv'  # Csv file path
     with open(CSV_PATH,  newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar=';')
-        plat = Platform()
+        # plat = Platform()
         brands_list = list(Brands.objects.values())
         # print('brands_list=', brands_list)
         # print('ext=', next((item for item in brands_list if item["name"] == 'Audi'), False))
         for row in reader:
+            plat = Platform()
             if next((item for item in brands_list if item["name"] == row[0]), False) != False:             #check if parsed brand name in Brands
                 plat.platform_code = True
                 plat.brandId_id =  [d['id'] for d in brands_list if d['name']== row[0]][0]
@@ -241,7 +242,8 @@ def create_platform_buy(self):
             else:
                 print('Error: Brand of this car was not found ')
     #             # break
-    return HttpResponseRedirect("/api/platform")
+    return Response({"message": "Elements added to Platform."}, status=201)
+
 
 
 """Create examples with average price"""
