@@ -184,12 +184,12 @@ def create_platform_sale(self):
     CSV_PATH = './Parsing/otomoto_data.csv'  # Csv file path
     with open(CSV_PATH, newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar=',')
-        plat = Platform()
         brands_list = list(Brands.objects.all().values_list('name', flat=True))
         print('brands_list=', brands_list)
         for row in reader:
             # print('row=', row)
             if row[0]  in brands_list:             #check if parsed brand name in Brands
+                plat = Platform()
                 plat.platform_code = False
                 plat.brandId_id = Brands.objects.filter(name=row[0]).first().id
                 plat.model = row[1]
@@ -218,7 +218,6 @@ def create_platform_buy(self):
     CSV_PATH = './Parsing/mobile_data.csv'  # Csv file path
     with open(CSV_PATH,  newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar=';')
-        # plat = Platform()
         brands_list = list(Brands.objects.values())
         # print('brands_list=', brands_list)
         # print('ext=', next((item for item in brands_list if item["name"] == 'Audi'), False))
