@@ -7,7 +7,13 @@ from scrapy import Selector
 class MobilespiderSpider(scrapy.Spider):
     name = 'mobilespider'
     allowed_domains = ['autoscout24.com']
-    start_urls = ['https://www.autoscout24.com/lst/audi?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % page for page in range(1,5)] + ['https://www.autoscout24.com/lst/toyota?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,5)] + ['https://www.autoscout24.com/lst/nissan?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,5)] + ['https://www.autoscout24.com/lst/skoda?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,5)] + ['https://www.autoscout24.com/lst/lexus?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,5)] + ['https://www.autoscout24.com/lst/ford?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,5)] + ['https://www.autoscout24.com/lst/renault?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,5)] + ['https://www.autoscout24.com/lst/volkswagen?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,5)]
+    start_urls = ['https://www.autoscout24.com/lst/audi?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % page for page in range(1,3)]\
+                 + ['https://www.autoscout24.com/lst/toyota?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,3)]\
+                 + ['https://www.autoscout24.com/lst/nissan?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,3)]\
+                 + ['https://www.autoscout24.com/lst/skoda?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,3)]\
+                 + ['https://www.autoscout24.com/lst/ford?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,3)]\
+                 + ['https://www.autoscout24.com/lst/renault?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,3)]\
+                 + ['https://www.autoscout24.com/lst/volkswagen?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,3)]
     #print(start_urls)     
     
     def parse(self, response):
