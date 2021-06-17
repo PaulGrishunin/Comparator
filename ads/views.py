@@ -241,7 +241,7 @@ def create_platform_buy(self):
             else:
                 print('Error: Brand of this car was not found ')
     #             # break
-    # return HttpResponseRedirect("/api/platform")
+    return HttpResponseRedirect("/api/platform")
 
 
 """Create examples with average price"""
