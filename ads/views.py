@@ -222,9 +222,10 @@ def create_platform_buy(self):
         brands_list = list(Brands.objects.values())
         print('brands_list=', brands_list)
         for row in reader:
-            if row[0]  in brands_list:             #check if parsed brand name in Brands
+            if  next(item for item in brands_list if item["name"] == row[0]):             #check if parsed brand name in Brands
                 plat.platform_code = True
-                plat.brandId_id = Brands.objects.filter(name=row[0]).first().id
+                plat.brandId_id = next((i+1 for i, item in enumerate(brands_list) if item["name"] == row[0]), None)
+                print('plat.brandId_id=', plat.brandId_id)
                 plat.model = row[1]
                 plat.year = row[2]
                 plat.fuel = row[3]
