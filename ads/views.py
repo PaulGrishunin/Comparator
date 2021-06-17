@@ -192,7 +192,6 @@ def create_platform_sale(self):
             if row[0]  in brands_list:             #check if parsed brand name in Brands
                 plat.platform_code = False
                 plat.brandId_id = Brands.objects.filter(name=row[0]).first().id
-                print('plat.brandId_id =', plat.brandId_id)
                 plat.model = row[1]
                 plat.year = row[2]
                 plat.fuel = row[3]
@@ -221,12 +220,12 @@ def create_platform_buy(self):
         reader = csv.reader(csvfile, delimiter=',', quotechar=';')
         plat = Platform()
         print('plat (Platform()) =', plat)
-        brands_list = Brands.objects.all().values_list('name', flat=True)
+        brands_list = list(Brands.objects.all().values_list('name', flat=True))
+        print('brands_list=', brands_list)
         for row in reader:
             if row[0]  in brands_list:             #check if parsed brand name in Brands
                 plat.platform_code = True
-                plat.brandId_id = Brands.objects.get(name=row[0]).id
-                print('plat.brandId_id =', plat.brandId_id)
+                plat.brandId_id = Brands.objects.filter(name=row[0]).first().id
                 plat.model = row[1]
                 plat.year = row[2]
                 plat.fuel = row[3]

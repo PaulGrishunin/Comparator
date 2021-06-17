@@ -36,7 +36,7 @@ class OtomotorSpider(scrapy.Spider):
                 'marka': item[0][:item[0].find(' ')].replace('Škoda', 'Skoda').replace('Citroën','Citroen').replace('Land','Land-Rover').replace('Alfa','Alfa-Romeo'),  
                 'model': item[0].split(' ')[1],
                 'year': item[1],
-                'fuel': item[2].replace('Benzyna+LPG', 'Gasoline').replace('Benzyna', 'Gasoline').replace('Hybryda', 'Electric/Gasoline').replace('Elektryczny', 'Electric'), 
+                'fuel': item[2].replace('+LPG','').replace('+CNG','').replace('Benzyna', 'Gasoline').replace('Hybryda', 'Electric/Gasoline').replace('Elektryczny', 'Electric'),
                 'price': item[3].replace(' ', '').split(',')[0],
                 'currency': 'PLN',
                 'ad_link': item[4],
