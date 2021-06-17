@@ -49,18 +49,18 @@ class PlatformLView(generics.ListAPIView):
         filtered_ids=[]
         plat_list=Platform.objects.filter(platform_code=1)
         sale_avg_list=Sale_avg.objects.all()
-        # print('plat_list=', plat_list)
+        print('plat_list=', plat_list)
         # print('sale_list=', sale_avg_list)
         for p in plat_list:
-            # print('p=', p)
+            print('p=', p)
             for s in sale_avg_list:
-                # print('s=', s)
+                print('s=', s)
                 if (p.brandId, p.year, p.fuel)==(s.brandId, s.year, p.fuel) and (p.model.lower() in s.model.lower()) and (s.avg_price - p.price) >= price_dif :
                     p.price_diff = s.avg_price - p.price
                     print("result=", p)
                     p.save()
                     filtered_ids.append(p.id)
-        # print('filtered_ids=', filtered_ids )
+        print('filtered_ids=', filtered_ids )
         queryset = Platform.objects.filter(pk__in=filtered_ids)
         return queryset.order_by('-date_add')
 
@@ -221,12 +221,12 @@ def create_platform_buy(self):
         plat = Platform()
         brands_list = list(Brands.objects.values())
         # print('brands_list=', brands_list)
-        print('ext=', next((item for item in brands_list if item["name"] == 'Audi'), False))
+        # print('ext=', next((item for item in brands_list if item["name"] == 'Audi'), False))
         for row in reader:
             if next((item for item in brands_list if item["name"] == row[0]), False) != False:             #check if parsed brand name in Brands
                 plat.platform_code = True
                 plat.brandId_id =  [d['id'] for d in brands_list if d['name']== row[0]][0]
-                print('plat.brandId_id=', plat.brandId_id)
+                # print('plat.brandId_id=', plat.brandId_id)
                 plat.model = row[1]
                 plat.year = row[2]
                 plat.fuel = row[3]
@@ -241,7 +241,7 @@ def create_platform_buy(self):
             else:
                 print('Error: Brand of this car was not found ')
     #             # break
-    return HttpResponseRedirect("/api/platform")
+    # return HttpResponseRedirect("/api/platform")
 
 
 """Create examples with average price"""
