@@ -227,6 +227,9 @@ def create_platform_buy(self):
 """Create examples with average price"""
 def create_sale_avg_examples(self):
     create_platform_sale(self)
+    elements = Sale_avg.objects.all()
+    elements.delete()
+    print('ELEMENTS deleted from Sale_avg')
     examples = Platform.objects.filter(platform_code=0).order_by('brandId_id').values_list(
             'brandId_id', 'model', 'year', 'fuel', 'price').iterator()
     grouped_cars_by_brand_model_year = defaultdict(list)
@@ -236,12 +239,12 @@ def create_sale_avg_examples(self):
 
     for k, v in grouped_cars_by_brand_model_year.items():
             avg = Sale_avg()
-            avg.brandId_id = [d['id'] for d in brands_list if d['id']== k[0]][0]    # Brands.objects.filter(id=k[0]).first().id
-            print('avg.brandId_id =', avg.brandId_id)
+            avg.brandId_id = [d['id'] for d in brands_list if d['id']== k[0]][0]           # Brands.objects.filter(id=k[0]).first().id
+            # print('avg.brandId_id =', avg.brandId_id)
             avg.model =  k[1]
             avg.year =  k[2]
             avg.fuel = k[3]
             avg.avg_price = int((sum(v) / len(v)) * exchange_rate_PLN_EUR)
-            print('avg=', avg)
+            print('avg_example =', avg)
             avg.save()
     return HttpResponseRedirect("/api/sale_avg")
