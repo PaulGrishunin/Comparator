@@ -68,27 +68,6 @@ class PlatformLView(generics.ListAPIView):
 #     """Add elements to Platform from csv"""
     # serializer_class = PlatformCreateSerializer
 
-    # def create(self, request):
-    #     CSV_PATH = './ads/otomoto_data.csv'  # Csv file path
-    #     with open(CSV_PATH, newline='') as csvfile:
-    #         reader = csv.reader(csvfile, delimiter=',', quotechar=';')
-    #         for row in reader:
-    #             Platform.create(self, platform_code=False,
-    #                 brandId=Brands.objects.get(name=str(row[0])),
-    #                 model=str(row[1]),
-    #                 year=int(row[2]),
-    #                 price=int(row[3]),
-    #                 currency=row[4],
-    #                 photo_link=row[5],
-    #                 ad_link=row[6])
-        #     serializer = PlatformCreateSerializer(data=obj, many=True)
-        #     print('serializer=', serializer)
-        #     if serializer.is_valid():
-        #         serializer.save()
-        #     print('data imported from CSV !!!')
-        # return Response(serializer.data, status=status.HTTP_201_CREATED)
-
-                # Example -> Book.objects.create(ISBNCode=row[0], title=row[1], aut
 
 class PlatformDestroyView(APIView):
     """Delete all elements in Platform"""
@@ -175,6 +154,7 @@ def platform(request):
     ads = Platform.objects.all()
     return render(request, "platform.html", {"ads": ads})
 
+brands_list = list(Brands.objects.values())
 
 # сохранение данных from home(sale) platform в бд
 def create_platform_sale(self):
@@ -184,14 +164,13 @@ def create_platform_sale(self):
     CSV_PATH = './Parsing/otomoto_data.csv'  # Csv file path
     with open(CSV_PATH, newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar=',')
-        brands_list = list(Brands.objects.all().values_list('name', flat=True))
+        # brands_list = list(Brands.objects.all().values_list('name', flat=True))
         print('brands_list=', brands_list)
         for row in reader:
-            # print('row=', row)
-            if row[0]  in brands_list:             #check if parsed brand name in Brands
+            if next((item for item in brands_list if item["name"] == row[0]), False) != False:      #check if parsed brand name in Brands
                 plat = Platform()
                 plat.platform_code = False
-                plat.brandId_id = Brands.objects.filter(name=row[0]).first().id
+                plat.brandId_id = [d['id'] for d in brands_list if d['name']== row[0]][0]        #Brands.objects.filter(name=row[0]).first().id
                 plat.model = row[1]
                 plat.year = row[2]
                 plat.fuel = row[3]
@@ -218,12 +197,10 @@ def create_platform_buy(self):
     CSV_PATH = './Parsing/mobile_data.csv'  # Csv file path
     with open(CSV_PATH,  newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar=';')
-        brands_list = list(Brands.objects.values())
-        # print('brands_list=', brands_list)
-        # print('ext=', next((item for item in brands_list if item["name"] == 'Audi'), False))
+        print('brands_list=', brands_list)
         for row in reader:
-            plat = Platform()
             if next((item for item in brands_list if item["name"] == row[0]), False) != False:             #check if parsed brand name in Brands
+                plat = Platform()
                 plat.platform_code = True
                 plat.brandId_id =  [d['id'] for d in brands_list if d['name']== row[0]][0]
                 # print('plat.brandId_id=', plat.brandId_id)
@@ -253,11 +230,11 @@ def create_sale_avg_examples(self):
     grouped_cars_by_brand_model_year = defaultdict(list)
     for brandId_id, model, year, fuel, price in examples:
         grouped_cars_by_brand_model_year[brandId_id, model, year, fuel].append(price)
-    print('grouped_cars_by_brand_model_year=', len(grouped_cars_by_brand_model_year))
+    print('grouped_cars_by_brand_model_year=', grouped_cars_by_brand_model_year)
 
     for k, v in grouped_cars_by_brand_model_year.items():
             avg = Sale_avg()
-            avg.brandId_id =  Brands.objects.filter(id=k[0]).first().id
+            avg.brandId_id = [d['id'] for d in brands_list if d['id']== k[0]][0]    # Brands.objects.filter(id=k[0]).first().id
             print('avg.brandId_id =', avg.brandId_id)
             avg.model =  k[1]
             avg.year =  k[2]
