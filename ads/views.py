@@ -200,7 +200,7 @@ def create_platform_sale(self):
                 print('plat=', plat)
                 plat.save()
             else:
-                print('FALLLLLSEEE')
+                print('Error: Brand of this car was not found ')
     #             # break
     return HttpResponseRedirect("/api/platform")
 
