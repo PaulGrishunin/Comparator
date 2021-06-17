@@ -185,14 +185,14 @@ def create_platform_sale(self):
     with open(CSV_PATH, newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar=',')
         plat = Platform()
-        print('Platform() =',plat)
-        brands_list = Brands.objects.all().values_list('name', flat=True)
+        brands_list = list(Brands.objects.all().values_list('name', flat=True))
         print('brands_list=', brands_list)
         for row in reader:
             # print('row=', row)
             if row[0]  in brands_list:             #check if parsed brand name in Brands
                 plat.platform_code = False
-                plat.brandId_id = Brands.objects.get(name=row[0]).id
+                plat.brandId_id = Brands.objects.filter(name=row[0]).first().id
+                print('plat.brandId_id =', plat.brandId_id)
                 plat.model = row[1]
                 plat.year = row[2]
                 plat.fuel = row[3]
@@ -256,7 +256,7 @@ def create_sale_avg_examples(self):
 
     for k, v in grouped_cars_by_brand_model_year.items():
             avg = Sale_avg()
-            avg.brandId_id =  Brands.objects.get(id=k[0]).id
+            avg.brandId_id =  Brands.objects.filter(id=k[0]).first().id
             print('avg.brandId_id =', avg.brandId_id)
             avg.model =  k[1]
             avg.year =  k[2]
