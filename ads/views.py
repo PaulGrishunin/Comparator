@@ -77,8 +77,6 @@ class PlatformDestroyView(APIView):
         return Response({"message": "All elements in Platform has been deleted."}, status=204)
 
 
-exchange_rate_PLN_EUR = 0.22         # value must be parsed  in other module
-
 class Sale_avgView(generics.ListAPIView):
     queryset = Sale_avg.objects.all().order_by('brandId')
     serializer_class = Sale_avgSerializer
@@ -154,6 +152,8 @@ def platform(request):
     ads = Platform.objects.all()
     return render(request, "platform.html", {"ads": ads})
 
+
+exchange_rate_PLN_EUR = 0.22         # value must be parsed  in other module
 brands_list = list(Brands.objects.values())
 
 # сохранение данных from home(sale) platform в бд
@@ -161,6 +161,7 @@ def create_platform_sale(self):
     subprocess.Popen(['scrapy', 'runspider', './Parsing/scrapy_otomoto/spiders/otomotospider.py', '-O', './Parsing/otomoto_data.csv']).wait(timeout=None)
     elements = Platform.objects.filter(platform_code=0)
     elements.delete()
+    print('ELEMENTS with platform_code=0 deleted from Platform')
     CSV_PATH = './Parsing/otomoto_data.csv'  # Csv file path
     with open(CSV_PATH, newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar=',')
@@ -194,6 +195,7 @@ def create_platform_buy(self):
     elements = Platform.objects.filter(platform_code=1)
     elements = elements.exclude(pk__in=fav_ids)
     elements.delete()
+    print('ELEMENTS with platform_code=1 deleted from Platform')
     CSV_PATH = './Parsing/mobile_data.csv'  # Csv file path
     with open(CSV_PATH,  newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar=';')
