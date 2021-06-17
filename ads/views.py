@@ -221,9 +221,9 @@ def create_platform_buy(self):
         plat = Platform()
         brands_list = list(Brands.objects.values())
         print('brands_list=', brands_list)
-        print('ext=', next(item for item in brands_list if item["name"] == 'Audi'))
+        print('ext=', next((item for item in brands_list if item["name"] == 'Audi'), False))
         for row in reader:
-            if (next(item for item in brands_list if item["name"] == row[0])):             #check if parsed brand name in Brands
+            if next((item for item in brands_list if item["name"] == row[0]), False) == True:             #check if parsed brand name in Brands
                 plat.platform_code = True
                 plat.brandId_id =  [d['id'] for d in brands_list if d['name']== row[0]]
                 print('plat.brandId_id=', plat.brandId_id)
