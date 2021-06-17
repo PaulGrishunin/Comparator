@@ -219,7 +219,7 @@ def create_platform_buy(self):
     with open(CSV_PATH,  newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar=';')
         plat = Platform()
-        brands_list = list(Brands.objects.all()(flat=True))
+        brands_list = list(Brands.objects.values())
         print('brands_list=', brands_list)
         for row in reader:
             if row[0]  in brands_list:             #check if parsed brand name in Brands
