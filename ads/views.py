@@ -240,7 +240,7 @@ def create_platform_buy(self):
                 print('Error: Brand of this car was not found ')
         print('res_list=', res_list)
         Platform.objects.bulk_create([Platform(**{'platform_code': plat.platform_code,
-                                                              'brandId_id': plat.brandId,
+                                                              'brandId_id': plat.brandId_id,
                                                               'model': plat.model,
                                                               'year': plat.year,
                                                               'fuel': plat.year,
