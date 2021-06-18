@@ -78,8 +78,8 @@ class PlatformLView(generics.ListAPIView):
         #                                         'date_add': p.date_add,
         #                                         'ad_link': p.ad_link})
         #                              for p in result_list])
-        queryset = Platform.objects.filter(pk__in=filtered_ids)
-        return queryset.order_by('-date_add')
+        queryset = Platform.objects.filter(pk__in=filtered_ids).order_by('-date_add')
+        return queryset
 
 # class PlatformCreateView(APIView):
 #     """Add elements to Platform from csv"""
@@ -161,7 +161,6 @@ class FavoritesDeleteView(APIView):
 # получение данных из бд
 def index(request):
     people = User.objects.all()
-    # print('request.user=', request.user)
     return render(request, "index.html", {"people": people})
 
 
