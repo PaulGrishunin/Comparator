@@ -47,6 +47,7 @@ class PlatformLView(generics.ListAPIView):
         create_platform_buy(self)
         price_dif = self.kwargs['dif']
         filtered_ids=[]
+        result_list=[]
         plat_list=Platform.objects.filter(platform_code=1)
         sale_avg_list=Sale_avg.objects.all()
         # print('plat_list=', plat_list)
@@ -58,9 +59,24 @@ class PlatformLView(generics.ListAPIView):
                 if (p.brandId, p.year, p.fuel)==(s.brandId, s.year, p.fuel) and (p.model.lower() in s.model.lower()) and (s.avg_price - p.price) >= price_dif :
                     p.price_diff = s.avg_price - p.price
                     print("result=", p)
-                    p.save()
+                    # p.save()
+                    result_list.append(p)
                     filtered_ids.append(p.id)
-        print('filtered_ids=', filtered_ids )
+        print('result_list=', result_list )
+        Platform.objects.bulk_create([Platform(**{'id': p.id,
+                                                'brandId': p.brandId,
+                                                'model': p.model,
+                                                'year': p.year,
+                                                'fuel': p.year,
+                                                'country': p.country,
+                                                'place': p.place,
+                                                'price': p.price,
+                                                'price_diff': p.price_diff,
+                                                'currency': p.currency,
+                                                'photo_link': p.photo_link,
+                                                'date_add': p.date_add,
+                                                'ad_link': p.ad_link})
+                                     for p in result_list])
         queryset = Platform.objects.filter(pk__in=filtered_ids)
         return queryset.order_by('-date_add')
 
@@ -195,11 +211,12 @@ def create_platform_buy(self):
     elements = Platform.objects.filter(platform_code=1)
     elements = elements.exclude(pk__in=fav_ids)
     elements.delete()
-    print('ELEMENTS with platform_code=1 deleted from Platform')
+    print('ELEMENTS with platform_code=1 (without elements in Favorites) deleted from Platform')
     CSV_PATH = './Parsing/mobile_data.csv'  # Csv file path
     with open(CSV_PATH,  newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar=';')
-        print('brands_list=', brands_list)
+        # print('brands_list=', brands_list)
+        res_list =[]
         for row in reader:
             if next((item for item in brands_list if item["name"] == row[0]), False) != False:             #check if parsed brand name in Brands
                 plat = Platform()
@@ -215,11 +232,26 @@ def create_platform_buy(self):
                 plat.currency = row[7]
                 plat.photo_link = row[8]
                 plat.ad_link = row[9]
-                print('plat=', plat)
-                plat.save()
+                # print('plat=', plat)
+                # plat.save()
+                res_list.append(plat)
+
             else:
                 print('Error: Brand of this car was not found ')
-    #             # break
+        print('res_list=', res_list)
+        Platform.objects.bulk_create([Platform(**{'platform_code': plat.platform_code,
+                                                              'brandId_id': plat.brandId,
+                                                              'model': plat.model,
+                                                              'year': plat.year,
+                                                              'fuel': plat.year,
+                                                              'country': plat.country,
+                                                              'place': plat.place,
+                                                              'price': plat.price,
+                                                              'price_diff': plat.price_diff,
+                                                              'currency': plat.currency,
+                                                              'photo_link': plat.photo_link,
+                                                              'ad_link': plat.ad_link})
+                                                  for plat in res_list])
     return Response({"message": "Elements added to Platform."}, status=201)
 
 
