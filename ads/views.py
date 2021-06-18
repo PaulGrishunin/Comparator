@@ -59,8 +59,8 @@ class PlatformLView(generics.ListAPIView):
                 if (p.brandId, p.year, p.fuel)==(s.brandId, s.year, p.fuel) and (p.model.lower() in s.model.lower()) and (s.avg_price - p.price) >= price_dif :
                     p.price_diff = s.avg_price - p.price
                     print("result=", p)
-                    # p.save()
-                    result_list.append(p)
+                    p.save()
+                    # result_list.append(p)
                     filtered_ids.append(p.id)
         # print('result_list=', result_list )
         # Platform.objects.update([Platform(**{'id': p.id,
