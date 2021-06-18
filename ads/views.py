@@ -62,8 +62,7 @@ class PlatformLView(generics.ListAPIView):
                     # p.save()
                     result_list.append(p)
                     filtered_ids.append(p.id)
-        print('result_list=', result_list )
-
+        # print('result_list=', result_list )
         # Platform.objects.update([Platform(**{'id': p.id,
         #                                         'platform_code': True,
         #                                         'brandId_id': p.brandId_id,
@@ -79,9 +78,7 @@ class PlatformLView(generics.ListAPIView):
         #                                         'date_add': p.date_add,
         #                                         'ad_link': p.ad_link})
         #                              for p in result_list])
-        queryset = Platform.objects.filter(pk__in=filtered_ids).update([Platform(**{
-                                                'price_diff': p.price_diff})
-                                     for p in result_list])
+        queryset = Platform.objects.filter(pk__in=filtered_ids)
         return queryset.order_by('-date_add')
 
 # class PlatformCreateView(APIView):
