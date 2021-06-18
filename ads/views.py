@@ -179,10 +179,9 @@ def create_platform_sale(self):
     elements.delete()
     print('ELEMENTS with platform_code=0 deleted from Platform')
     CSV_PATH = './Parsing/otomoto_data.csv'  # Csv file path
+    platform_sale_list=[]
     with open(CSV_PATH, newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar=',')
-        # brands_list = list(Brands.objects.all().values_list('name', flat=True))
-        print('brands_list=', brands_list)
         for row in reader:
             if next((item for item in brands_list if item["name"] == row[0]), False) != False:      #check if parsed brand name in Brands
                 plat = Platform()
@@ -195,10 +194,20 @@ def create_platform_sale(self):
                 plat.currency = row[5]
                 plat.ad_link = row[6]
                 print('plat=', plat)
-                plat.save()
+                # plat.save()
+                platform_sale_list.append(plat)
             else:
                 print('Error: Brand of this car was not found ')
-    #             # break
+        print('platform_sale_list=', platform_sale_list)
+        Platform.objects.bulk_create([Platform(**{'platform_code': plat.platform_code,
+                                                  'brandId_id': plat.brandId_id,
+                                                  'model': plat.model,
+                                                  'year': plat.year,
+                                                  'fuel': plat.fuel,
+                                                  'price': plat.price,
+                                                  'currency': plat.currency,
+                                                  'ad_link': plat.ad_link})
+                                      for plat in platform_sale_list])
     return HttpResponseRedirect("/api/platform")
 
 # сохранение данных from home(sale) platform в бд
@@ -216,7 +225,7 @@ def create_platform_buy(self):
     with open(CSV_PATH,  newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar=';')
         # print('brands_list=', brands_list)
-        res_list =[]
+        platform_buy_list =[]
         for row in reader:
             if next((item for item in brands_list if item["name"] == row[0]), False) != False:             #check if parsed brand name in Brands
                 plat = Platform()
@@ -234,11 +243,11 @@ def create_platform_buy(self):
                 plat.ad_link = row[9]
                 # print('plat=', plat)
                 # plat.save()
-                res_list.append(plat)
+                platform_buy_list.append(plat)
 
             else:
                 print('Error: Brand of this car was not found ')
-        print('res_list=', res_list)
+        print(' platform_buy_list=',  platform_buy_list)
         Platform.objects.bulk_create([Platform(**{'platform_code': plat.platform_code,
                                                               'brandId_id': plat.brandId_id,
                                                               'model': plat.model,
@@ -251,7 +260,7 @@ def create_platform_buy(self):
                                                               'currency': plat.currency,
                                                               'photo_link': plat.photo_link,
                                                               'ad_link': plat.ad_link})
-                                                  for plat in res_list])
+                                                  for plat in  platform_buy_list])
     return Response({"message": "Elements added to Platform."}, status=201)
 
 
@@ -268,7 +277,7 @@ def create_sale_avg_examples(self):
     for brandId_id, model, year, fuel, price in examples:
         grouped_cars_by_brand_model_year[brandId_id, model, year, fuel].append(price)
     print('grouped_cars_by_brand_model_year=', grouped_cars_by_brand_model_year)
-
+    sale_avg_list=[]
     for k, v in grouped_cars_by_brand_model_year.items():
             avg = Sale_avg()
             avg.brandId_id = [d['id'] for d in brands_list if d['id']== k[0]][0]           # Brands.objects.filter(id=k[0]).first().id
@@ -278,5 +287,12 @@ def create_sale_avg_examples(self):
             avg.fuel = k[3]
             avg.avg_price = int((sum(v) / len(v)) * exchange_rate_PLN_EUR)
             print('avg_example =', avg)
-            avg.save()
+            # avg.save()
+            sale_avg_list.append(avg)
+    Sale_avg.objects.bulk_create([Sale_avg(**{'brandId_id': avg.brandId_id,
+                                              'model': avg.model,
+                                              'year': avg.year,
+                                              'fuel': avg.fuel,
+                                              'price_diff': avg.price_diff})
+                                  for avg in sale_avg_list])
     return HttpResponseRedirect("/api/sale_avg")
