@@ -64,10 +64,11 @@ class PlatformLView(generics.ListAPIView):
                     filtered_ids.append(p.id)
         print('result_list=', result_list )
         Platform.objects.bulk_create([Platform(**{'id': p.id,
-                                                'brandId': p.brandId,
+                                                'platform_code': True,
+                                                'brandId_id': p.brandId_id,
                                                 'model': p.model,
                                                 'year': p.year,
-                                                'fuel': p.year,
+                                                'fuel': p.fuel,
                                                 'country': p.country,
                                                 'place': p.place,
                                                 'price': p.price,
@@ -243,7 +244,7 @@ def create_platform_buy(self):
                                                               'brandId_id': plat.brandId_id,
                                                               'model': plat.model,
                                                               'year': plat.year,
-                                                              'fuel': plat.year,
+                                                              'fuel': plat.fuel,
                                                               'country': plat.country,
                                                               'place': plat.place,
                                                               'price': plat.price,
