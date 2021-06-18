@@ -293,6 +293,6 @@ def create_sale_avg_examples(self):
                                               'model': avg.model,
                                               'year': avg.year,
                                               'fuel': avg.fuel,
-                                              'price_diff': avg.price_diff})
+                                              'avg_price': avg.avg_price})
                                   for avg in sale_avg_list])
     return HttpResponseRedirect("/api/sale_avg")
