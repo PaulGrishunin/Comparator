@@ -8,7 +8,7 @@ from scrapy.utils.project import get_project_settings
 class OtomotorSpider(scrapy.Spider):
     name = 'otomotospider'
     allowed_domains = ['www.otomoto.pl', 'otomoto.pl']
-    start_urls = ['https://www.otomoto.pl/osobowe/?search%5Border%5D=created_at_first%3Adesc&search%5Bbrand_program_id%5D%5B0%5D=&search%5Bcountry%5D=&page='+'%s' % page for page in range(1,40)]
+    start_urls = ['https://www.otomoto.pl/osobowe/?search%5Border%5D=created_at_first%3Adesc&search%5Bbrand_program_id%5D%5B0%5D=&search%5Bcountry%5D=&page='+'%s' % page for page in range(1,45)]
     #print('start_urls=', start_urls)
     
     settings = {
