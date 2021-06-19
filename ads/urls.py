@@ -1,4 +1,6 @@
-from django.urls import path
+import debug_toolbar
+from django.conf import settings
+from django.urls import path, include
 from .views import (
     BrandsListView,
     PlatformListView,
@@ -33,4 +35,6 @@ urlpatterns = [
     path('favorites', FavoritesListView.as_view(), name='favorites_list'),
     path('favorites/add/<int:pk>', FavoritesCreateView.as_view(), name='favorite_create'),
     path('favorites/delete/<int:pk>', FavoritesDeleteView.as_view(), name='favorites_delete'),
+
+    path('__debug__/', include(debug_toolbar.urls)),
 ]
