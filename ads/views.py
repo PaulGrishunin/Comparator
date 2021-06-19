@@ -47,15 +47,12 @@ class PlatformLView(generics.ListAPIView):
         create_platform_buy(self)
         price_dif = self.kwargs['dif']
         filtered_ids=[]
-        result_list=[]
         plat_list=Platform.objects.filter(platform_code=1)
         sale_avg_list=Sale_avg.objects.all()
-        # print('plat_list=', plat_list)
-        # print('sale_list=', sale_avg_list)
+        print('plat_list=', plat_list)
+        print('sale_list=', sale_avg_list)
         for p in plat_list:
-            # print('p=', p)
             for s in sale_avg_list:
-                # print('s=', s)
                 if (p.brandId, p.year, p.fuel)==(s.brandId, s.year, p.fuel) and (p.model.lower() in s.model.lower()) and (s.avg_price - p.price) >= price_dif :
                     p.price_diff = s.avg_price - p.price
                     print("result=", p)
@@ -217,8 +214,8 @@ def create_platform_buy(self):
     favs = Favorites.objects.all()
     for f in favs:
         fav_ids.append(f.platformId_id)                 # don't delete ads, which have relations in Favorites.
-    elements = Platform.objects.filter(platform_code=1)
-    elements = elements.exclude(pk__in=fav_ids)
+    elements = Platform.objects.filter(platform_code=1).exclude(pk__in=fav_ids)
+    # elements = elements.exclude(pk__in=fav_ids)
     elements.delete()
     print('ELEMENTS with platform_code=1 (without elements in Favorites) deleted from Platform')
     CSV_PATH = './Parsing/mobile_data.csv'  # Csv file path
@@ -244,7 +241,6 @@ def create_platform_buy(self):
                 # print('plat=', plat)
                 # plat.save()
                 platform_buy_list.append(plat)
-
             else:
                 print('Error: Brand of this car was not found ')
         print(' platform_buy_list=',  platform_buy_list)
@@ -262,7 +258,6 @@ def create_platform_buy(self):
                                                               'ad_link': plat.ad_link})
                                                   for plat in  platform_buy_list])
     return Response({"message": "Elements added to Platform."}, status=201)
-
 
 
 """Create examples with average price"""
