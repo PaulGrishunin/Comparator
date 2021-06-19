@@ -1,5 +1,5 @@
-import debug_toolbar
-from django.conf import settings
+# import debug_toolbar
+# from django.conf import settings
 from django.urls import path, include
 from .views import (
     BrandsListView,
@@ -25,7 +25,6 @@ urlpatterns = [
 
     path('platform/', PlatformListView.as_view(), name='platform_list'),
     path('platforml/price_diff=<int:dif>', PlatformLView.as_view(), name='platform_list_filtered'),
-    # path('platform/add', PlatformCreateView.as_view(), name='platform_create'),
     path('platform/delete', PlatformDestroyView.as_view(), name='platform_delete'),
 
     path('sale_avg/', Sale_avgView.as_view(), name='sale_avg'),
