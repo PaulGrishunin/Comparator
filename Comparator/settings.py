@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',          #
-    'debug_toolbar',
+    # 'debug_toolbar',
     'corsheaders',
     'drf_yasg',
     'rest_framework',
@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -171,5 +171,8 @@ import dj_database_url
 
 db_from_env = dj_database_url.config()
 # DATABASE['default'].update(db_from_env)
-
 django_heroku.settings(locals())
+
+# INTERNAL_IPS = [
+#     '127.0.0.1',
+# ]
