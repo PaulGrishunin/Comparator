@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+# import django_heroku
 
-import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,8 +25,8 @@ SECRET_KEY = '3t$3$653h%+_sk#!^w&1=w(e(g0-1d@auc=s$x0g_l%yh8^cd1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'http://127.0.0.1:8000']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'http://127.0.0.1:8000']
+# ALLOWED_HOSTS = ['*']                                                       #
 
 
 # Application definition
@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'debug_toolbar',               #
     'django_extensions',          #
-    # 'debug_toolbar',
     'corsheaders',
     'drf_yasg',
     'rest_framework',
@@ -51,13 +51,13 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',  #
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -94,14 +94,14 @@ WSGI_APPLICATION = 'Comparator.wsgi.application'
 DATABASES = {
 'default': {
 'ENGINE': 'django.db.backends.mysql',
-'NAME': 'heroku_4808438aaa5dc30',
-        'USER': 'b6e9f0fa210fa8',
-        'PASSWORD': 'd7494209',
-        'HOST': 'eu-cdbr-west-01.cleardb.com',
-# 'NAME': 'my_db',
-#         'USER': 'root',
-#         'PASSWORD': '555555',
-#         'HOST': 'localhost',
+# 'NAME': 'heroku_4808438aaa5dc30',
+#         'USER': 'b6e9f0fa210fa8',
+#         'PASSWORD': 'd7494209',
+#         'HOST': 'eu-cdbr-west-01.cleardb.com',
+'NAME': 'my_db',
+        'USER': 'root',
+        'PASSWORD': '555555',
+        'HOST': 'localhost',
         'PORT': '3306',
 'OPTIONS': {
 'read_default_file': '/etc/mysql/my.cnf',
@@ -165,14 +165,14 @@ REST_FRAMEWORK = {
     'NON_FIELD_ERRORS_KEY': 'error',
     'DEFAULT_AUTHENTICATION_CLASSES': ('authentication.backends.JWTAuthentication', ),
     'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend', ),
+    'DEFAULT_RENDERER_CLASSES': ('rest_framework.renderers.JSONRenderer',),           # Disable Browsable API, Only for PRODUCTION
 }
 
-import dj_database_url
-
-db_from_env = dj_database_url.config()
+# import dj_database_url
+#
+# db_from_env = dj_database_url.config()
 # DATABASE['default'].update(db_from_env)
-django_heroku.settings(locals())
 
-# INTERNAL_IPS = [
-#     '127.0.0.1',
-# ]
+# django_heroku.settings(locals())
+
+INTERNAL_IPS = ['http://127.0.0.1']     #

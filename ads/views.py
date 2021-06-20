@@ -39,8 +39,9 @@ class PlatformListView(generics.ListAPIView):
 class PlatformLView(generics.ListAPIView):
     """Get List elements of Platform with filter price_diff, year_min, year_max, price_min, price_max"""
     serializer_class = PlatformListSerializer
-    filter_backends = (DjangoFilterBackend, )
+    filter_backends = (DjangoFilterBackend, filters.SearchFilter)
     filterset_class = PlatformFilter
+    search_fields = ['model']
     # pagination_class = PaginationPlatform
 
     def get_queryset(self):
@@ -53,7 +54,7 @@ class PlatformLView(generics.ListAPIView):
         print('sale_list=', sale_avg_list)
         for p in plat_list:
             for s in sale_avg_list:
-                if (p.brandId, p.year, p.fuel)==(s.brandId, s.year, p.fuel) and (p.model.lower() in s.model.lower()) and (s.avg_price - p.price) >= price_dif :
+                if (p.brandId_id, p.model, p.year, p.fuel)==(s.brandId_id, s.model, s.year, p.fuel) and (s.avg_price - p.price) >= price_dif :
                     p.price_diff = s.avg_price - p.price
                     print("result=", p)
                     p.save()
@@ -260,6 +261,8 @@ def create_platform_buy(self):
     return Response({"message": "Elements added to Platform."}, status=201)
 
 
+from statistics import median
+
 """Create examples with average price"""
 def create_sale_avg_examples(self):
     create_platform_sale(self)
@@ -280,7 +283,8 @@ def create_sale_avg_examples(self):
             avg.model =  k[1]
             avg.year =  k[2]
             avg.fuel = k[3]
-            avg.avg_price = int((sum(v) / len(v)) * exchange_rate_PLN_EUR)
+            # avg.avg_price = int((sum(v) / len(v)) * exchange_rate_PLN_EUR)        # Average
+            avg.avg_price = int(median([i*exchange_rate_PLN_EUR for i in v]))        # Median
             print('avg_example =', avg)
             # avg.save()
             sale_avg_list.append(avg)

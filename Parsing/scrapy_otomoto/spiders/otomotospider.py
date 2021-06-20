@@ -26,7 +26,7 @@ class OtomotorSpider(scrapy.Spider):
         
         price = response.css("article.adListingItem > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > span:nth-child(3) > span:nth-child(1)::text").extract()
         
-        photo_link = response.css("article.adListingItem > div:nth-child(1) > a:nth-child(1) > img:nth-child(1)::attr(data-src)").extract()
+        # photo_link = response.css("article.adListingItem > div:nth-child(1) > a:nth-child(1) > img:nth-child(1)::attr(data-src)").extract()
         
         ad_link = response.css("article.adListingItem > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > h2:nth-child(1) > a:nth-child(1)::attr(href)").extract()
         count = 0
@@ -43,20 +43,3 @@ class OtomotorSpider(scrapy.Spider):
                 
             }
             yield scraped_data
-            
-        #time.sleep(2) #If you take out this line you won't get anything because the content of that page take some time to get loaded.
-
-        #NEXT_PAGE_SELECTOR = '.next-page > a::attr(href)'         
-        #print('NEXT_PAGE_SELECTOR=',NEXT_PAGE_SELECTOR)   /html/body/div[1]/div[9]/div[4]/div[2]/div[4]/div[2]/div[4]/ul/li[15]/a
-        #print(response.text)
-        #next_page = response.css(".next-page a::attr(href)").extract_first()
-        #print('NEXT_PAGE=', next_page)
-        #if next_page:
-            #yield scrapy.Request(
-                #response.urljoin(next_page),
-                #callback=self.parse
-            #) 
-
-#driver.quit()
-
-

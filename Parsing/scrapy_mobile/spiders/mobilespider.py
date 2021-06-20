@@ -54,20 +54,5 @@ class MobilespiderSpider(scrapy.Spider):
                 
             }
             yield scraped_data
-            
-        #time.sleep(2) #If you take out this line you won't get anything because the content of that page take some time to get loaded.
-
-        #NEXT_PAGE_SELECTOR = '.next-page > a::attr(href)'         
-        #print('NEXT_PAGE_SELECTOR=',NEXT_PAGE_SELECTOR)   /html/body/div[1]/div[9]/div[4]/div[2]/div[4]/div[2]/div[4]/ul/li[15]/a
-        #print(response.text)
-        #next_page = response.css(".next-page a::attr(href)").extract_first()
-        #print('NEXT_PAGE=', next_page)
-        #if next_page:
-            #yield scrapy.Request(
-                #response.urljoin(next_page),
-                #callback=self.parse
-            #) 
-
-#driver.quit()
 
 
