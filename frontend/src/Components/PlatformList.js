@@ -35,19 +35,47 @@ class PlatformList extends Component {
             .then(console.log)
     }
 
-    searchSpace=(event)=>{
-        let model = event.target.value;
-        this.setState({search:model})
-        console.log(this.state.search)
-  }
+    onSortByChange = (event) => {
+        this.sortBy = event.target.value;
+            // console.log(this.sortBy)
+        const data = localStorage.getItem('platform-data');
+        if (this.sortBy === "year"){
+            var cars_sorted = JSON.parse(data).sort(function(a, b){return a.year - b.year});}
+        else if (this.sortBy === "price"){
+            var cars_sorted = JSON.parse(data).sort(function(a, b){return a.price - b.price});}
+        else if (this.sortBy === "price_diff"){
+            var cars_sorted = JSON.parse(data).sort(function(a, b){return a.price_diff - b.price_diff});}
+        else if (this.sortBy === "brandId") {
+            var cars_sorted = JSON.parse(data).sort(function (a, b) {
+                var nameA = a.brandId.toLowerCase(),
+                    nameB = b.brandId.toLowerCase()
+                if (nameA < nameB)
+                    return -1
+                if (nameA > nameB)
+                    return 1
+                return 0
+            })
+        }
+        localStorage.setItem('platform-data',  JSON.stringify(cars_sorted));
+        let platform = cars_sorted.map((plat) => this.renderPlatformList(plat))
+        this.setState({platform: platform})
+    }
 
-    // filterList(e){
-    //     var filteredList = this.platform.filter(function(model){
-    //         return model.toLowerCase().search(e.target.value.toLowerCase())!== -1;
-    //     });
-    //     // обновление состояния
-    //     this.setState({platform: filteredList});
-    // }
+  //   searchSpace=(event)=>{
+  //       let model = event.target.value;
+  //       this.setState({search:model})
+  //       console.log(this.state.search)
+  // }
+  //
+  //   filterList(e){
+  //           const data = localStorage.getItem('platform-data');
+  //           var filteredList = JSON.parse(data).filter(function(model){
+  //           return model.toLowerCase().search(e.target.value.toLowerCase())!== -1;
+  //       });
+  //   let platform = filteredList.map((plat) => this.renderPlatformList(plat))
+  //
+  //       this.setState({platform: filteredList});
+  //   }
 
     renderPlatformList(plat) {
         return (
@@ -101,10 +129,11 @@ class PlatformList extends Component {
     }
 
     componentDidMount(){
-         const data = localStorage.getItem('platform-data');
-        let platform = JSON.parse(data).map((plat) => this.renderPlatformList(plat)
+        if (localStorage.getItem('platform-data') != null){
+            const data = localStorage.getItem('platform-data');
+            let platform = JSON.parse(data).map((plat) => this.renderPlatformList(plat)
 )
-        this.setState({platform: platform},)
+        this.setState({platform: platform},)}
     }
 
     render() {
@@ -113,7 +142,14 @@ class PlatformList extends Component {
               <div>
                   <Form listAds={this.gettingPlatform} />
                   {/*<input placeholder="Поиск" onChange={this.filterList} />*/}
-                   <input type="search" placeholder="🔍 model" onChange={(e)=>this.searchSpace(e)} />
+                  {/* <input type="search" placeholder="🔍 model" onChange={(e)=>this.searchSpace(e)} />*/}
+                  <select name="sortBy" onChange={this.onSortByChange}>
+                      <option value="brandId">sort by</option>
+                      <option value="brandId">brand</option>
+                      <option value="year">year</option>
+                      <option value="price">price</option>
+                      <option value="price_diff">price difference</option>
+                  </select>
                   {this.state.loading ? <Spinner />:
                       this.state.platform}
               </div>
