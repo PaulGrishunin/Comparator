@@ -185,7 +185,7 @@ class Form extends React.Component {
                     <legend>Price difference, €</legend>
                     <div className="select-row-dif">
                         <select name="price_diff" required className="form-control form-control--combobox ab-normal combo-variant" onChange={this.onPriceDifChange}>
-                            <option value="1">from</option>
+                            <option value="">from</option>
                             <option value="1">1</option>
                             <option value="100">100</option>
                             <option value="500">500</option>

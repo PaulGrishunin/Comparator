@@ -29,7 +29,7 @@ class Platform(models.Model):
     year = models.IntegerField()
     fuel = models.CharField(max_length=50)
     country = models.CharField(max_length=10, null=True)
-    place = models.CharField(max_length=50, null=True)
+    place = models.CharField(max_length=100, null=True)
     price =  models.IntegerField()
     price_diff = models.IntegerField(default=0)
     currency = models.CharField(max_length=3)

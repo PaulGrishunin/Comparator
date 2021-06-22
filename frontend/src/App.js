@@ -13,11 +13,11 @@ class App extends Component {
     contactUsDiv = () => {
         return (
                 <QueueAnim style={{ backgroundColor: "#ffffff" }}>
-                    <div key="a" style={{ marginTop: "80vh", align: "bottom", padding: "2%", fontWeight: "bold", fontSize: "large" }}>
+                    <div key="a" style={{ marginTop: "80vh", align: "bottom", padding: "2%", fontWeight: "bold", fontSize: "medium" }}>
                         Contact us
                     </div>
                     <div key="b" style={{ paddingLeft: "10%", paddingRight: "10%", display: "flex" }}>
-                        <div style={{ float: "right", fontSize: "larger", textAlign: "center", width: "60vw"}} >
+                        <div style={{ float: "right", fontSize: "small", textAlign: "center", width: "60vw"}} >
                             Phone: XXX-XXX-XXX
                             <br />
                             Email: xxx@email.com

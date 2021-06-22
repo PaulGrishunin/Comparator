@@ -200,36 +200,74 @@
     border-radius: 15px 0 0 15px;
 }
 
-.knopka01 {
-    display: inline-block;
-    width: 60px;
-    height: 30px;
-    margin: 0 10px 10px 0;
-    line-height: 25px;
-    font-size: 12px;
-    justify-content: end;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 0 1px rgba(255,255,255,.2), 0 -1px rgba(0,0,0,.8);
-    outline: none;
-    border: none;
-    border-radius: 100px;
-    background: rgb(28,107,114) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
-    box-shadow: inset rgba(0,0,0,.6) 0 -2px 5px, inset rgba(252,255,255,.7) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
-    color: rgb(0,79,86);
-    user-select: none;
-}
-.knopka01:hover {
-    color: rgb(0,59,66);
-    cursor: pointer;
-}
-.knopka01:active {
-    padding-bottom: 1px;
-    box-shadow:
-            inset rgba(0,0,0,1) 0 1px 3px,
-            inset rgba(0,0,0,.6) 0 -2px 5px,
-            inset rgba(252,255,255,.7) 0 2px 5px,
-            0 1px rgba(255,255,255,.08);
-    color: rgb(128,207,214);
+html, body{
+    min-height:100%;
 }
 
+body{
+    background-image: -webkit-linear-gradient(top, #edecec, #cecbc9);
+    background-image: linear-gradient(top, #edecec, #cecbc9);
+}
+
+.buttonHolder{
+    margin:50px auto;
+    width:250px;
+}
+
+
+.button{
+    background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
+    background-image: linear-gradient(top, #f4f1ee, #fff);
+    border-radius: 50%;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);
+    float:left;
+    height: 42px;
+    margin: 0 10px 10px 0;
+    position: relative;
+    width: 42px;
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+}
+.button:after{
+    color:#e9e6e4;
+    content: "";
+    display: block;
+    font-size: 30px;
+    height: 30px;
+    text-decoration: none;
+    text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+    position: absolute;
+    width: 30px;
+}
+.heart:after{
+    content: "❤";
+    left: 6px;
+    top: -2px;
+}
+.cross:after{
+    content: "✖";
+    left: 6px;
+    top: -2px;
+}
+.button:hover{
+    background-image: -webkit-linear-gradient(top, #fff, #f4f1ee);
+    background-image: linear-gradient(top, #fff, #f4f1ee);
+    color:#0088cc;
+}
+.heart:hover:after{
+    color:#f94e66;
+    text-shadow:0px 0px 6px #f94e66;
+}
+.cross:hover:after{
+    color:#eb2f2f;
+    text-shadow:0px 0px 6px #eb2f2f;
+}
+.button:active{
+    background-image: -webkit-linear-gradient(top, #efedec, #f7f4f4);
+    background-image: linear-gradient(top, #efedec, #f7f4f4);
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.4), inset 0px -3px 1px 1px rgba(204,198,197,.5);
+}
+.button:active:after{
+    color:#dbd2d2;
+    text-shadow: 0px -1px 1px #bdb5b4, 0px 1px 1px white;
+}

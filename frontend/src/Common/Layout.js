@@ -14,7 +14,7 @@ class CustomLayout extends Component{
         super();
         this.iconPath = '/';
         this.state = {
-            registred: "",
+            registred: false,
         };
     }
 
@@ -25,10 +25,10 @@ class CustomLayout extends Component{
                 (result) => {
                     if (result.user.email){
                         console.log("registred Ok")
-                        this.setState({registred: "ok"})
+                        this.setState({registred: true})
                     } else{
                         console.log("Not registered")
-                        this.setState({registred: "not"})
+                        this.setState({registred: false})
                     }
                 }
                 // (error) => {
@@ -111,7 +111,7 @@ class CustomLayout extends Component{
     }
 
     renderMenu = () => {
-        if ( this.state.registred === "ok" )
+        if ( this.state.registred === true)
             return <this.authorizedMenu/>;
         else
         return <this.nonAuthorizedMenu />;
