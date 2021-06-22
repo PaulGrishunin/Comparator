@@ -25,8 +25,8 @@ SECRET_KEY = '3t$3$653h%+_sk#!^w&1=w(e(g0-1d@auc=s$x0g_l%yh8^cd1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'http://127.0.0.1:8000']
-# ALLOWED_HOSTS = ['*']                                                       #
+# ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'http://127.0.0.1:8000']
+ALLOWED_HOSTS = ['*']                                                       #
 
 
 # Application definition
@@ -94,14 +94,14 @@ WSGI_APPLICATION = 'Comparator.wsgi.application'
 DATABASES = {
 'default': {
 'ENGINE': 'django.db.backends.mysql',
-# 'NAME': 'heroku_4808438aaa5dc30',
-#         'USER': 'b6e9f0fa210fa8',
-#         'PASSWORD': 'd7494209',
-#         'HOST': 'eu-cdbr-west-01.cleardb.com',
-'NAME': 'my_db',
-        'USER': 'root',
-        'PASSWORD': '555555',
-        'HOST': 'localhost',
+'NAME': 'heroku_4808438aaa5dc30',
+        'USER': 'b6e9f0fa210fa8',
+        'PASSWORD': 'd7494209',
+        'HOST': 'eu-cdbr-west-01.cleardb.com',
+# 'NAME': 'my_db',
+#         'USER': 'root',
+#         'PASSWORD': '555555',
+#         'HOST': 'localhost',
         'PORT': '3306',
 'OPTIONS': {
 'read_default_file': '/etc/mysql/my.cnf',
@@ -168,11 +168,11 @@ REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': ('rest_framework.renderers.JSONRenderer',),           # Disable Browsable API, Only for PRODUCTION
 }
 
-# import dj_database_url
-#
-# db_from_env = dj_database_url.config()
+import dj_database_url
+
+db_from_env = dj_database_url.config()
 # DATABASE['default'].update(db_from_env)
 
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
 
 INTERNAL_IPS = ['http://127.0.0.1']     #
