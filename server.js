@@ -4,7 +4,6 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(favicon(__dirname + '/build/favicon.png'));
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('*', (req, res) => {

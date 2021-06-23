@@ -129,7 +129,7 @@
     padding: 5px;
     /*font-family: 'Poppins', sans-serif;*/
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     justify-content: center;
     /*border-radius: 15px;*/
     -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
@@ -206,7 +206,7 @@ html, body{
 
 body{
     background-image: -webkit-linear-gradient(top, #edecec, #cecbc9);
-    background-image: linear-gradient(top, #edecec, #cecbc9);
+    background-image: linear-gradient(to left, #edecec, #cecbc9);
 }
 
 .buttonHolder{
@@ -217,7 +217,7 @@ body{
 
 .button{
     background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
-    background-image: linear-gradient(top, #f4f1ee, #fff);
+    background-image: linear-gradient(to left, #f4f1ee, #fff);
     border-radius: 50%;
     box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);
     float:left;
@@ -251,7 +251,7 @@ body{
 }
 .button:hover{
     background-image: -webkit-linear-gradient(top, #fff, #f4f1ee);
-    background-image: linear-gradient(top, #fff, #f4f1ee);
+    background-image: linear-gradient(to left, #fff, #f4f1ee);
     color:#0088cc;
 }
 .heart:hover:after{
@@ -264,7 +264,7 @@ body{
 }
 .button:active{
     background-image: -webkit-linear-gradient(top, #efedec, #f7f4f4);
-    background-image: linear-gradient(top, #efedec, #f7f4f4);
+    background-image: linear-gradient(to left, #efedec, #f7f4f4);
     box-shadow: 0 3px 5px 0 rgba(0,0,0,.4), inset 0px -3px 1px 1px rgba(204,198,197,.5);
 }
 .button:active:after{
