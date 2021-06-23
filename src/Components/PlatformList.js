@@ -113,7 +113,7 @@ class PlatformList extends Component {
         var price_min = e.target.elements.price_min.value;
         var price_max = e.target.elements.price_max.value;
         const api_url = await
-        fetch(`http://127.0.0.1:8000/api/platforml/price_diff=${price_diff}?year_min=${year_min}&year_max=${year_max}&price_min=${price_min}&price_max=${price_max}`);
+        fetch(`http://localhost:8000/api/platforml/price_diff=${price_diff}?year_min=${year_min}&year_max=${year_max}&price_min=${price_min}&price_max=${price_max}`);
         const data = await api_url.json();
         console.log(data);
         this.setState({loading: false})
