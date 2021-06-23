@@ -5,7 +5,7 @@ import BaseRouter from './routes';
 import Layout from './Common/Layout.js';
 import 'antd/dist/antd.css';
 import QueueAnim from 'rc-queue-anim';
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 
 class App extends Component {
