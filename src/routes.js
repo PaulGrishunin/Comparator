@@ -5,8 +5,8 @@ import Login from './Components/login.component';
 import Register from './Components/register.component';
 import Profile from './Components/profile.component';
 import Favorites from './Components/Favorites';
-
 import './App.css';
+
 
 const BaseRouter = () => (
    <Switch>

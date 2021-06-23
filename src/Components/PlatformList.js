@@ -37,7 +37,6 @@ class PlatformList extends Component {
 
     onSortByChange = (event) => {
         this.sortBy = event.target.value;
-            // console.log(this.sortBy)
         const data = localStorage.getItem('platform-data');
         if (this.sortBy === "year"){
             var cars_sorted = JSON.parse(data).sort(function(a, b){return a.year - b.year});}
