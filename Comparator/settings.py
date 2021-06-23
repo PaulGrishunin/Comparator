@@ -148,10 +148,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [                              #
-    os.path.join(BASE_DIR, 'build/static')
+    os.path.join(PROJECT_ROOT, 'build/static')
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 
 
 #активировать CORS и перечень разрешенных URL
