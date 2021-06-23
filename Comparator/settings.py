@@ -13,14 +13,12 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 
 import django_heroku
-django_heroku.settings(locals())
-import dotenv                       #
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().root.root          #BASE_DIR = Path(__file__).resolve().parent.parent
 
-dotenv_file = os.path.join(BASE_DIR, ".env")         #
-if os.path.isfile(dotenv_file):
-    dotenv.load_dotenv(dotenv_file)
+
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))         #BASE_DIR = Path(__file__).resolve().parent.parent
+
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -155,7 +153,7 @@ STATIC_URL = '/static/'
 #     os.path.join(BASE_DIR, 'build/static')
 # ]
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'build/static')
+    os.path.join(BASE_DIR, 'static')
 ]
 # STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'staticfiles'))
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
@@ -192,5 +190,6 @@ import dj_database_url
 
 db_from_env = dj_database_url.config()
 # DATABASE['default'].update(db_from_env)
+django_heroku.settings(locals())
 
 INTERNAL_IPS = ['http://127.0.0.1']     #
