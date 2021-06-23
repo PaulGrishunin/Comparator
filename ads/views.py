@@ -20,6 +20,9 @@ from .models import Brands, Platform, Sale_avg, Favorites
 from authentication.models import User
 import csv
 import subprocess
+from django.views import View
+from django.http import HttpResponse, HttpResponseNotFound
+import os
 
 
 class BrandsListView(generics.ListAPIView):
@@ -295,3 +298,16 @@ def create_sale_avg_examples(self):
                                               'avg_price': avg.avg_price})
                                   for avg in sale_avg_list])
     return HttpResponseRedirect("/api/sale_avg")
+
+
+
+    class Assets(View):
+
+        def get(self, _request, filename):
+            path = os.path.join(os.path.dirname(__file__), 'static', filename)
+
+            if os.path.isfile(path):
+                with open(path, 'rb') as file:
+                    return HttpResponse(file.read(), content_type='application/javascript')
+            else:
+                return HttpResponseNotFound()
