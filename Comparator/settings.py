@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-
+import os
+import dj_database_url
 import django_heroku
 
 
@@ -72,7 +73,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ROOT_URLCONF = 'Comparator.urls'
 
-import os
 
 TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 TEMPLATES = [
@@ -186,7 +186,6 @@ REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': ('rest_framework.renderers.JSONRenderer',),           # Disable Browsable API, Only for PRODUCTION
 }
 
-import dj_database_url
 
 db_from_env = dj_database_url.config()
 # DATABASE['default'].update(db_from_env)
