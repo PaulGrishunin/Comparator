@@ -12,11 +12,12 @@ from .views import (
     FavoritesDeleteView
 )
 from ads import views
-
+from .views import index
 app_name = 'ads'
 
 urlpatterns = [
-    path('', views.index),
+    path('', index, name='index'),
+    # path('', views.index),
     path('create/buy', views.create_platform_buy),            #collect data from buy_platform
     path('create/sale', views.create_platform_sale),          #collect data from sale_platform
     path('brands/', BrandsListView.as_view(), name='brands_list'),
