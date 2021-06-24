@@ -157,7 +157,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'build/static')
 ]
 # STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'staticfiles'))
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 #активировать CORS и перечень разрешенных URL
