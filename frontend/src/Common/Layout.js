@@ -19,7 +19,7 @@ class CustomLayout extends Component{
     }
 
     componentDidMount() {
-        fetch("http://localhost:8000/api/user",{ headers: authHeader() })
+        fetch("http://compar.herokuapp.com/api/user",{ headers: authHeader() })
             .then(res => res.json())
             .then(
                 (result) => {
