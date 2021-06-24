@@ -28,9 +28,9 @@ from django.views.decorators.cache import never_cache
 
 # Serve Single Page Application
 # index = never_cache(TemplateView.as_view(template_name='index.html'))
+
 def new_home(request):
     return render(request, 'index.html')
-
 
 class BrandsListView(generics.ListAPIView):
     queryset = Brands.objects.all().order_by('name')
@@ -308,13 +308,13 @@ def create_sale_avg_examples(self):
 
 
 
-    # class Assets(View):
-    #
-    #     def get(self, _request, filename):
-    #         path = os.path.join(os.path.dirname(__file__), 'static', filename)
-    #
-    #         if os.path.isfile(path):
-    #             with open(path, 'rb') as file:
-    #                 return HttpResponse(file.read(), content_type='application/javascript')
-    #         else:
-    #             return HttpResponseNotFound()
+    class Assets(View):
+
+        def get(self, _request, filename):
+            path = os.path.join(os.path.dirname(__file__), 'static', filename)
+
+            if os.path.isfile(path):
+                with open(path, 'rb') as file:
+                    return HttpResponse(file.read(), content_type='application/javascript')
+            else:
+                return HttpResponseNotFound()

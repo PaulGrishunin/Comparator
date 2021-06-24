@@ -148,15 +148,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-# STATIC_URL = '/static/'
-
-# STATICFILES_DIRS = [
-    # os.path.join(BASE_DIR, 'build/static')
-# ]
-# STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'staticfiles'))
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-
 #активировать CORS и перечень разрешенных URL
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'   #
@@ -171,7 +162,6 @@ CORS_ORIGIN_WHITELIST=[
     'http://localhost',
 ]
 
-
 AUTH_USER_MODEL = 'authentication.User'
 
 REST_FRAMEWORK = {
@@ -185,22 +175,20 @@ REST_FRAMEWORK = {
 
 db_from_env = dj_database_url.config()
 # DATABASE['default'].update(db_from_env)
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
 
 # INTERNAL_IPS = ['http://127.0.0.1']     #
 
-# Configure app for Heroku deployment
-django_heroku.settings(locals())
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 STATIC_URL = '/static/'
 # Place static in the same location as webpack build files
-STATIC_ROOT = os.path.join(BASE_DIR, 'build')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'build')
 STATICFILE_DIR = os.path.join(BASE_DIR, 'build/static')
 # STATICFILE_DIR = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [STATICFILE_DIR,]
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
