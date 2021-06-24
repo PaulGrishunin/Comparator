@@ -201,8 +201,8 @@ STATICFILE_DIR = os.path.join(BASE_DIR, 'build/static')
 STATICFILES_DIRS = [STATICFILE_DIR,]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 # If you want to serve user uploaded files add these settings
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'build', 'media')
