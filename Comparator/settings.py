@@ -77,11 +77,11 @@ ROOT_URLCONF = 'Comparator.urls'
 
 
 # TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'build')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-#         'DIRS': [TEMPLATE_DIR,],
-        'DIRS': [os.path.join(BASE_DIR, 'build')],
+        'DIRS': [TEMPLATE_DIR,],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -198,8 +198,9 @@ django_heroku.settings(locals())
 STATIC_URL = '/static/'
 # Place static in the same location as webpack build files
 # STATIC_ROOT = os.path.join(BASE_DIR, 'build/static')
+STATICFILE_DIR = os.path.join(BASE_DIR, 'build/static')
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'build/static')
+    STATICFILE_DIR,
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
