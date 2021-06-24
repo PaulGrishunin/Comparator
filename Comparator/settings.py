@@ -76,8 +76,8 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'Comparator.urls'
 
 
-# TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
-TEMPLATE_DIR = os.path.join(BASE_DIR, 'build')
+TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
+# TEMPLATE_DIR = os.path.join(BASE_DIR, 'build')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
