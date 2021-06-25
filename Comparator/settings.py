@@ -188,8 +188,8 @@ STATIC_URL = '/static/'
 STATICFILE_DIR = os.path.join(BASE_DIR, 'build/static')
 # STATICFILE_DIR = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [STATICFILE_DIR,]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # If you want to serve user uploaded files add these settings
