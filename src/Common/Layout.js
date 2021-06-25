@@ -31,19 +31,8 @@ class CustomLayout extends Component{
                         this.setState({registred: false})
                     }
                 }
-                // (error) => {
-                //     console.log("register error")
-                //     this.setState({registred: "not"})
-                // }
             )
     }
-
-    // signOut() {
-    //     fetch("http://localhost:8000/signOut", {credentials:"include"})
-    //     setTimeout(() => {
-    //         window.location.reload(false);
-    //     }, 100)
-    // }
 
     logOut() {
         AuthService.logout();
@@ -61,7 +50,7 @@ class CustomLayout extends Component{
                 <Menu.Item
                     key="home"
                     style={{float: 'center', marginLeft: '10%'}}>
-                    <Link to="/platform"><HomeOutlined />Home</Link>
+                    <Link to="/"><HomeOutlined />Home</Link>
                 </Menu.Item>
 
                 <Menu.Item
@@ -87,7 +76,7 @@ class CustomLayout extends Component{
                 <Menu.Item
                     key="home"
                     style={{float: 'center', marginLeft: '10%'}}>
-                    <Link to="/platform"><HomeOutlined />Home</Link>
+                    <Link to="/"><HomeOutlined />Home</Link>
                 </Menu.Item>
 
                 <Menu.Item
