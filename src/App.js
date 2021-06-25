@@ -6,6 +6,10 @@ import Layout from './Common/Layout.js';
 import 'antd/dist/antd.css';
 import QueueAnim from 'rc-queue-anim';
 import PlatformList from "./Components/PlatformList";
+import Login from "./Components/login.component";
+import Register from "./Components/register.component";
+import Profile from "./Components/profile.component";
+import Favorites from "./Components/Favorites";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -34,9 +38,22 @@ class App extends Component {
         return (
             <div className="App" style={{height: "100%"}}>
                 <Router>
-                    <Switch>
-                      <Route exact path="/" component={PlatformList}/>
-                    </Switch>
+                      <Layout {...this.props}>
+                      <div className="Base" >
+                              <div className="BaseInfo">
+                               <Switch>
+
+                                   <Route exact path="/" component={PlatformList}/>
+                                   <Route exact path="/auth/login" component={Login}/>
+                                   <Route exact path="/auth/register" component={Register}/>
+                                   <Route exact path="/auth/user" component={Profile}/>
+                                   <Route exact path="/favorites" component={Favorites}/>
+
+                               </Switch>
+                              </div>
+                      </div>
+                      <this.contactUsDiv />
+                      </Layout>
                 </Router>
 
             </div>);

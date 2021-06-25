@@ -6,12 +6,11 @@ import AuthService from '../services/auth.service'
 import { HomeOutlined, HeartOutlined,
     UserOutlined, UserAddOutlined, LogoutOutlined } from '@ant-design/icons';
 
-
 const { Header, Content } = Layout;
 
 class CustomLayout extends Component{
-    constructor () {
-        super();
+    constructor (props) {
+        super(props);
         this.iconPath = '/';
         this.state = {
             registred: false,
@@ -19,7 +18,7 @@ class CustomLayout extends Component{
     }
 
     componentDidMount() {
-        fetch("http://compar.herokuapp.com/api/user",{ headers: authHeader() })
+        fetch("http://localhost:8000/api/user",{ headers: authHeader() })
             .then(res => res.json())
             .then(
                 (result) => {
