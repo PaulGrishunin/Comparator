@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
 import BaseRouter from './routes';
 import Layout from './Common/Layout.js';
 import 'antd/dist/antd.css';
 import QueueAnim from 'rc-queue-anim';
+import PlatformList from "./Components/PlatformList";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -33,14 +34,9 @@ class App extends Component {
         return (
             <div className="App" style={{height: "100%"}}>
                 <Router>
-                      <Layout {...this.props}>
-                      <div className="Base" >
-                              <div className="BaseInfo">
-                               <BaseRouter />
-                              </div>
-                      </div>
-                      <this.contactUsDiv />
-                      </Layout>
+                    <Switch>
+                      <Route exact path="/" component={PlatformList}/>
+                    </Switch>
                 </Router>
 
             </div>);
