@@ -12,8 +12,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url
-import django_heroku
+# import dj_database_url
+# import django_heroku
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -102,14 +102,14 @@ WSGI_APPLICATION = 'Comparator.wsgi.application'
 DATABASES = {
 'default': {
 'ENGINE': 'django.db.backends.mysql',
-'NAME': 'heroku_4808438aaa5dc30',
-        'USER': 'b6e9f0fa210fa8',
-        'PASSWORD': 'd7494209',
-        'HOST': 'eu-cdbr-west-01.cleardb.com',
-# 'NAME': 'my_db',
-#         'USER': 'root',
-#         'PASSWORD': '555555',
-#         'HOST': 'localhost',
+# 'NAME': 'heroku_4808438aaa5dc30',
+#         'USER': 'b6e9f0fa210fa8',
+#         'PASSWORD': 'd7494209',
+#         'HOST': 'eu-cdbr-west-01.cleardb.com',
+'NAME': 'my_db',
+        'USER': 'root',
+        'PASSWORD': '555555',
+        'HOST': 'localhost',
         'PORT': '3306',
 'OPTIONS': {
 'read_default_file': '/etc/mysql/my.cnf',
@@ -173,9 +173,9 @@ REST_FRAMEWORK = {
 }
 
 
-db_from_env = dj_database_url.config()
+# db_from_env = dj_database_url.config()
 # DATABASE['default'].update(db_from_env)
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 # INTERNAL_IPS = ['http://127.0.0.1']     #
 
@@ -193,7 +193,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # If you want to serve user uploaded files add these settings
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'build/static/media')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'build', 'media')
 
 

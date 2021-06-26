@@ -1,12 +1,12 @@
 import axios from 'axios';
-const API_URL = 'http://localhost:8000/api';
+const API_URL = 'http://localhost:8000';
 
 export default class PlatformService{
 
     constructor(){}
 
     getPlatform() {
-        const url = `${API_URL}/platform`;
+        const url = `${API_URL}/`;
 
         // console.log(axios.get(url).then(response => response.data));
         return async() => await axios.get(url).then(response => response.data);

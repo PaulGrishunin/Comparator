@@ -87,7 +87,7 @@ class CustomLayout extends Component{
                 <Menu.Item
                     key="signout"
                     style={{float: 'right'}}>
-                    <a href="/logout"  onClick={this.logOut}>< LogoutOutlined />Log out</a>
+                    <Link to={this.logOut}>< LogoutOutlined />Log out</Link>
                 </Menu.Item>
                 <Menu.Item
                     key="userpage"
