@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
+import 'antd/dist/antd.css';
 import BaseRouter from './routes';
 import Layout from './Common/Layout.js';
-import 'antd/dist/antd.css';
 import QueueAnim from 'rc-queue-anim';
 import PlatformList from "./Components/PlatformList";
 import Login from "./Components/login.component";
 import Register from "./Components/register.component";
 import Profile from "./Components/profile.component";
 import Favorites from "./Components/Favorites";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 class App extends Component {

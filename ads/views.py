@@ -216,7 +216,7 @@ def create_platform_sale(self):
                                                   'currency': plat.currency,
                                                   'ad_link': plat.ad_link})
                                       for plat in platform_sale_list])
-    return HttpResponseRedirect("/api/platform")
+    return HttpResponseRedirect("/platform")
 
 # сохранение данных from home(sale) platform в бд
 def create_platform_buy(self):
@@ -304,7 +304,7 @@ def create_sale_avg_examples(self):
                                               'fuel': avg.fuel,
                                               'avg_price': avg.avg_price})
                                   for avg in sale_avg_list])
-    return HttpResponseRedirect("/api/sale_avg")
+    return HttpResponseRedirect("/sale_avg")
 
 
 

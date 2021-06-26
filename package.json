@@ -5,12 +5,12 @@
   "private": true,
   "proxy": "http://localhost:8000",
   "dependencies": {
-    "@ant-design/icons": "^4.0.3",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
-    "antd": "^4.16.5",
+    "antd": "^4.15.3",
     "axios": "^0.21.1",
+    "bootstrap": "^5.0.2",
     "express": "^4.17.1",
     "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",
@@ -30,8 +30,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "postinstall": "npm run build"
+    "eject": "react-scripts eject"
   },
   "engines": {
     "node": "10.19.0",

@@ -2,15 +2,15 @@ import React, {Component} from 'react';
 import { Layout, Menu } from 'antd';
 import { Link, withRouter } from 'react-router-dom';
 import authHeader from '../services/auth-header';
-import AuthService from '../services/auth.service'
+import AuthService from '../services/auth.service';
 import { HomeOutlined, HeartOutlined,
     UserOutlined, UserAddOutlined, LogoutOutlined } from '@ant-design/icons';
 
 const { Header, Content } = Layout;
 
 class CustomLayout extends Component{
-    constructor (props) {
-        super(props);
+    constructor () {
+        super();
         this.iconPath = '/';
         this.state = {
             registred: false,
@@ -18,7 +18,7 @@ class CustomLayout extends Component{
     }
 
     componentDidMount() {
-        fetch("http://localhost:8000/api/user",{ headers: authHeader() })
+        fetch("http://localhost:8000/user",{ headers: authHeader() })
             .then(res => res.json())
             .then(
                 (result) => {

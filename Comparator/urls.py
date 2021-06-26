@@ -22,8 +22,8 @@ from ads import views
 urlpatterns = [
     path('', views.new_home, name='index'),
     path('admin/', admin.site.urls),
-    path('api/', include('authentication.urls', namespace='authentication')),
-    path('api/', include('ads.urls', namespace='ads')),
+    path('', include('authentication.urls', namespace='authentication')),
+    path('', include('ads.urls', namespace='ads')),
 ]
 
 # urlpatterns += doc_urls
