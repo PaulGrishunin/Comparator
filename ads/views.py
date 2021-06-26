@@ -22,6 +22,9 @@ import csv
 import subprocess
 
 
+def new_home(request):
+    return render(request, 'index.html')
+
 class BrandsListView(generics.ListAPIView):
     queryset = Brands.objects.all().order_by('name')
     serializer_class = BrandsSerializer
