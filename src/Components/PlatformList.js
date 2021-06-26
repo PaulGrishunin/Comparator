@@ -30,7 +30,7 @@ class PlatformList extends Component {
     // };
 
     addToFavorites(platformId) {
-        fetch(`http://localhost:8000/api/favorites/add/`+ platformId, { method:"POST", headers: authHeader()})
+        fetch(`https://compar.herokuapp.com/api/favorites/add/`+ platformId, { method:"POST", headers: authHeader()})
             .then(res => res.json())
             .then(console.log)
     }

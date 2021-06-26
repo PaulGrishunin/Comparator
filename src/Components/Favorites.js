@@ -15,7 +15,7 @@ class Favorites extends Component {
     deleteFromFavorites = async (id) => {
         // e.preventDefault();
         const api_url = await
-        fetch(`http://localhost:8000/api/favorites/delete/` + id, {
+        fetch(`https://compar.herokuapp.com/api/favorites/delete/` + id, {
             // mode: 'cors',
             method: "DELETE",
             // headers: authHeader(),
@@ -32,7 +32,7 @@ class Favorites extends Component {
     gettingFavorites = async () => {
         // e.preventDefault();
         const api_url = await
-            fetch( "http://localhost:8000/api/favorites", { headers: authHeader() })
+            fetch( "https://compar.herokuapp.com/api/favorites", { headers: authHeader() })
         const data = await api_url.json();
         let favorites = data.map((favs) => {
             return (
