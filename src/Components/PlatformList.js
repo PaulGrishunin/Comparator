@@ -4,6 +4,8 @@ import Form from './Form';
 import authHeader from "../services/auth-header";
 import Spinner from './Spinner';
 
+const API_URL = 'https://compar.herokuapp.com';
+
 class PlatformList extends Component {
     constructor() {
         super();
@@ -30,7 +32,7 @@ class PlatformList extends Component {
     // };
 
     addToFavorites(platformId) {
-        fetch(`https://compar.herokuapp.com/favorites/add/`+ platformId, { method:"POST", headers: authHeader()})
+        fetch(API_URL + `/favorites/add/`+ platformId, { method:"POST", headers: authHeader()})
             .then(res => res.json())
             .then(console.log)
     }
@@ -112,7 +114,7 @@ class PlatformList extends Component {
         var price_min = e.target.elements.price_min.value;
         var price_max = e.target.elements.price_max.value;
         const api_url = await
-        fetch(`https://compar.herokuapp.com/platforml/price_diff=${price_diff}?year_min=${year_min}&year_max=${year_max}&price_min=${price_min}&price_max=${price_max}`);
+        fetch(API_URL + `/platforml/price_diff=${price_diff}?year_min=${year_min}&year_max=${year_max}&price_min=${price_min}&price_max=${price_max}`);
         const data = await api_url.json();
         console.log(data);
         this.setState({loading: false})

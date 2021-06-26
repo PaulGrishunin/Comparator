@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import authHeader from "../services/auth-header";
 import './PlatformList.css';
 
+const API_URL = 'https://compar.herokuapp.com';
+
 class Favorites extends Component {
     constructor() {
         super();
@@ -15,7 +17,7 @@ class Favorites extends Component {
     deleteFromFavorites = async (id) => {
         // e.preventDefault();
         const api_url = await
-        fetch(`https://compar.herokuapp.com/api/favorites/delete/` + id, {
+        fetch(API_URL + `/favorites/delete/` + id, {
             // mode: 'cors',
             method: "DELETE",
             // headers: authHeader(),
@@ -32,7 +34,7 @@ class Favorites extends Component {
     gettingFavorites = async () => {
         // e.preventDefault();
         const api_url = await
-            fetch( "https://compar.herokuapp.com/api/favorites", { headers: authHeader() })
+            fetch( API_URL + "/favorites", { headers: authHeader() })
         const data = await api_url.json();
         let favorites = data.map((favs) => {
             return (
