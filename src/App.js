@@ -31,7 +31,7 @@ class App extends Component {
 
 
     componentDidMount() {
-        fetch("http://localhost:8000/api/user",{ headers: authHeader() })
+        fetch("https://compar.herokuapp.com/user",{ headers: authHeader() })
             .then(res => res.json())
             .then(
                 (result) => {
@@ -45,8 +45,6 @@ class App extends Component {
                 }
             )
     }
-
-
 
     renderMenu = () => {
         if ( this.state.registred === true)
@@ -92,9 +90,6 @@ class App extends Component {
 
 }
 export default App;
-
-
-
 
 
 

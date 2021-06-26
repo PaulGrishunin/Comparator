@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_URL = 'https://compar.herokuapp.com/api';
+const API_URL = 'https://compar.herokuapp.com';
 
 export default class PlatformService{
 
