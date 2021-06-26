@@ -1,5 +1,4 @@
 import React from "react";
-import './PlatformList.css';
 
 class Form extends React.Component {
 

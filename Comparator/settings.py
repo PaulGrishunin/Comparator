@@ -12,15 +12,11 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
-# import dj_database_url
-# import django_heroku
-
+import dj_database_url
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = Path(__file__).resolve().parent.parent
-# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -34,7 +30,6 @@ DEBUG = True
 # ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'http://127.0.0.1:8000']
 ALLOWED_HOSTS = ['*']                                                       #
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -45,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'whitenoise.runserver_nostatic',   #
     'django.contrib.staticfiles',
-    # 'debug_toolbar',               #
+#     'debug_toolbar',               #
     'django_extensions',          #
     'corsheaders',
 #     'drf_yasg',
@@ -54,11 +49,10 @@ INSTALLED_APPS = [
     'ads',
     'authentication',
     'django_filters',
-
 ]
 
 MIDDLEWARE = [
-    # 'debug_toolbar.middleware.DebugToolbarMiddleware',  #
+#     'debug_toolbar.middleware.DebugToolbarMiddleware',  #
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -70,11 +64,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
 ]
-
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 ROOT_URLCONF = 'Comparator.urls'
-
 
 # TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'build')
@@ -95,31 +85,28 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'Comparator.wsgi.application'
-
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
 'default': {
 'ENGINE': 'django.db.backends.mysql',
-# 'NAME': 'heroku_4808438aaa5dc30',
-#         'USER': 'b6e9f0fa210fa8',
-#         'PASSWORD': 'd7494209',
-#         'HOST': 'eu-cdbr-west-01.cleardb.com',
-'NAME': 'my_db',
-        'USER': 'root',
-        'PASSWORD': '555555',
-        'HOST': 'localhost',
+'NAME': 'heroku_4808438aaa5dc30',
+        'USER': 'b6e9f0fa210fa8',
+        'PASSWORD': 'd7494209',
+        'HOST': 'eu-cdbr-west-01.cleardb.com',
+# 'NAME': 'my_db',
+#         'USER': 'root',
+#         'PASSWORD': '555555',
+#         'HOST': 'localhost',
         'PORT': '3306',
 'OPTIONS': {
 'read_default_file': '/etc/mysql/my.cnf',
 },
 }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -144,15 +131,11 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.1/howto/static-files/
-
 #активировать CORS и перечень разрешенных URL
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'   #
 
-CORS_ORIGIN_ALLOW_ALL = True     #Default: False
+CORS_ORIGIN_ALLOW_ALL = True   #default False
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_ALL_ORIGINS = True
 
@@ -161,6 +144,7 @@ CORS_ORIGIN_WHITELIST=[
     'http://127.0.0.1',
     'http://localhost',
 ]
+
 
 AUTH_USER_MODEL = 'authentication.User'
 
@@ -172,28 +156,18 @@ REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': ('rest_framework.renderers.JSONRenderer',),           # Disable Browsable API, Only for PRODUCTION
 }
 
-
-# db_from_env = dj_database_url.config()
+db_from_env = dj_database_url.config()
 # DATABASE['default'].update(db_from_env)
-# django_heroku.settings(locals())
 
-# INTERNAL_IPS = ['http://127.0.0.1']     #
-
+django_heroku.settings(locals())
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.1/howto/static-files/
+# https://docs.djangoproject.com/en/3.1/howto/static-files/
+
 STATIC_URL = '/static/'
-# Place static in the same location as webpack build files
-# STATIC_ROOT = os.path.join(BASE_DIR, 'build')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILE_DIR = os.path.join(BASE_DIR, 'build/static')
 # STATICFILE_DIR = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [STATICFILE_DIR,]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-# If you want to serve user uploaded files add these settings
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'build', 'media')
-
-

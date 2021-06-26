@@ -12,6 +12,7 @@ class PlatformList extends Component {
             search:null,
             id: 0,
             loading: false,
+            registred: true,
         };
         this.addToFavorites = this.addToFavorites.bind(this);
         // this.filterList = this.filterList.bind(this);
@@ -29,7 +30,7 @@ class PlatformList extends Component {
     // };
 
     addToFavorites(platformId) {
-        fetch(`http://localhost:8000/favorites/add/`+ platformId, { method:"POST", headers: authHeader()})
+        fetch(`http://localhost:8000/api/favorites/add/`+ platformId, { method:"POST", headers: authHeader()})
             .then(res => res.json())
             .then(console.log)
     }
@@ -92,7 +93,7 @@ class PlatformList extends Component {
                         <div className="priceContainer">
                             <div className="price">Price: {plat.price} EUR</div>
                             <div className="price_diff">Price difference: € {plat.price_diff} </div>
-                            { Object.keys(authHeader()).length !== 0 ? <a href="#" className="button heart" onClick={() => this.addToFavorites(plat.id)}></a>:
+                            { Object.keys(authHeader()).length !== 0 ?<a href="#" className="button heart" onClick={() => this.addToFavorites(plat.id)}></a>:
                                 null}
                         </div >
                     </div>
@@ -111,7 +112,7 @@ class PlatformList extends Component {
         var price_min = e.target.elements.price_min.value;
         var price_max = e.target.elements.price_max.value;
         const api_url = await
-        fetch(`http://localhost:8000/platforml/price_diff=${price_diff}?year_min=${year_min}&year_max=${year_max}&price_min=${price_min}&price_max=${price_max}`);
+        fetch(`http://127.0.0.1:8000/api/platforml/price_diff=${price_diff}?year_min=${year_min}&year_max=${year_max}&price_min=${price_min}&price_max=${price_max}`);
         const data = await api_url.json();
         console.log(data);
         this.setState({loading: false})

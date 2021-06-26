@@ -15,7 +15,7 @@ class Favorites extends Component {
     deleteFromFavorites = async (id) => {
         // e.preventDefault();
         const api_url = await
-        fetch(`http://localhost:8000/favorites/delete/` + id, {
+        fetch(`http://localhost:8000/api/favorites/delete/` + id, {
             // mode: 'cors',
             method: "DELETE",
             // headers: authHeader(),
@@ -32,7 +32,7 @@ class Favorites extends Component {
     gettingFavorites = async () => {
         // e.preventDefault();
         const api_url = await
-            fetch( "http://localhost:8000/favorites", { headers: authHeader() })
+            fetch( "http://localhost:8000/api/favorites", { headers: authHeader() })
         const data = await api_url.json();
         let favorites = data.map((favs) => {
             return (
@@ -68,12 +68,24 @@ class Favorites extends Component {
     }
 
     render() {
+        // if (!this.state.isDeleted){
+        //     console.log("1+", this.state.isDeleted)
 
         return (
             <div>
                 {this.state.favorites}
             </div>
         )
+    //     }
+    //     else {
+    //         console.log("2+", this.state.isDeleted)
+    //         this.setState({isDeleted: false})
+    //         return (
+    //             <div>
+    //                 {this.state.favorites}
+    //             </div>
+    //         )
+    //     }
     }
 }
 
