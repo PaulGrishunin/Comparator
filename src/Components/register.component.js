@@ -105,6 +105,7 @@ export default class Register extends Component {
                 })
                 .then(
                     () => {
+                        console.log("this.props.history:", this.props.history)
                         this.props.history.push("/login");
                         window.location.reload();
                     },
