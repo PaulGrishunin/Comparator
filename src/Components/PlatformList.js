@@ -96,7 +96,7 @@ class PlatformList extends Component {
                             <div className="price_diff">Price difference: € {plat.price_diff} </div>
 
                             <div className="btnContainer">
-                            { Object.keys(authHeader()).length !== 0 ?<a href="#!" className="button heart" onClick={() => this.addToFavorites(plat.id)}></a>:
+                            { Object.keys(authHeader()).length !== 0 ?<a href="" className="button heart" onClick={() => this.addToFavorites(plat.id)}></a>:
                                 null}
                             </div >
                         </div>

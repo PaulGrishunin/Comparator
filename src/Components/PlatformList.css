@@ -250,11 +250,11 @@ body{
 .heart:after{
     content: "❤";
     left: 2px;
-    top:  -5px;
+    top:  -6px;
 }
 .cross:after{
     content: "✖";
-    left: 2px;
+    left: -1px;
     top:  -5px;
 }
 .button:hover{

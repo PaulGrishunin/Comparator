@@ -24,7 +24,7 @@ class AuthorizedMenu extends Component {
                     <Menu.Item
                         key="home"
                         style={{float: 'center', marginLeft: '10%'}}>
-                        <Link to="#!"><HomeOutlined />Home</Link>
+                        <Link to="/"><HomeOutlined />Home</Link>
                     </Menu.Item>
 
                     <Menu.Item
