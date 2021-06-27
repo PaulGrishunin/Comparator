@@ -4,7 +4,7 @@ import Form from './Form';
 import authHeader from "../services/auth-header";
 import Spinner from './Spinner';
 
-const API_URL = 'https://compar.herokuapp.com/api';
+const API_URL = 'https://compar.herokuapp.com';
 
 class PlatformList extends Component {
     constructor() {
@@ -35,7 +35,7 @@ class PlatformList extends Component {
         fetch(API_URL + `/favorites/add/`+ platformId, { method:"POST", headers: authHeader()})
             .then(res => res.json())
             .then(console.log)
-            window.location.reload(false);
+            // window.location.reload(false);
     }
 
     onSortByChange = (event) => {

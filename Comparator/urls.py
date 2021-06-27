@@ -22,7 +22,7 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('admin/', admin.site.urls),
     path('', include('authentication.urls', namespace='authentication')),
-    path('/api', include('ads.urls', namespace='ads')),
+    path('', include('ads.urls', namespace='ads')),
 ]
 
 urlpatterns += doc_urls

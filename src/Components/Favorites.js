@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import authHeader from "../services/auth-header";
 import './PlatformList.css';
 
-const API_URL = 'https://compar.herokuapp.com/api';
+const API_URL = 'https://compar.herokuapp.com';
 
 class Favorites extends Component {
     constructor() {
