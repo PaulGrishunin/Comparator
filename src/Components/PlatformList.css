@@ -57,14 +57,21 @@
     font-family: serif;
 }
 .priceContainer{
+    width: inherit;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 10px;
+    font-family: serif;
     font-size: 16px;
+    padding-left: 40px;
     display: flex;
+    flex-direction: column;
+
+
     flex-wrap: nowrap;
     position: absolute;
     right: 50px;
-    justify-content: right;
-    margin: 10px;
-    font-family: serif;
+    /*justify-content: right;*/
 }
 /*.priceContainer:hover {*/
 /*    height: auto;*/

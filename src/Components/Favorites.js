@@ -49,6 +49,7 @@ class Favorites extends Component {
                             <p> {favs.platformId.year+'   '+favs.platformId.fuel}</p>
                             <div className="locationContainer">
                                 <br/>
+                                <br/>
                             <div className="location">Location: {favs.platformId.country+' '+favs.platformId.place}</div>
                         </div>
                         </div>
