@@ -27,7 +27,12 @@ class Favorites extends Component {
             //     console.log(result);
                     // console.log("deletefrom", this.state.isDeleted)
             // })
-        document.location.reload()
+         .then(
+                    () => {
+                        this.props.history.push('/favorites');
+                        window.location.reload();
+                    })
+        // document.location.reload()
         // window.location.reload()
     }
 
