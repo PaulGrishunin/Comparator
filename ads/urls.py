@@ -16,7 +16,7 @@ from ads import views
 app_name = 'ads'
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    # path('', views.index, name='index'),
     path('create/buy', views.create_platform_buy),            #collect data from buy_platform
     path('create/sale', views.create_platform_sale),          #collect data from sale_platform
     path('brands/', BrandsListView.as_view(), name='brands_list'),

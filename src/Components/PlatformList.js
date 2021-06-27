@@ -4,7 +4,7 @@ import Form from './Form';
 import authHeader from "../services/auth-header";
 import Spinner from './Spinner';
 
-const API_URL = 'https://compar.herokuapp.com';
+const API_URL = 'https://compar.herokuapp.com/api';
 
 class PlatformList extends Component {
     constructor() {
@@ -44,11 +44,11 @@ class PlatformList extends Component {
         if (this.sortBy === "year"){
             var cars_sorted = JSON.parse(data).sort(function(a, b){return a.year - b.year});}
         else if (this.sortBy === "price"){
-            var cars_sorted = JSON.parse(data).sort(function(a, b){return a.price - b.price});}
+            cars_sorted = JSON.parse(data).sort(function(a, b){return a.price - b.price});}
         else if (this.sortBy === "price_diff"){
-            var cars_sorted = JSON.parse(data).sort(function(a, b){return a.price_diff - b.price_diff});}
+            cars_sorted = JSON.parse(data).sort(function(a, b){return a.price_diff - b.price_diff});}
         else if (this.sortBy === "brandId") {
-            var cars_sorted = JSON.parse(data).sort(function (a, b) {
+            cars_sorted = JSON.parse(data).sort(function (a, b) {
                 var nameA = a.brandId.toLowerCase(),
                     nameB = b.brandId.toLowerCase()
                 if (nameA < nameB)

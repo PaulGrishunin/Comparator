@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import authHeader from "../services/auth-header";
 import './PlatformList.css';
 
-const API_URL = 'https://compar.herokuapp.com';
+const API_URL = 'https://compar.herokuapp.com/api';
 
 class Favorites extends Component {
     constructor() {
@@ -16,7 +16,6 @@ class Favorites extends Component {
 
     deleteFromFavorites = async (id) => {
         // e.preventDefault();
-        const api_url = await
         fetch(API_URL + `/favorites/delete/` + id, {
             // mode: 'cors',
             method: "DELETE",
@@ -61,7 +60,7 @@ class Favorites extends Component {
                         <div className="priceContainer">
                                <div className="price">Price: € <b> {favs.price} </b> </div>
                                <div className="price_diff">Price difference: € <b> {favs.price_diff} </b></div>
-                                <a className="button cross" href="#" onClick={() => this.deleteFromFavorites(favs.id)}> </a>
+                                <button className="button cross" href="#" onClick={() => this.deleteFromFavorites(favs.id)}> </button>
                         </div>
 
                     </div>

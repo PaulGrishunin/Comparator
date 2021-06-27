@@ -14,8 +14,7 @@ import AuthorizedMenu from "./Components/AuthorizedMenu";
 import NonAuthorizedMenu from "./Components/NonAuthorizedMenu";
 import {Link} from 'react-router-dom';
 import authHeader from './services/auth-header';
-import AuthService from './services/auth.service'
-import QueueAnim from 'rc-queue-anim';
+
 
 const { Header, Content } = Layout;
 
