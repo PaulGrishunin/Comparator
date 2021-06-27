@@ -105,8 +105,8 @@ export default class Register extends Component {
                 })
                 .then(
                     () => {
-                        this.props.history.push("login");
-                        window.location.reload();
+                        this.props.history.push('/login');
+                        // window.location.reload();
                     },
                 error => {
                     const resMessage =

@@ -28,7 +28,7 @@ class Favorites extends Component {
                     // console.log("deletefrom", this.state.isDeleted)
             // })
         // document.location.reload()
-        window.location.reload()
+        // window.location.reload()
     }
 
 
@@ -55,7 +55,7 @@ class Favorites extends Component {
                         <div className="priceContainer">
                                 <div className="price">Price: {favs.platformId.price} EUR</div>
                                 <div className="price_diff"> € {favs.platformId.price_diff} </div>
-                                <a href={Favorites} className="button cross"  onClick={() => this.deleteFromFavorites(favs.id)}></a>
+                                <a href="#" className="button cross"  onClick={() => this.deleteFromFavorites(favs.id)}></a>
                         </div>
 
                     </div>
