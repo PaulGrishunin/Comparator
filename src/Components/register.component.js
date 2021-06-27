@@ -105,8 +105,7 @@ export default class Register extends Component {
                 })
                 .then(
                     () => {
-                        console.log("this.props.history:", this.props.history)
-                        this.props.history.push("/login");
+                        this.props.history.push("https://compar.herokuapp.com//login");
                         window.location.reload();
                     },
                 error => {
