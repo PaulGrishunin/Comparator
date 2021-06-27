@@ -88,13 +88,14 @@ class PlatformList extends Component {
                         <div className="titleContainer">
                             <p><b>{plat.brandId+' '+plat.model}</b></p>
                             <p> {plat.year+'   '+plat.fuel}</p>
-                            <div className="locationContainer">
-                            <div className="location">Location: {plat.country+' '+plat.place}</div>
-                        </div>
+                            <div className="locationContainer">Location: {plat.country+' '+plat.place}</div>
+
                         </div>
                         <div className="priceContainer">
                             <div className="price">Price: {plat.price} EUR</div>
                             <div className="price_diff">Price difference: € {plat.price_diff} </div>
+                        </div>
+                         <div className="btnContainer">
                             { Object.keys(authHeader()).length !== 0 ?<a href="#" className="button heart" onClick={() => this.addToFavorites(plat.id)}></a>:
                                 null}
                         </div >

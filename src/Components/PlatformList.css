@@ -56,46 +56,50 @@
     margin-bottom: 10px;
     font-family: serif;
 }
-.priceContainer{
-    width: inherit;
-    justify-content: flex-start;
+.locationContainer {
     text-align: left;
+    margin-top: 18px;
+
+}
+.priceContainer{
+    font-size: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+    position: revert;
+    right: 50px;
+    justify-content: right;
     margin: 10px;
     font-family: serif;
-    font-size: 16px;
+
+    width: inherit;
+    text-align: right;
     padding-left: 40px;
-    display: flex;
     flex-direction: column;
-
-
-    flex-wrap: nowrap;
-    position: absolute;
-    right: 50px;
-    /*justify-content: right;*/
 }
-/*.priceContainer:hover {*/
-/*    height: auto;*/
-/*}*/
+.btnContainer {
+    display: flex;
+    width: inherit;
+    flex-wrap: nowrap;
+    position: revert;
+    margin: 10px;
+    padding-right: 10px;
+}
 .price{
     font-size: 16px;
     height: 55px;
     white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: darkgray;
+    color: #0a53be;
 }
 .price_diff{
     font-size: 20px;
     color: red;
     /*text-align: center;*/
-    padding: 30px;
+    padding-left: 30px;
     border: 1px;
     height: auto;
 }
-/*.priceContainer:hover .price_dif{*/
-/*    display: none;*/
-/*}*/
-
 
 .FilterContainer button {
     height: 40px;
@@ -227,13 +231,14 @@ body{
     background-image: linear-gradient(top, #f4f1ee, #fff);
     border-radius: 50%;
     box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);
-    float:left;
-    height: 42px;
+    float: end;
+    height: 32px;
     margin: 0 10px 10px 0;
     position: relative;
-    width: 42px;
+    width: 32px;
     -webkit-transition: all .1s linear;
     transition: all .1s linear;
+
 }
 .button:after{
     color:#e9e6e4;
@@ -248,8 +253,8 @@ body{
 }
 .heart:after{
     content: "❤";
-    left: 6px;
-    top: -2px;
+    left: 0px;
+    top: -7px;
 }
 .cross:after{
     content: "✖";
