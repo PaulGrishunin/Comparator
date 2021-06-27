@@ -254,7 +254,7 @@ body{
 }
 .cross:after{
     content: "✖";
-    left: -1px;
+    left: 1px;
     top:  -5px;
 }
 .button:hover{

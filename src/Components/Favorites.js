@@ -60,7 +60,7 @@ class Favorites extends Component {
                         <div className="priceContainer">
                                <div className="price">Price: € <b> {favs.price} </b> </div>
                                <div className="price_diff">Price difference: € <b> {favs.price_diff} </b></div>
-                                <button className="button cross" href="#" onClick={() => this.deleteFromFavorites(favs.id)}> </button>
+                                <button className="button cross" onClick={() => this.deleteFromFavorites(favs.id)}> </button>
                         </div>
 
                     </div>
