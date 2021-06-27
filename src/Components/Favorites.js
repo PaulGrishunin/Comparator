@@ -29,8 +29,8 @@ class Favorites extends Component {
             // })
          .then(
                     () => {
-                        this.props.history.push('/favorites');
-                        window.location.reload();
+                        this.props.history.push('/#!');
+                        // window.location.reload();
                     })
         // document.location.reload()
         // window.location.reload()

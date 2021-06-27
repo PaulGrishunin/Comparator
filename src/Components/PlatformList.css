@@ -89,6 +89,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     color: #0a53be;
+    margin-right: 70px;
 }
 .price_diff{
     color: red;
@@ -96,6 +97,7 @@
     padding-left: 30px;
     border: 1px;
     height: auto;
+    margin-right: 70px;
 }
 
 .FilterContainer button {
@@ -227,7 +229,7 @@ body{
     box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);
     float: right;
     height: 35px;
-    position: sticky;
+    position: relative;
     /*left:95px;*/
     width: 35px;
     -webkit-transition: all .1s linear;
@@ -247,13 +249,13 @@ body{
 }
 .heart:after{
     content: "❤";
-    left: 0px;
-    top: -7px;
+    left: 2px;
+    top:  -5px;
 }
 .cross:after{
     content: "✖";
-    left: 6px;
-    top: -2px;
+    left: 2px;
+    top:  -5px;
 }
 .button:hover{
     background-image: -webkit-linear-gradient(top, #fff, #f4f1ee);
