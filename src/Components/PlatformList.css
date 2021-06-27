@@ -209,19 +209,19 @@
     border-radius: 15px 0 0 15px;
 }
 
-html, body{
-    min-height:100%;
-}
+/*html, body{*/
+/*    min-height:100%;*/
+/*}*/
 
-body{
-    background-image: -webkit-linear-gradient(top, #edecec, #cecbc9);
-    background-image: linear-gradient(top, #edecec, #cecbc9);
-}
+/*body{*/
+/*    background-image: -webkit-linear-gradient(top, #edecec, #cecbc9);*/
+/*    background-image: linear-gradient(top, #edecec, #cecbc9);*/
+/*}*/
 
-.buttonHolder{
-    margin:50px auto;
-    width:250px;
-}
+/*.buttonHolder{*/
+/*    margin:50px auto;*/
+/*    width:250px;*/
+/*}*/
 .button{
     background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
     background-image: linear-gradient(top, #f4f1ee, #fff);
@@ -238,7 +238,6 @@ body{
 }
 .button:after{
     color:#e9e6e4;
-    content: "";
     display: block;
     font-size: 30px;
     height: 30px;
