@@ -36,7 +36,7 @@ class AuthorizedMenu extends Component {
                     <Menu.Item
                         key="signout"
                         style={{float: 'right'}}>
-                        <a href="" onClick={this.logOut}>< LogoutOutlined />Log out</a>
+                        <a href="/" onClick={this.logOut}>< LogoutOutlined />Log out</a>
                     </Menu.Item>
                     <Menu.Item
                         key="userpage"

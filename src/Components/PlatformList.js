@@ -35,6 +35,7 @@ class PlatformList extends Component {
         fetch(API_URL + `/favorites/add/`+ platformId, { method:"POST", headers: authHeader()})
             .then(res => res.json())
             .then(console.log)
+            window.location.reload(false);
     }
 
     onSortByChange = (event) => {
@@ -92,11 +93,11 @@ class PlatformList extends Component {
 
                         </div>
                         <div className="priceContainer">
-                            <div className="price">Price: € {plat.price} </div>
-                            <div className="price_diff">Price difference: € {plat.price_diff} </div>
+                            <div className="price">Price: € <b> {plat.price} </b> </div>
+                            <div className="price_diff">Price difference: € <b> {plat.price_diff} </b></div>
 
                             <div className="btnContainer">
-                            { Object.keys(authHeader()).length !== 0 ?<a href="" className="button heart" onClick={() => this.addToFavorites(plat.id)}></a>:
+                            { Object.keys(authHeader()).length !== 0 ? <a href="#!" className="button heart" onClick={() => this.addToFavorites(plat.id)}> </a>:
                                 null}
                             </div >
                         </div>

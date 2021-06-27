@@ -250,7 +250,7 @@ body{
 .heart:after{
     content: "❤";
     left: 2px;
-    top:  -6px;
+    top:  -4px;
 }
 .cross:after{
     content: "✖";
