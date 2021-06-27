@@ -75,24 +75,12 @@ class Favorites extends Component {
     }
 
     render() {
-        // if (!this.state.isDeleted){
-        //     console.log("1+", this.state.isDeleted)
 
         return (
             <div>
                 {this.state.favorites}
             </div>
         )
-    //     }
-    //     else {
-    //         console.log("2+", this.state.isDeleted)
-    //         this.setState({isDeleted: false})
-    //         return (
-    //             <div>
-    //                 {this.state.favorites}
-    //             </div>
-    //         )
-    //     }
     }
 }
 
