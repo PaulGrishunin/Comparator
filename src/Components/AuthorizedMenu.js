@@ -41,7 +41,7 @@ class AuthorizedMenu extends Component {
                     <Menu.Item
                         key="userpage"
                         style={{float: 'right'}}>
-                        <Link to="/auth/user" >< UserOutlined />Profile</Link>
+                        <Link to="/profile" >< UserOutlined />Profile</Link>
                     </Menu.Item>
                 </Menu>
             </React.Fragment>

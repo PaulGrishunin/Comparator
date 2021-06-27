@@ -71,9 +71,9 @@ class App extends Component {
                         <Switch>
 
                             <Route exact path="/" component={PlatformList}/>
-                            <Route exact path="/auth/login" component={Login}/>
-                            <Route exact path="/auth/register" component={Register}/>
-                            <Route exact path="/auth/user" component={Profile}/>
+                            <Route exact path="/login" component={Login}/>
+                            <Route exact path="/register" component={Register}/>
+                            <Route exact path="/profile" component={Profile}/>
                             <Route exact path="/favorites" component={Favorites}/>
 
                         </Switch>

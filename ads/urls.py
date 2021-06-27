@@ -29,7 +29,7 @@ urlpatterns = [
     path('sale_avg/create', views.create_sale_avg_examples, name='sale_avg_create_examples'),
     path('sale_avg/delete', Sale_avgDestroyView.as_view(), name='sale_avg_delete'),
 
-    path('favorites', FavoritesListView.as_view(), name='favorites_list'),
+    path('favorites_list', FavoritesListView.as_view(), name='favorites_list'),
     path('favorites/add/<int:pk>', FavoritesCreateView.as_view(), name='favorite_create'),
     path('favorites/delete/<int:pk>', FavoritesDeleteView.as_view(), name='favorites_delete'),
 ]

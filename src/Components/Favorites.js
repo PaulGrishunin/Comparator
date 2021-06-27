@@ -34,7 +34,7 @@ class Favorites extends Component {
     gettingFavorites = async () => {
         // e.preventDefault();
         const api_url = await
-            fetch( API_URL + "/favorites", { headers: authHeader() })
+            fetch( API_URL + "/favorites_list", { headers: authHeader() })
         const data = await api_url.json();
         let favorites = data.map((favs) => {
             return (
@@ -54,7 +54,7 @@ class Favorites extends Component {
                         <div className="priceContainer">
                                 <div className="price">Price: {favs.platformId.price} EUR</div>
                                 <div className="price_diff"> € {favs.platformId.price_diff} </div>
-                                <a href="#" className="button cross"  onClick={() => this.deleteFromFavorites(favs.id)}></a>
+                                <a href="/favorites" className="button cross"  onClick={() => this.deleteFromFavorites(favs.id)}></a>
                         </div>
 
                     </div>

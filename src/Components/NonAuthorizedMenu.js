@@ -20,12 +20,12 @@ class NonAuthorizedMenu extends Component {
                     <Menu.Item
                         key="register"
                         style={{float: 'right'}}>
-                        <Link to="/auth/register"><UserAddOutlined />Registration</Link>
+                        <Link to="/register"><UserAddOutlined />Registration</Link>
                     </Menu.Item>
                     <Menu.Item
                         key="login"
                         style={{float: 'right'}}>
-                        <Link to="/auth/login"><UserOutlined />Login</Link>
+                        <Link to="/login"><UserOutlined />Login</Link>
                     </Menu.Item>
                 </Menu>
             </React.Fragment>
