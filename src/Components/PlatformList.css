@@ -8,6 +8,7 @@
     display: flex;
     margin: 10px ;
     background-color: #fff;
+    position: relative;
 }
 .AdContainer:hover {
     background-color: rgba(250, 250, 250, 0.8);
@@ -33,7 +34,6 @@
     object-fit: cover;
     float: inherit;
     border: 0px;
-    text-align: left;
     font-size: 8px;
     border-radius: 15px 0 0 15px;
 }
@@ -44,7 +44,7 @@
     margin: 10px;
     font-family: serif;
     font-size: 16px;
-    padding-left: 40px;
+    padding-left: 25px;
     display: flex;
     flex-direction: column;
 }
@@ -59,43 +59,40 @@
 .locationContainer {
     text-align: left;
     margin-top: 18px;
-
 }
 .priceContainer{
-    font-size: 16px;
-    display: flex;
-    flex-wrap: nowrap;
-    position: revert;
-    right: 50px;
+    /*display: flex;*/
+    /*flex-wrap: nowrap;*/
     justify-content: right;
     margin: 10px;
     font-family: serif;
-
-    width: inherit;
+    width: available;
     text-align: right;
     padding-left: 40px;
     flex-direction: column;
+    position: absolute;
+    right: 5px;
+
 }
 .btnContainer {
-    display: flex;
-    width: inherit;
-    flex-wrap: nowrap;
-    position: revert;
-    margin: 10px;
+    /*display: flex;*/
+    /*width: auto;*/
+    /*flex-wrap: nowrap;*/
+    /*position: revert;*/
+    margin-top: 10px;
     padding-right: 10px;
 }
 .price{
     font-size: 16px;
-    height: 55px;
+    height: 35px;
     white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis;
     color: #0a53be;
 }
 .price_diff{
-    font-size: 20px;
     color: red;
-    /*text-align: center;*/
+    font-size: 18px;
     padding-left: 30px;
     border: 1px;
     height: auto;
@@ -138,11 +135,10 @@
     border-radius: 15px 15px 0 0;
     border-bottom-style: groove;
     padding: 5px;
-    /*font-family: 'Poppins', sans-serif;*/
+    font-family: 'Poppins', sans-serif;
     display: flex;
-    align-items: end;
+    align-items: baseline;
     justify-content: center;
-    /*border-radius: 15px;*/
     -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
     margin: 10px ;
@@ -224,17 +220,15 @@ body{
     margin:50px auto;
     width:250px;
 }
-
-
 .button{
     background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
     background-image: linear-gradient(top, #f4f1ee, #fff);
     border-radius: 50%;
     box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);
-    float: end;
+    float: right;
     height: 32px;
-    margin: 0 10px 10px 0;
-    position: relative;
+    position: sticky;
+    /*left:95px;*/
     width: 32px;
     -webkit-transition: all .1s linear;
     transition: all .1s linear;

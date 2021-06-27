@@ -81,7 +81,7 @@ class PlatformList extends Component {
     renderPlatformList(plat) {
         return (
             <span key={plat.id} >
-                    <div className="AdContainer"  >
+                    <div className="AdContainer">
                         <div className="imageContainer">
                             <img src={plat.photo_link} onClick={ e => window.open(plat.ad_link, "_blank")} alt="" />
                         </div>
@@ -92,13 +92,14 @@ class PlatformList extends Component {
 
                         </div>
                         <div className="priceContainer">
-                            <div className="price">Price: {plat.price} EUR</div>
+                            <div className="price">Price: € {plat.price} </div>
                             <div className="price_diff">Price difference: € {plat.price_diff} </div>
-                        </div>
-                         <div className="btnContainer">
+
+                            <div className="btnContainer">
                             { Object.keys(authHeader()).length !== 0 ?<a href="#" className="button heart" onClick={() => this.addToFavorites(plat.id)}></a>:
                                 null}
-                        </div >
+                            </div >
+                        </div>
                     </div>
                     </span>
         )
