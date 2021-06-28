@@ -16,11 +16,10 @@ class Favorites extends Component {
 
     deleteFromFavorites = async (id) => {
         // e.preventDefault();
-        const api_url = await
         fetch(API_URL + `/favorites/delete/` + id, {
-            // mode: 'cors',
+            mode: 'cors',
             method: "DELETE",
-            // headers: authHeader(),
+            headers: authHeader(),
         })
             // .then(res => res.json())
             // .then(result => {
@@ -59,9 +58,9 @@ class Favorites extends Component {
                         </div>
                         </div>
                         <div className="priceContainer">
-                               <div className="price">Price: € <b> {favs.price} </b> </div>
-                               <div className="price_diff">Price difference: € <b> {favs.price_diff} </b></div>
-                                <a className="button cross" href="#!" onClick={() => this.deleteFromFavorites(favs.id)}> </a>
+                               <div className="price">Price: € <b> {favs.platformId.price} </b> </div>
+                               <div className="price_diff">Price difference: € <b> {favs.platformId.price_diff} </b></div>
+                                <a className="button cross" onClick={() => this.deleteFromFavorites(favs.id)}> </a>
                         </div>
 
                     </div>
@@ -76,24 +75,12 @@ class Favorites extends Component {
     }
 
     render() {
-        // if (!this.state.isDeleted){
-        //     console.log("1+", this.state.isDeleted)
 
         return (
             <div>
                 {this.state.favorites}
             </div>
         )
-    //     }
-    //     else {
-    //         console.log("2+", this.state.isDeleted)
-    //         this.setState({isDeleted: false})
-    //         return (
-    //             <div>
-    //                 {this.state.favorites}
-    //             </div>
-    //         )
-    //     }
     }
 }
 
