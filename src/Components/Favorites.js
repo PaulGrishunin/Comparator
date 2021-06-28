@@ -21,18 +21,14 @@ class Favorites extends Component {
             method: "DELETE",
             headers: authHeader(),
         })
-            // .then(res => res.json())
-            // .then(result => {
-            //     console.log(result);
-                    // console.log("deletefrom", this.state.isDeleted)
-            // })
+
          // .then(
          //            () => {
          //                this.props.history.push('#!');
          //                // window.location.reload();
          //            })
         // document.location.reload()
-        window.location.reload(false);
+        // window.location.reload(false);
     }
 
 
@@ -52,15 +48,13 @@ class Favorites extends Component {
                             <p><b>{favs.platformId.brandId+' '+favs.platformId.model}</b></p>
                             <p> {favs.platformId.year+'   '+favs.platformId.fuel}</p>
                             <div className="locationContainer">
-                                <br/>
-                                <br/>
                             <div className="location">Location: {favs.platformId.country+' '+favs.platformId.place}</div>
                         </div>
                         </div>
                         <div className="priceContainer">
                                <div className="price">Price: € <b> {favs.platformId.price} </b> </div>
                                <div className="price_diff">Price difference: € <b> {favs.platformId.price_diff} </b></div>
-                                <a className="button cross" onClick={() => this.deleteFromFavorites(favs.id)}> </a>
+                                <a className="button cross" href="" onClick={() => this.deleteFromFavorites(favs.id)}> </a>
                         </div>
 
                     </div>

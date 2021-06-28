@@ -83,7 +83,7 @@
     padding-right: 10px;
 }
 .price{
-    font-size: 16px;
+    font-size: 18px;
     height: 35px;
     white-space: normal;
     overflow: hidden;
@@ -93,7 +93,7 @@
 }
 .price_diff{
     color: red;
-    font-size: 18px;
+    font-size: 20px;
     padding-left: 30px;
     border: 1px;
     height: auto;
