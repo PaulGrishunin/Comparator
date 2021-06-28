@@ -19,7 +19,7 @@ from ads import views
 from .yasg import urlpatterns as doc_urls
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', views.new_home, name='index'),
     path('admin/', admin.site.urls),
     path('', include('authentication.urls', namespace='authentication')),
     path('', include('ads.urls', namespace='ads')),
