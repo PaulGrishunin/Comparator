@@ -16,6 +16,7 @@ class Favorites extends Component {
 
     deleteFromFavorites = async (id) => {
         // e.preventDefault();
+        const api_url = await
         fetch(API_URL + `/favorites/delete/` + id, {
             // mode: 'cors',
             method: "DELETE",
@@ -31,8 +32,8 @@ class Favorites extends Component {
                         this.props.history.push('/#!');
                         // window.location.reload();
                     })
-        // document.location.reload()
-        window.location.reload(false);
+        document.location.reload()
+        // window.location.reload(false);
     }
 
 
@@ -60,7 +61,7 @@ class Favorites extends Component {
                         <div className="priceContainer">
                                <div className="price">Price: € <b> {favs.price} </b> </div>
                                <div className="price_diff">Price difference: € <b> {favs.price_diff} </b></div>
-                                <button className="button cross" onClick={() => this.deleteFromFavorites(favs.id)}> </button>
+                                <a className="button cross" href="#!" onClick={() => this.deleteFromFavorites(favs.id)}> </a>
                         </div>
 
                     </div>
@@ -72,15 +73,28 @@ class Favorites extends Component {
 
     componentDidMount() {
         this.gettingFavorites()
+        document.location.reload()
     }
 
     render() {
+        // if (!this.state.isDeleted){
+        //     console.log("1+", this.state.isDeleted)
 
         return (
             <div>
                 {this.state.favorites}
             </div>
         )
+    //     }
+    //     else {
+    //         console.log("2+", this.state.isDeleted)
+    //         this.setState({isDeleted: false})
+    //         return (
+    //             <div>
+    //                 {this.state.favorites}
+    //             </div>
+    //         )
+    //     }
     }
 }
 
