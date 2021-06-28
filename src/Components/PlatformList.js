@@ -107,7 +107,6 @@ class PlatformList extends Component {
     }
 
     gettingPlatform = async (e) => {
-        console.log(this.state.registred)
         console.log('gettingPlatform STARTED')
         this.setState ( {loading: true},)
         e.preventDefault();

@@ -27,13 +27,13 @@ class Favorites extends Component {
             //     console.log(result);
                     // console.log("deletefrom", this.state.isDeleted)
             // })
-         .then(
-                    () => {
-                        this.props.history.push('/#!');
-                        // window.location.reload();
-                    })
-        document.location.reload()
-        // window.location.reload(false);
+         // .then(
+         //            () => {
+         //                this.props.history.push('#!');
+         //                // window.location.reload();
+         //            })
+        // document.location.reload()
+        window.location.reload(false);
     }
 
 
@@ -73,7 +73,6 @@ class Favorites extends Component {
 
     componentDidMount() {
         this.gettingFavorites()
-        document.location.reload()
     }
 
     render() {
