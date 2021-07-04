@@ -15,26 +15,16 @@ class Favorites extends Component {
     }
 
     deleteFromFavorites = async (id) => {
-        // e.preventDefault();
         fetch(API_URL + `/favorites/delete/` + id, {
             mode: 'cors',
             method: "DELETE",
             headers: authHeader(),
         })
-
-         // .then(
-         //            () => {
-         //                this.props.history.push('#!');
-         //                // window.location.reload();
-         //            })
-        // document.location.reload()
-        // window.location.reload(false);
         this.gettingFavorites()
     }
 
 
     gettingFavorites = async () => {
-        // e.preventDefault();
         const api_url = await
             fetch( API_URL + "/favorites_list", { headers: authHeader() })
         const data = await api_url.json();
@@ -55,9 +45,8 @@ class Favorites extends Component {
                         <div className="priceContainer">
                                <div className="price">Price: € <b> {favs.platformId.price} </b> </div>
                                <div className="price_diff">Price difference: € <b> {favs.platformId.price_diff} </b></div>
-                                <a className="button cross" href="#" onClick={() => this.deleteFromFavorites(favs.id)}> </a>
+                                <a className="button cross" href="#!" onClick={() => this.deleteFromFavorites(favs.id)}> </a>
                         </div>
-
                     </div>
                     </span>
             )

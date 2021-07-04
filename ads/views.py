@@ -256,6 +256,7 @@ from statistics import median
 def create_sale_avg_examples(self):
     create_platform_sale(self)
     exchange_rate_PLN_EUR = float(get_actual_exchange_rate(self))
+    print('exchange_rate_PLN_EUR = ', exchange_rate_PLN_EUR)
     elements = Sale_avg.objects.all()
     elements.delete()
     print('ELEMENTS deleted from Sale_avg')
@@ -274,7 +275,7 @@ def create_sale_avg_examples(self):
             avg.fuel = k[3]
             # avg.avg_price = int((sum(v) / len(v)) * exchange_rate_PLN_EUR)        # Average
             avg.avg_price = int(median([i/exchange_rate_PLN_EUR for i in v]))        # Median
-            print('avg_example =', avg)
+            #print('avg_example =', avg)
             # avg.save()
             sale_avg_list.append(avg)
     Sale_avg.objects.bulk_create([Sale_avg(**{'brandId_id': avg.brandId_id,
