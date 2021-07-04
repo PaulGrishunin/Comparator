@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from ads import views
-from .yasg import urlpatterns as doc_urls
+# from .yasg import urlpatterns as doc_urls
 
 urlpatterns = [
     path('', views.new_home, name='index'),
@@ -25,4 +25,4 @@ urlpatterns = [
     path('', include('ads.urls', namespace='ads')),
 ]
 
-urlpatterns += doc_urls
+# urlpatterns += doc_urls
