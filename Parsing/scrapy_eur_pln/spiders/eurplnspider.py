@@ -1,7 +1,6 @@
-#from six.moves.urllib.parse import urljoin
+
 import scrapy
 from scrapy.utils.python import to_native_str
-#import time
 from scrapy import Selector
 
 class EurplnSpider(scrapy.Spider):
@@ -12,10 +11,10 @@ class EurplnSpider(scrapy.Spider):
     def parse(self, response):
         #print(response.text)
         kurs = response.xpath('//div[@class = "profilLast"]/text()').extract()
-        #print('kurs',kurs[0].replace(' ', ''))
-        exchange_rate_EUR_PLN = kurs[0].replace(',', '.')
-        print('exchange_rate_EUR_PLN', float(exchange_rate_EUR_PLN))
-        yield float(exchange_rate_EUR_PLN) 
+        print('kurs',kurs[0].replace(' ', '').replace(',', '.'))
+        exchange_rate_EUR_PLN = { "kurs": float(kurs[0].replace(' ', '').replace(',', '.')) }
+       
+        yield exchange_rate_EUR_PLN
             
             
             

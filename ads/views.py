@@ -29,6 +29,7 @@ import subprocess
 def new_home(request):
     return render(request, 'index.html')
 
+
 class BrandsListView(generics.ListAPIView):
     queryset = Brands.objects.all().order_by('name')
     serializer_class = BrandsSerializer
@@ -65,30 +66,10 @@ class PlatformLView(generics.ListAPIView):
                     p.price_diff = s.avg_price - p.price
                     print("result=", p)
                     p.save()
-                    # result_list.append(p)
                     filtered_ids.append(p.id)
-        # print('result_list=', result_list )
-        # Platform.objects.update([Platform(**{'id': p.id,
-        #                                         'platform_code': True,
-        #                                         'brandId_id': p.brandId_id,
-        #                                         'model': p.model,
-        #                                         'year': p.year,
-        #                                         'fuel': p.fuel,
-        #                                         'country': p.country,
-        #                                         'place': p.place,
-        #                                         'price': p.price,
-        #                                         'price_diff': p.price_diff,
-        #                                         'currency': p.currency,
-        #                                         'photo_link': p.photo_link,
-        #                                         'date_add': p.date_add,
-        #                                         'ad_link': p.ad_link})
-        #                              for p in result_list])
         queryset = Platform.objects.filter(pk__in=filtered_ids).order_by('-date_add')
         return queryset
 
-# class PlatformCreateView(APIView):
-#     """Add elements to Platform from csv"""
-    # serializer_class = PlatformCreateSerializer
 
 
 class PlatformDestroyView(APIView):
@@ -120,7 +101,7 @@ class FavoritesListView(generics.ListAPIView):
 
     def get_queryset(self):
         try:
-            return Favorites.objects.filter(userId=self.request.user.id)
+            return Favorites.objects.filter(userId=self.request.user.id).reverse()
         except Exception as e:
             return None
 
@@ -168,13 +149,16 @@ class FavoritesDeleteView(APIView):
 #     people = User.objects.all()
 #     return render(request, "index.html", {"people": people})
 
+def get_actual_exchange_rate(self):
+    subprocess.Popen(['scrapy', 'runspider', './Parsing/scrapy_eur_pln/spiders/eurplnspider.py', '-O', './Parsing/eurpln_data.csv']).wait(timeout=None)
+    CSV_PATH = './Parsing/eurpln_data.csv'
+    with open(CSV_PATH, newline='') as csvfile:
+        reader = csv.reader(csvfile, delimiter=',', quotechar=',')
+        for row in reader:
+            exchange_rate_PLN_EUR = row[0]
+    return exchange_rate_PLN_EUR
 
-def platform(request):
-    ads = Platform.objects.all()
-    return render(request, "platform.html", {"ads": ads})
-
-
-exchange_rate_PLN_EUR = 0.22         # value must be parsed  in other module
+# exchange_rate_PLN_EUR = 0.22         # value must be parsed  in other module
 brands_list = list(Brands.objects.values())
 
 # сохранение данных from home(sale) platform в бд
@@ -213,9 +197,10 @@ def create_platform_sale(self):
                                                   'currency': plat.currency,
                                                   'ad_link': plat.ad_link})
                                       for plat in platform_sale_list])
-    return HttpResponseRedirect("/api/platform")
+    return HttpResponseRedirect("/platform")
 
-# сохранение данных from home(sale) platform в бд
+
+"""Add ads from buy platform"""
 def create_platform_buy(self):
     subprocess.Popen(['scrapy', 'runspider', './Parsing/scrapy_mobile/spiders/mobilespider.py', '-O', './Parsing/mobile_data.csv']).wait(timeout=None)
     fav_ids=[]
@@ -223,20 +208,17 @@ def create_platform_buy(self):
     for f in favs:
         fav_ids.append(f.platformId_id)                 # don't delete ads, which have relations in Favorites.
     elements = Platform.objects.filter(platform_code=1).exclude(pk__in=fav_ids)
-    # elements = elements.exclude(pk__in=fav_ids)
     elements.delete()
     print('ELEMENTS with platform_code=1 (without elements in Favorites) deleted from Platform')
     CSV_PATH = './Parsing/mobile_data.csv'  # Csv file path
     with open(CSV_PATH,  newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar=';')
-        # print('brands_list=', brands_list)
         platform_buy_list =[]
         for row in reader:
             if next((item for item in brands_list if item["name"] == row[0]), False) != False:             #check if parsed brand name in Brands
                 plat = Platform()
                 plat.platform_code = True
                 plat.brandId_id =  [d['id'] for d in brands_list if d['name']== row[0]][0]
-                # print('plat.brandId_id=', plat.brandId_id)
                 plat.model = row[1]
                 plat.year = row[2]
                 plat.fuel = row[3]
@@ -273,6 +255,7 @@ from statistics import median
 """Create examples with average price"""
 def create_sale_avg_examples(self):
     create_platform_sale(self)
+    exchange_rate_PLN_EUR = float(get_actual_exchange_rate(self))
     elements = Sale_avg.objects.all()
     elements.delete()
     print('ELEMENTS deleted from Sale_avg')
@@ -286,12 +269,11 @@ def create_sale_avg_examples(self):
     for k, v in grouped_cars_by_brand_model_year.items():
             avg = Sale_avg()
             avg.brandId_id = [d['id'] for d in brands_list if d['id']== k[0]][0]           # Brands.objects.filter(id=k[0]).first().id
-            # print('avg.brandId_id =', avg.brandId_id)
             avg.model =  k[1]
             avg.year =  k[2]
             avg.fuel = k[3]
             # avg.avg_price = int((sum(v) / len(v)) * exchange_rate_PLN_EUR)        # Average
-            avg.avg_price = int(median([i*exchange_rate_PLN_EUR for i in v]))        # Median
+            avg.avg_price = int(median([i/exchange_rate_PLN_EUR for i in v]))        # Median
             print('avg_example =', avg)
             # avg.save()
             sale_avg_list.append(avg)
@@ -301,4 +283,7 @@ def create_sale_avg_examples(self):
                                               'fuel': avg.fuel,
                                               'avg_price': avg.avg_price})
                                   for avg in sale_avg_list])
-    return HttpResponseRedirect("/api/sale_avg")
+    return HttpResponseRedirect("/sale_avg")
+
+
+

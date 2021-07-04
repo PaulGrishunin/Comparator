@@ -18,9 +18,6 @@ class Brands(models.Model):
     def __str__(self):
         return self.name
 
-    # def get_id(self):
-    #     return self.id
-
 
 class Platform(models.Model):
     platform_code = models.BooleanField("0 - ad from sale platform; 1 - ad from buy platform", max_length=1)

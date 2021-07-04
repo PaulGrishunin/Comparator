@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 #     'debug_toolbar',               #
     'django_extensions',          #
     'corsheaders',
-#     'drf_yasg',
+    'drf_yasg',
     'rest_framework',
     'rest_framework.authtoken',
     'ads',
@@ -167,7 +167,6 @@ django_heroku.settings(locals())
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILE_DIR = os.path.join(BASE_DIR, 'build/static')
-# STATICFILE_DIR = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [STATICFILE_DIR,]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

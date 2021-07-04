@@ -27,8 +27,9 @@ class Favorites extends Component {
          //                this.props.history.push('#!');
          //                // window.location.reload();
          //            })
-        document.location.reload()
+        // document.location.reload()
         // window.location.reload(false);
+        this.gettingFavorites()
     }
 
 
