@@ -15,7 +15,6 @@ class MobilespiderSpider(scrapy.Spider):
                  + ['https://www.autoscout24.com/lst/skoda?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,4)]\
                  + ['https://www.autoscout24.com/lst/ford?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,4)] \
                  + ['https://www.autoscout24.com/lst/peugeot?sort=age&desc=1&ustate=N%2CU&size=20&page=' + '%s&atype=C&' % p for p in range(1, 4)]\
-                 + ['https://www.autoscout24.com/lst/renault?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,4)]\
                  + ['https://www.autoscout24.com/lst/volkswagen?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,4)]\
                  + ['https://www.autoscout24.com/lst/kia?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,4)]\
                  + ['https://www.autoscout24.com/lst/mitsubishi?sort=age&desc=1&ustate=N%2CU&size=20&page='+'%s&atype=C&' % p for p in range(1,4)]\
@@ -49,7 +48,7 @@ class MobilespiderSpider(scrapy.Spider):
             scraped_data = {
                 'marka': item[0][:item[0].find(' ')],  
                 'model': item[0].split()[1],
-                'year': item[1][4:].replace('\n','').replace('(First Registration)','2021'),
+                'year': item[1][4:].replace('\n','').replace('(First Registration)','2021').replace('First Registration)','2021').replace('(First Registration','2021'),
                 'fuel': item[2].replace('\n',''),
                 'country': item[3],
                 'place': item[4].replace(',',' ').replace(';',' '),

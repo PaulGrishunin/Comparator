@@ -153,12 +153,12 @@ def get_actual_exchange_rate(self):
     subprocess.Popen(['scrapy', 'runspider', './Parsing/scrapy_eur_pln/spiders/eurplnspider.py', '-O', './Parsing/eurpln_data.csv']).wait(timeout=None)
     CSV_PATH = './Parsing/eurpln_data.csv'
     with open(CSV_PATH, newline='') as csvfile:
-        reader = csv.reader(csvfile, delimiter=',', quotechar=',')
+        reader = csv.reader(csvfile, delimiter=',')      #, quotechar=','
         for row in reader:
             exchange_rate_PLN_EUR = row[0]
     return exchange_rate_PLN_EUR
 
-# exchange_rate_PLN_EUR = 0.22         # value must be parsed  in other module
+
 brands_list = list(Brands.objects.values())
 
 # сохранение данных from home(sale) platform в бд
@@ -212,7 +212,7 @@ def create_platform_buy(self):
     print('ELEMENTS with platform_code=1 (without elements in Favorites) deleted from Platform')
     CSV_PATH = './Parsing/mobile_data.csv'  # Csv file path
     with open(CSV_PATH,  newline='') as csvfile:
-        reader = csv.reader(csvfile, delimiter=',', quotechar=';')
+        reader = csv.reader(csvfile, delimiter=',')         #, quotechar=','
         platform_buy_list =[]
         for row in reader:
             if next((item for item in brands_list if item["name"] == row[0]), False) != False:             #check if parsed brand name in Brands
